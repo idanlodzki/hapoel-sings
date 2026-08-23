@@ -296,7 +296,6 @@ input{font:inherit}
 
       <p class="err" id="setupErr"></p>
       <button class="btn btn--red btn--lg" id="startBtn">התחלה</button>
-      <p style="color:var(--grey);font-size:.9rem" id="poolInfo"></p>
     </div>
   </div>
 </section>
@@ -466,7 +465,6 @@ input{font:inherit}
 
   function updatePool() {
     const base = basePool(), sel = chosen().length;
-    $("poolInfo").textContent = `${sel} שירים ישוחקו`;
     $("pickCount").textContent = `(${sel}/${base.length})`;
     $("pickFoot").textContent = `${sel} נבחרו מתוך ${base.length}`;
   }

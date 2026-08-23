@@ -3,7 +3,7 @@
 A "name that tune" party game built on the songs of Hapoel Tel Aviv. A song
 plays, players buzz in by name, the host marks them right or wrong.
 
-**137 songs · 143 videos.** Song titles and links only — for the words, follow
+Song titles and links only — for the words, follow
 the wiki link shown when a song is revealed.
 
 ## Play
