@@ -35,7 +35,13 @@ tr.warn td{background:rgba(226,0,26,.07)}
 .l a:hover{color:var(--red)}
 .ttl{display:block;color:var(--grey);font-size:.72rem;margin-top:4px}
 .note{background:#3a2a00;border:1px solid #7a5c00;color:#f0d68a;border-radius:10px;padding:12px 15px;margin-bottom:18px;font-size:.9rem}
-</style></head><body>
+</style><!-- Vercel Web Analytics. Deliberately the first-party /_vercel/insights
+     path, not cdn.vercel-insights.com: same-origin means no extra DNS and it
+     is not tripped by content blockers. In <head> so it is discovered early;
+     `defer` keeps it off the critical path. 404s harmlessly on localhost, and
+     only reports once Analytics is enabled for the project in the dashboard. -->
+<script defer src="/_vercel/insights/script.js"></script>
+</head><body>
 <h1>השירים שנמצאו</h1>
 <p class="sub">כל שיר שיש לו כעת קישור לשיר המקורי — עם הקישור, המקור, ואיך הוא נמצא.</p>
 
@@ -1261,9 +1267,4 @@ document.querySelectorAll('.tools button').forEach(b=>b.addEventListener('click'
 }));
 </script>
 
-<!-- Vercel Web Analytics. Served from Vercel's edge at /_vercel/insights,
-     so there is nothing to install and no build step. It 404s harmlessly on
-     localhost; it only reports once the site is deployed AND Analytics is
-     switched on for the project in the Vercel dashboard. -->
-<script defer src="/_vercel/insights/script.js"></script>
 </body></html>
