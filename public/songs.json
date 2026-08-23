@@ -1,5 +1,5 @@
 {
- "count": 165,
+ "count": 143,
  "songs": [
   {
    "name": "16 מלאו לנער-ביברס נאתכו",
@@ -8,16 +8,6 @@
    "wiki": "https://wiki.red-fans.com/index.php?title=16_מלאו_לנער-ביברס_נאתכו",
    "youtube": [
     "Nqnji8-oLFk"
-   ],
-   "original": false
-  },
-  {
-   "name": "Bella Ciao - יניב מזרחי",
-   "category": "שירי שחקנים",
-   "artist": null,
-   "wiki": "https://wiki.red-fans.com/index.php?title=Bella_Ciao_-_יניב_מזרחי",
-   "youtube": [
-    "uT-axQy92jY"
    ],
    "original": false
   },
@@ -96,16 +86,6 @@
    "original": false
   },
   {
-   "name": "אדום בלב",
-   "category": "שירים",
-   "artist": null,
-   "wiki": "https://wiki.red-fans.com/index.php?title=אדום_בלב",
-   "youtube": [
-    "3BOocawSkVs"
-   ],
-   "original": false
-  },
-  {
    "name": "אדומה שלי",
    "category": "שירים",
    "artist": null,
@@ -166,42 +146,12 @@
    "original": true
   },
   {
-   "name": "איך הקהל באטרף",
-   "category": "שירים מהיציע",
-   "artist": null,
-   "wiki": "https://wiki.red-fans.com/index.php?title=איך_הקהל_באטרף",
-   "youtube": [
-    "u10ciReA1TE"
-   ],
-   "original": false
-  },
-  {
    "name": "אין לי גרוש ועדיין בא",
    "category": "שירים מהיציע",
    "artist": null,
    "wiki": "https://wiki.red-fans.com/index.php?title=אין_לי_גרוש_ועדיין_בא",
    "youtube": [
     "IFLgChjqRUA"
-   ],
-   "original": true
-  },
-  {
-   "name": "אין עוד ריגוש כזה אני יודע",
-   "category": "שירים מהיציע",
-   "artist": null,
-   "wiki": "https://wiki.red-fans.com/index.php?title=אין_עוד_ריגוש_כזה_אני_יודע",
-   "youtube": [
-    "ud4011gVvhw"
-   ],
-   "original": false
-  },
-  {
-   "name": "איפה שתגידי אני מתייצב",
-   "category": "שירים מהיציע",
-   "artist": "אוהדי אריס",
-   "wiki": "https://wiki.red-fans.com/index.php?title=איפה_שתגידי_אני_מתייצב",
-   "youtube": [
-    "4F8N2gQC9f8"
    ],
    "original": true
   },
@@ -366,16 +316,6 @@
    "original": false
   },
   {
-   "name": "אשתו של אובארוב",
-   "category": "שירים מהיציע",
-   "artist": null,
-   "wiki": "https://wiki.red-fans.com/index.php?title=אשתו_של_אובארוב",
-   "youtube": [
-    "cfAHLES_Yd8"
-   ],
-   "original": true
-  },
-  {
    "name": "את זאת שאהבתי",
    "category": "שירים מהיציע",
    "artist": null,
@@ -416,16 +356,6 @@
    "original": true
   },
   {
-   "name": "בכל העיר כולם יודעים",
-   "category": "שירים מהיציע",
-   "artist": null,
-   "wiki": "https://wiki.red-fans.com/index.php?title=בכל_העיר_כולם_יודעים",
-   "youtube": [
-    "FshHa6uKTXc"
-   ],
-   "original": false
-  },
-  {
    "name": "בכל מקום בכל מגרש",
    "category": "שירים מהיציע",
    "artist": null,
@@ -434,16 +364,6 @@
     "n4RjJKxsamQ"
    ],
    "original": true
-  },
-  {
-   "name": "בכל מקום, בכל פינה",
-   "category": "שירים מהיציע",
-   "artist": null,
-   "wiki": "https://wiki.red-fans.com/index.php?title=בכל_מקום,_בכל_פינה",
-   "youtube": [
-    "dG3Lx08HhgM"
-   ],
-   "original": false
   },
   {
    "name": "בכל שבוע קרנבל",
@@ -534,16 +454,6 @@
     "rfvGz953w2k"
    ],
    "original": false
-  },
-  {
-   "name": "דור בנימיני",
-   "category": "שירי שחקנים",
-   "artist": "אלון דה לוקו",
-   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%93%D7%95%D7%A8_%D7%91%D7%A0%D7%99%D7%9E%D7%99%D7%A0%D7%99",
-   "youtube": [
-    "WZXOpB-L34U"
-   ],
-   "original": true
   },
   {
    "name": "דורון ליידנר",
@@ -676,16 +586,6 @@
    "original": true
   },
   {
-   "name": "הפועל זו דת",
-   "category": "שירים מהיציע",
-   "artist": null,
-   "wiki": "https://wiki.red-fans.com/index.php?title=הפועל_זו_דת",
-   "youtube": [
-    "16y1AkoZkmQ"
-   ],
-   "original": true
-  },
-  {
    "name": "הפועל כמוך אין אף אחת",
    "category": "Hapoel Songs in Foreign Languages",
    "artist": null,
@@ -761,9 +661,7 @@
    "artist": null,
    "wiki": "https://wiki.red-fans.com/index.php?title=הפועל_שיגעת_אותי",
    "youtube": [
-    "x9_R75LjnZg",
-    "O6OperOcTYo",
-    "CwjEwBW2CLw"
+    "JWRoHfkLZNQ"
    ],
    "original": true
   },
@@ -774,16 +672,6 @@
    "wiki": "https://wiki.red-fans.com/index.php?title=הפועל_שלי_אני_איתך_לעולמים",
    "youtube": [
     "n__raqTpqfg"
-   ],
-   "original": true
-  },
-  {
-   "name": "הפועל תל אביב המנון האוהדים והשחקנים",
-   "category": "שירים",
-   "artist": null,
-   "wiki": "https://wiki.red-fans.com/index.php?title=הפועל_תל_אביב_המנון_האוהדים_והשחקנים",
-   "youtube": [
-    "MuA7LWFAXus"
    ],
    "original": true
   },
@@ -838,16 +726,6 @@
    "original": true
   },
   {
-   "name": "ויוה הפועל",
-   "category": "שירים מהיציע",
-   "artist": null,
-   "wiki": "https://wiki.red-fans.com/index.php?title=ויוה_הפועל",
-   "youtube": [
-    "99NgfUpS4rk"
-   ],
-   "original": true
-  },
-  {
    "name": "זיכרון ישן",
    "category": "שירים מהיציע",
    "artist": null,
@@ -864,16 +742,6 @@
    "wiki": "https://wiki.red-fans.com/index.php?title=חוץ_ממך_אין_עוד_אחרת",
    "youtube": [
     "dgTraS02Zyc"
-   ],
-   "original": true
-  },
-  {
-   "name": "חלומות - פאביו ג'וניור",
-   "category": "שירי שחקנים",
-   "artist": "אייל גולן",
-   "wiki": "https://wiki.red-fans.com/index.php?title=חלומות_-_פאביו_ג'וניור",
-   "youtube": [
-    "ofa-ehYZbwQ"
    ],
    "original": true
   },
@@ -953,7 +821,7 @@
    "artist": null,
    "wiki": "https://wiki.red-fans.com/index.php?title=יוצא_היום_לקרב",
    "youtube": [
-    "7Mn1WN5yeag"
+    "CUgSRJfa7mQ"
    ],
    "original": true
   },
@@ -978,16 +846,6 @@
    "original": true
   },
   {
-   "name": "ירושלים לא באירופה",
-   "category": "שירים מהיציע",
-   "artist": null,
-   "wiki": "https://wiki.red-fans.com/index.php?title=ירושלים_לא_באירופה",
-   "youtube": [
-    "Z7-keT45suI"
-   ],
-   "original": false
-  },
-  {
    "name": "כדי להיות אוהד של הפועל",
    "category": "שירים מהיציע",
    "artist": null,
@@ -1008,7 +866,7 @@
    "original": true
   },
   {
-   "name": "ככה וככה - מזואה אנסומבו",
+   "name": "ככה וככה - אקסבייר מנפורד",
    "category": "שירי שחקנים",
    "artist": null,
    "wiki": "https://wiki.red-fans.com/index.php?title=ככה_וככה_-_מזואה_אנסומבו",
@@ -1058,16 +916,6 @@
    "original": true
   },
   {
-   "name": "כמו פעם אוסישקין",
-   "category": "שירים",
-   "artist": null,
-   "wiki": "https://wiki.red-fans.com/index.php?title=כמו_פעם_אוסישקין",
-   "youtube": [
-    "lJ0akKvq9AE"
-   ],
-   "original": true
-  },
-  {
    "name": "כמו פרפר לאור",
    "category": "שירים מהיציע",
    "artist": null,
@@ -1076,16 +924,6 @@
     "tmwcjNE1eQw"
    ],
    "original": false
-  },
-  {
-   "name": "כפיים-ריף מסיקה",
-   "category": "שירי שחקנים",
-   "artist": "יהודה פוליקר",
-   "wiki": "https://wiki.red-fans.com/index.php?title=כפיים-ריף_מסיקה",
-   "youtube": [
-    "sFdSCsTkU1s"
-   ],
-   "original": true
   },
   {
    "name": "כשאת בוכה את לא יפה - אליניב ברדה",
@@ -1288,16 +1126,6 @@
    "original": true
   },
   {
-   "name": "מצצי (יא בת שרמוטה)",
-   "category": "שירים מהיציע",
-   "artist": null,
-   "wiki": "https://wiki.red-fans.com/index.php?title=מצצי_(יא_בת_שרמוטה)",
-   "youtube": [
-    "TzW_N8YnTpw"
-   ],
-   "original": true
-  },
-  {
    "name": "מרקוס קוקו",
    "category": "שירי שחקנים",
    "artist": "החלונות הגבוהים",
@@ -1388,16 +1216,6 @@
    "original": true
   },
   {
-   "name": "עופר גלברד",
-   "category": "שירי שחקנים",
-   "artist": "John Newman",
-   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%A2%D7%95%D7%A4%D7%A8_%D7%92%D7%9C%D7%91%D7%A8%D7%93",
-   "youtube": [
-    "CfihYWRWRTQ"
-   ],
-   "original": true
-  },
-  {
    "name": "עמית למקין",
    "category": "שירי שחקנים",
    "artist": "דודו אהרון",
@@ -1444,16 +1262,6 @@
    "wiki": "https://wiki.red-fans.com/index.php?title=צועניה_נפלאה",
    "youtube": [
     "pz6TeRhHIUo"
-   ],
-   "original": true
-  },
-  {
-   "name": "ציקו",
-   "category": "שחקנים",
-   "artist": "אילן לבניין",
-   "wiki": null,
-   "youtube": [
-    "rUt_PXjRha8"
    ],
    "original": true
   },
@@ -1569,43 +1377,12 @@
    "original": true
   },
   {
-   "name": "שיר ההבדלה - שביט אלימלך",
-   "category": "שירי שחקנים",
-   "artist": null,
-   "wiki": "https://wiki.red-fans.com/index.php?title=שיר_ההבדלה_-_שביט_אלימלך",
-   "youtube": [
-    "mD21Wh-2ac4",
-    "MPnv6IaCbY0"
-   ],
-   "original": true
-  },
-  {
-   "name": "שיר העמותה",
-   "category": "שירים מהיציע",
-   "artist": "הגבעתרון",
-   "wiki": "https://wiki.red-fans.com/index.php?title=שיר_העמותה",
-   "youtube": [
-    "EdfxwaHVnAk"
-   ],
-   "original": true
-  },
-  {
    "name": "שלום עליכם",
    "category": "שירים מהיציע",
    "artist": null,
    "wiki": "https://wiki.red-fans.com/index.php?title=שלום_עליכם",
    "youtube": [
     "EKlLpiBuxIA"
-   ],
-   "original": true
-  },
-  {
-   "name": "שלוש בלילה-בריאן גרזיצ'יץ'",
-   "category": "שירי שחקנים",
-   "artist": null,
-   "wiki": "https://wiki.red-fans.com/index.php?title=שלוש_בלילה-בריאן_גרזיצ'יץ'",
-   "youtube": [
-    "NyRZQko3gIY"
    ],
    "original": true
   },
