@@ -55,11 +55,7 @@ input{font:inherit}
 
 /* ---------- brand ---------- */
 .brand{display:flex;align-items:center;gap:12px;justify-content:center}
-.brand__mark{
-  width:44px;height:44px;border-radius:50%;background:var(--red);
-  display:grid;place-items:center;font-family:var(--f-d);font-weight:900;
-  font-size:1.4rem;color:#fff;flex:none;
-}
+.brand__mark{width:52px;height:52px;flex:none}
 .brand h1{font-size:clamp(2.2rem,7vw,3.6rem)}
 
 /* ---------- setup ---------- */
@@ -260,6 +256,7 @@ input{font:inherit}
      `defer` keeps it off the critical path. 404s harmlessly on localhost, and
      only reports once Analytics is enabled for the project in the dashboard. -->
 <script defer src="/_vercel/insights/script.js"></script>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
 <body>
 
@@ -267,7 +264,7 @@ input{font:inherit}
 <section id="setup">
   <div class="setup-card">
     <div class="brand">
-      <span class="brand__mark">ה</span>
+      <img class="brand__mark" src="logo.svg" alt="" width="52" height="52">
       <h1>הפועל שרים</h1>
     </div>
     <p class="tagline">שיר של הפועל מתנגן. מי מזהה ראשון?</p>
@@ -307,7 +304,7 @@ input{font:inherit}
 <!-- ============ GAME ============ -->
 <section id="game" class="hide">
   <div class="topbar">
-    <span class="topbar__brand"><i>ה</i> הפועל שרים</span>
+    <span class="topbar__brand"><img src="logo.svg" alt="" width="26" height="26"> הפועל שרים</span>
     <span class="round" id="roundInfo"></span>
   </div>
 
@@ -815,5 +812,6 @@ input{font:inherit}
 })();
 </script>
 
+<script src="site.js"></script>
 </body>
 </html>

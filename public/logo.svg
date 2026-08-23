@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="הפועל שרים">
+  <!-- Original mark for this game. Deliberately NOT the club crest, which is
+       Hapoel Tel Aviv's trademark: a megaphone in the club's red, singing. -->
+  <circle cx="64" cy="64" r="64" fill="#E2001A"/>
+  <g fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round">
+    <path d="M84 47c9 5 9 29 0 34"/>
+    <path d="M96 38c15 9 15 43 0 52" opacity=".65"/>
+    <path d="M108 29c21 13 21 57 0 70" opacity=".35"/>
+  </g>
+  <path d="M30 52h14l22-16v56L44 76H30a6 6 0 0 1-6-6V58a6 6 0 0 1 6-6z" fill="#fff"/>
+  <circle cx="47" cy="92" r="9" fill="#fff"/>
+  <path d="M56 92V72" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+</svg>
