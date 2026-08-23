@@ -38,4 +38,26 @@
       f.querySelector(".foot__legal").setAttribute("style", "display:flex;gap:8px 20px;flex-wrap:wrap;justify-content:space-between");
     }
   });
+
+  /* Small page menu. Closes on Escape, on outside click, and moves focus back
+     to the button so keyboard users are not stranded inside it. */
+  document.addEventListener("DOMContentLoaded", function () {
+    var btn = document.getElementById("menuBtn");
+    var menu = document.getElementById("pagemenu");
+    if (!btn || !menu) return;
+    function set(open) {
+      btn.setAttribute("aria-expanded", String(open));
+      menu.hidden = !open;
+    }
+    btn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      set(menu.hidden);
+    });
+    document.addEventListener("click", function (e) {
+      if (!menu.hidden && !menu.contains(e.target) && e.target !== btn) set(false);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !menu.hidden) { set(false); btn.focus(); }
+    });
+  });
 })();

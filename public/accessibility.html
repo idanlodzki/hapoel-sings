@@ -21,7 +21,13 @@
 <header class="top">
   <div class="wrap top__in">
     <a class="brand" href="index.html"><img src="logo.svg" alt="" width="34" height="34">הפועל שרים</a>
-    <nav class="top__nav" aria-label="ניווט ראשי"><a href="index.html">המשחק</a><a href="rules.html">כללי המשחק</a><a href="found.html">רשימת השירים</a><a href="accessibility.html" aria-current="page">נגישות</a><a href="terms.html">תנאי שימוש</a><a href="privacy.html">פרטיות</a></nav>
+    <div class="top__actions">
+      <a class="btn-play" href="index.html"><span aria-hidden="true">▶</span> חזרה למשחק</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="pagemenu" aria-haspopup="true">
+        <span class="menu-btn__ico" aria-hidden="true"></span> תפריט
+      </button>
+    </div>
+    <nav class="menu" id="pagemenu" aria-label="ניווט באתר" role="menu" hidden><a href="index.html" role="menuitem">המשחק</a><a href="rules.html" role="menuitem">כללי המשחק</a><a href="found.html" role="menuitem">רשימת השירים</a><a href="accessibility.html" aria-current="page" role="menuitem">נגישות</a><a href="terms.html" role="menuitem">תנאי שימוש</a><a href="privacy.html" role="menuitem">פרטיות</a></nav>
   </div>
 </header>
 <main id="main"><div class="wrap">

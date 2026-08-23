@@ -58,10 +58,43 @@ header.top{border-bottom:1px solid var(--line);background:var(--ink2)}
 .top__in{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:14px 0}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--f-d);font-weight:900;font-size:1.2rem}
 .brand img{width:34px;height:34px}
-nav.top__nav{display:flex;gap:4px;flex-wrap:wrap;margin-inline-start:auto}
-nav.top__nav a{text-decoration:none;color:var(--grey);font-size:.9rem;font-weight:600;padding:7px 11px;border-radius:7px}
-nav.top__nav a:hover{color:var(--white);background:var(--ink3)}
-nav.top__nav a[aria-current=page]{color:var(--white);background:var(--ink3)}
+.top__in{position:relative}
+.top__actions{display:flex;gap:8px;align-items:center;margin-inline-start:auto}
+.btn-play{
+  display:inline-flex;align-items:center;gap:7px;background:var(--red);color:#fff;
+  text-decoration:none;font-weight:700;font-size:.92rem;padding:9px 16px;border-radius:8px;
+  white-space:nowrap;transition:background .15s
+}
+.btn-play:hover{background:#b30015;color:#fff}
+.menu-btn{
+  display:inline-flex;align-items:center;gap:8px;background:none;color:var(--grey);
+  border:1px solid var(--line);border-radius:8px;padding:9px 14px;font:inherit;
+  font-size:.9rem;font-weight:600;cursor:pointer;white-space:nowrap
+}
+.menu-btn:hover,.menu-btn[aria-expanded=true]{color:var(--white);border-color:var(--grey)}
+.menu-btn__ico{width:15px;height:11px;position:relative;display:inline-block}
+.menu-btn__ico::before,.menu-btn__ico::after,.menu-btn__ico span{content:"";position:absolute;
+  inset-inline:0;height:2px;background:currentColor;border-radius:2px}
+.menu-btn__ico::before{top:0}
+.menu-btn__ico::after{bottom:0}
+.menu-btn[aria-expanded=true] .menu-btn__ico::before{top:4.5px}
+.menu-btn[aria-expanded=true] .menu-btn__ico::after{bottom:4.5px}
+.menu{
+  position:absolute;top:calc(100% + 8px);inset-inline-end:0;z-index:40;min-width:210px;
+  background:var(--ink3);border:1px solid var(--line);border-radius:12px;padding:6px;
+  display:flex;flex-direction:column;box-shadow:0 14px 40px rgba(0,0,0,.55)
+}
+.menu[hidden]{display:none}
+.menu a{text-decoration:none;color:var(--grey);font-size:.94rem;font-weight:600;
+  padding:10px 13px;border-radius:8px}
+.menu a:hover{color:var(--white);background:var(--ink2)}
+.menu a[aria-current=page]{color:var(--white);background:var(--ink2)}
+.menu a[aria-current=page]::after{content:" ●";color:var(--red);font-size:.7em}
+@media (max-width:520px){
+  .btn-play span[aria-hidden]{display:none}
+  .top__in{padding:11px 0}
+  .brand{font-size:1.05rem}
+}
 
 main{flex:1;padding:clamp(28px,5vw,56px) 0}
 main h1{font-size:clamp(1.9rem,5vw,2.7rem);margin-bottom:10px}
@@ -129,14 +162,42 @@ FOOT_JS = """/* One footer, injected everywhere — including into the game, whi
       f.querySelector(".foot__legal").setAttribute("style", "display:flex;gap:8px 20px;flex-wrap:wrap;justify-content:space-between");
     }
   });
+
+  /* Small page menu. Closes on Escape, on outside click, and moves focus back
+     to the button so keyboard users are not stranded inside it. */
+  document.addEventListener("DOMContentLoaded", function () {
+    var btn = document.getElementById("menuBtn");
+    var menu = document.getElementById("pagemenu");
+    if (!btn || !menu) return;
+    function set(open) {
+      btn.setAttribute("aria-expanded", String(open));
+      menu.hidden = !open;
+    }
+    btn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      set(menu.hidden);
+    });
+    document.addEventListener("click", function (e) {
+      if (!menu.hidden && !menu.contains(e.target) && e.target !== btn) set(false);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !menu.hidden) { set(false); btn.focus(); }
+    });
+  });
 })();
 """
 
 
 def shell(slug, title, desc, body):
     nav = "".join(
-        '<a href="%s"%s>%s</a>' % (h, ' aria-current="page"' if h == slug else "", t)
+        '<a href="%s"%s role="menuitem">%s</a>' % (h, ' aria-current="page"' if h == slug else "", t)
         for h, t in NAV
+    )
+    # the game is the point of the site; on every other page it gets a real
+    # button rather than being one link among six
+    play = "" if slug == "index.html" else (
+        '<a class="btn-play" href="index.html">'
+        '<span aria-hidden="true">▶</span> חזרה למשחק</a>'
     )
     return f"""<!doctype html>
 <html lang="he" dir="rtl">
@@ -161,7 +222,13 @@ def shell(slug, title, desc, body):
 <header class="top">
   <div class="wrap top__in">
     <a class="brand" href="index.html"><img src="logo.svg" alt="" width="34" height="34">הפועל שרים</a>
-    <nav class="top__nav" aria-label="ניווט ראשי">{nav}</nav>
+    <div class="top__actions">
+      {play}
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="pagemenu" aria-haspopup="true">
+        <span class="menu-btn__ico" aria-hidden="true"></span> תפריט
+      </button>
+    </div>
+    <nav class="menu" id="pagemenu" aria-label="ניווט באתר" role="menu" hidden>{nav}</nav>
   </div>
 </header>
 <main id="main"><div class="wrap">
