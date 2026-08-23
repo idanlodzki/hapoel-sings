@@ -1,0 +1,325 @@
+{
+ "actions": [
+  {
+   "player": "עומרי אלטמן",
+   "raw": "[https://www.youtube.com/watch?v=5PoevYOKh5w עוד לא תמו כל פלאייך]",
+   "how": "wiki-link-dead",
+   "tune": "עוד לא תמו כל פלאייך"
+  },
+  {
+   "player": "אנאס מחאמיד",
+   "raw": "אני תמיד נשאר אני/עוזי חיטמן",
+   "how": "search",
+   "vid": "Su4Gv-cwpWI",
+   "title": "עוזי חיטמן ואפי בן ישראל: אני תמיד נשאר אני",
+   "tune": "אני תמיד נשאר אני/עוזי חיטמן",
+   "conf": 1.0
+  },
+  {
+   "player": "דורון ליידנר",
+   "raw": "חורף בחלון/פאר טסי",
+   "how": "search",
+   "vid": "8qTu7LFgouY",
+   "title": "פאר טסי - חורף בחלון | Peer Tasi - Horef Bahalon",
+   "tune": "חורף בחלון/פאר טסי",
+   "conf": 1.0
+  },
+  {
+   "player": "אור ישראלוב",
+   "raw": "קרן שמש/בניה ברבי",
+   "how": "search",
+   "vid": "n5illsgvqKA",
+   "title": "בניה ברבי - קרן שמש",
+   "tune": "קרן שמש/בניה ברבי",
+   "conf": 1.0
+  },
+  {
+   "player": "אל-ים קנצפולסקי",
+   "raw": "[https://www.youtube.com/watch?v=WRneo8GPXu0 צינגלה - תומר חן]",
+   "how": "wiki-link",
+   "vid": "WRneo8GPXu0",
+   "title": "תומר חן- צינגלה",
+   "tune": "צינגלה - תומר חן"
+  },
+  {
+   "player": "טל ארצ'ל",
+   "raw": "[https://m.youtube.com/watch?v=R0KbozRzFfI&pp=2AEAkAIB רדיו חזק/תיסלם]",
+   "how": "wiki-link",
+   "vid": "R0KbozRzFfI",
+   "title": "טל ארצ'ל - שיר שחקן חדש!",
+   "tune": "רדיו חזק/תיסלם"
+  },
+  {
+   "player": "רועי אלקוקין",
+   "raw": "זה לא נורמלי/רון שובל",
+   "how": "search",
+   "vid": "vV1WQLR--tE",
+   "title": "רון שובל  - זה לא נורמלי",
+   "tune": "זה לא נורמלי/רון שובל",
+   "conf": 1.0
+  },
+  {
+   "player": "סתיו טוריאל",
+   "raw": "זה מה שנשאר/שלמה ארצי",
+   "how": "search",
+   "vid": "2zk_cTSeLUk",
+   "title": "שלמה ארצי - זה מה שנשאר",
+   "tune": "זה מה שנשאר/שלמה ארצי",
+   "conf": 1.0
+  },
+  {
+   "player": "דור בנימיני",
+   "raw": "אור/אלון דה לוקו",
+   "how": "search",
+   "vid": "WZXOpB-L34U",
+   "title": "אלון דה לוקו אור קליפ Alon De Loco",
+   "tune": "אור/אלון דה לוקו",
+   "conf": 1.0
+  },
+  {
+   "player": "אסף צור",
+   "raw": "מחר/אביב גפן",
+   "how": "search",
+   "vid": "1XtsdZfcRu0",
+   "title": "מחר",
+   "tune": "מחר/אביב גפן",
+   "conf": 1.0
+  },
+  {
+   "player": "לוקאס פלקאו",
+   "raw": "עקבים וג׳ינס/עומר אדם",
+   "how": "search",
+   "vid": "_VAQwpv5jpQ",
+   "title": "עומר אדם - עקבים וג'ינס  (Prod. By Jo Cohen)",
+   "tune": "עקבים וג׳ינס/עומר אדם",
+   "conf": 0.5
+  },
+  {
+   "player": "דניאל דאפה",
+   "raw": "איזה יום/דודו טסה",
+   "how": "search",
+   "vid": "HHWcnaJXeIY",
+   "title": "דודו טסה - איזה יום | Dudu Tassa - Eize You",
+   "tune": "איזה יום/דודו טסה",
+   "conf": 1.0
+  },
+  {
+   "player": "אנדריאן קרייב",
+   "raw": "על הברכיים/טל שגב",
+   "how": "search",
+   "vid": "wVpLBgwyuoI",
+   "title": "על הברכיים - טל שגב",
+   "tune": "על הברכיים/טל שגב",
+   "conf": 1.0
+  },
+  {
+   "player": "צ'יקו",
+   "raw": "הבניין מחכה לאילן/הפיג'מות",
+   "how": "search",
+   "vid": "JybdxlhMlK4",
+   "title": "הבניין מחכה לאילן",
+   "tune": "הבניין מחכה לאילן/הפיג'מות",
+   "conf": 1.0
+  },
+  {
+   "player": "עמנואל בואטנג (חלוץ)",
+   "raw": "September/Earth, Wind & Fire",
+   "how": "search",
+   "vid": "Gs069dndIYk",
+   "title": "Earth, Wind & Fire - September (Official HD Video)",
+   "tune": "September/Earth, Wind & Fire",
+   "conf": 1.0
+  },
+  {
+   "player": "יונתן פרבר",
+   "raw": "לילות וקללות/עומר אדם",
+   "how": "search",
+   "vid": "isCbysjdcQ0",
+   "title": "עומר אדם - לילות וקללות (Prod. By Bleu)",
+   "tune": "לילות וקללות/עומר אדם",
+   "conf": 1.0
+  },
+  {
+   "player": "אליניב ברדה",
+   "raw": "כשאת בוכה את לא יפה",
+   "how": "search",
+   "vid": "vKJvaI5JdcM",
+   "title": "אריק איינשטיין כשאת בוכה את לא יפה Arik Einstein",
+   "tune": "כשאת בוכה את לא יפה",
+   "conf": 1.0
+  },
+  {
+   "player": "בר טימור",
+   "raw": "תנו לי רונקרול (תיסלם)",
+   "how": "search",
+   "vid": "Bu7bMJ-5-kM",
+   "title": "תיסלם - תנו לי רוקנרול",
+   "tune": "תנו לי רונקרול (תיסלם)",
+   "conf": 0.67
+  },
+  {
+   "player": "תומר גינת",
+   "raw": "Heaven Is a Place on Earth/Belinda Carlisle",
+   "how": "search",
+   "vid": "j2F4INQFjEI",
+   "title": "Belinda Carlisle - Heaven Is A Place On Earth (Official Music Video) (4K Remaster)",
+   "tune": "Heaven Is a Place on Earth/Belinda Carlisle",
+   "conf": 1.0
+  },
+  {
+   "player": "רוי ברנס",
+   "raw": "Material Girl/Madonna",
+   "how": "search",
+   "vid": "6p-lDYPR2P8",
+   "title": "Madonna - Material Girl (Official Video) [HD]",
+   "tune": "Material Girl/Madonna",
+   "conf": 1.0
+  },
+  {
+   "player": "טיילר אניס",
+   "raw": "השפן הקטן",
+   "how": "search",
+   "vid": "-qH8J3gZ-gI",
+   "title": "השפן הקטן -שירי ילדים - ילדות ישראלית",
+   "tune": "השפן הקטן",
+   "conf": 1.0,
+   "why": "video already used"
+  },
+  {
+   "player": "עופר גלברד",
+   "raw": "Love Me Again/John Newman",
+   "how": "search",
+   "vid": "CfihYWRWRTQ",
+   "title": "John Newman - Love Me Again",
+   "tune": "Love Me Again/John Newman",
+   "conf": 1.0
+  },
+  {
+   "player": "רוי קורין",
+   "raw": "אוהבת לא אוהבת/ארקדי דוכין",
+   "how": "search",
+   "vid": "_EtY8t35yb8",
+   "title": "ארקדי דוכין - אוהבת לא אוהבת",
+   "tune": "אוהבת לא אוהבת/ארקדי דוכין",
+   "conf": 1.0
+  },
+  {
+   "player": "איש וויינרייט",
+   "raw": "מוזיקת אוהדים נבחרת אנגליה",
+   "how": "not-found",
+   "tune": "מוזיקת אוהדים נבחרת אנגליה"
+  },
+  {
+   "player": "עמית למקין",
+   "raw": "כסף ואלכוהול/דודו אהרון",
+   "how": "search",
+   "vid": "zMWp-Fsp02E",
+   "title": "דודו אהרון - כסף ואלכוהול - הקליפ הרשמי!",
+   "tune": "כסף ואלכוהול/דודו אהרון",
+   "conf": 1.0
+  },
+  {
+   "player": "גיא פלטין",
+   "raw": "[https://www.youtube.com/watch?v=Prv3wl3X9O4 Vengaboys - Boom boom boom boom!!]",
+   "how": "wiki-link",
+   "vid": "Prv3wl3X9O4",
+   "title": "Vengaboys - Boom, Boom, Boom, Boom!! (Lyric Video)",
+   "tune": "Vengaboys - Boom boom boom boom!!"
+  },
+  {
+   "player": "עוז בלייזר",
+   "raw": "תגידי שטוב/כנסיית השכל",
+   "how": "search",
+   "vid": "2G6dj66Dc5o",
+   "title": "כנסיית השכל - תגידי שטוב (אוטוביוגרפיה)",
+   "tune": "תגידי שטוב/כנסיית השכל",
+   "conf": 1.0
+  },
+  {
+   "player": "אנטוניו בלייקני",
+   "raw": "איציק/פופלקס",
+   "how": "search",
+   "vid": "wiSAhfPtAg4",
+   "title": "פופלקס - איציק - קליפ",
+   "tune": "איציק/פופלקס",
+   "conf": 1.0
+  },
+  {
+   "player": "שחר פיבן",
+   "raw": "כמו מלך/משה פרץ",
+   "how": "search",
+   "vid": "PXyZN8A9XB8",
+   "title": "משה פרץ - כמו מלך - Moshe Peretz - Kmo Melech",
+   "tune": "כמו מלך/משה פרץ",
+   "conf": 1.0
+  },
+  {
+   "player": "פרנאן מאיימבו",
+   "raw": "חגיגה/שרית חדד",
+   "how": "search",
+   "vid": "jRvXRGrX1cU",
+   "title": "שרית חדד - חגיגה - Sarit Hadad - Hagiga",
+   "tune": "חגיגה/שרית חדד",
+   "conf": 1.0
+  },
+  {
+   "player": "מור בוסקילה",
+   "raw": "אולי הלילה/משה פרץ",
+   "how": "search",
+   "vid": "NHDuKGNNTc8",
+   "title": "משה פרץ - אולי הלילה הקליפ",
+   "tune": "אולי הלילה/משה פרץ",
+   "conf": 1.0
+  },
+  {
+   "player": "טאי אודיאסה",
+   "raw": "[https://www.youtube.com/watch?v=T_1GL2AIUco עפרה חזה - חי]",
+   "how": "wiki-link",
+   "vid": "T_1GL2AIUco",
+   "title": "עפרה חזה - חי | קליפ",
+   "tune": "עפרה חזה - חי"
+  },
+  {
+   "player": "אלייז'ה בראיינט",
+   "raw": "[https://www.youtube.com/watch?v=ErklElxgoNU&list=RDErklElxgoNU האחיות פיק - השיר הזה]",
+   "how": "wiki-link",
+   "vid": "ErklElxgoNU",
+   "title": "האחיות פיק - השיר הזה",
+   "tune": "האחיות פיק - השיר הזה"
+  },
+  {
+   "player": "דן אוטורו",
+   "raw": "[\nhttps://youtu.be/WHDQ-JHI6Z8?si=KEuSEniWHAJAPtaD היא לא יודעת מה עובר עליי - שלמה ארצי]",
+   "how": "wiki-link",
+   "vid": "WHDQ-JHI6Z8",
+   "title": "שלמה ארצי - היא לא יודעת מה עובר עלי | קליפ",
+   "tune": "היא לא יודעת מה עובר עליי - שלמה ארצי"
+  },
+  {
+   "player": "יפתח זיו",
+   "raw": "[https://www.youtube.com/watch?v=hSfvAKQUOzM אורי בנאי - פרפרים]",
+   "how": "wiki-link",
+   "vid": "hSfvAKQUOzM",
+   "title": "אורי בנאי - פרפרים",
+   "tune": "אורי בנאי - פרפרים"
+  },
+  {
+   "player": "שאנדה סילבה",
+   "raw": "בטיילת על המדרכה/מוג'דה & רינת בר",
+   "how": "search",
+   "vid": "mgg1ttP5es4",
+   "title": "מוג'דה- בטיילת",
+   "tune": "בטיילת על המדרכה/מוג'דה & רינת בר",
+   "conf": 0.5
+  },
+  {
+   "player": "מרקוס קוקו",
+   "raw": "אינך יכולה/החלונות הגבוהים",
+   "how": "search",
+   "vid": "Mp-oAudF6yY",
+   "title": "החלונות הגבוהים - אינך יכולה",
+   "tune": "אינך יכולה/החלונות הגבוהים",
+   "conf": 1.0
+  }
+ ]
+}

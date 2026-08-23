@@ -1,5 +1,5 @@
 {
- "count": 131,
+ "count": 165,
  "songs": [
   {
    "name": "16 מלאו לנער-ביברס נאתכו",
@@ -136,6 +136,16 @@
    "original": true
   },
   {
+   "name": "אור ישראלוב",
+   "category": "שירי שחקנים",
+   "artist": "בניה ברבי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%90%D7%95%D7%A8_%D7%99%D7%A9%D7%A8%D7%90%D7%9C%D7%95%D7%91",
+   "youtube": [
+    "n5illsgvqKA"
+   ],
+   "original": true
+  },
+  {
    "name": "אותך אני אוהב",
    "category": "שירים מהיציע",
    "artist": null,
@@ -206,6 +216,36 @@
    "original": true
   },
   {
+   "name": "אל-ים קנצפולסקי",
+   "category": "שירי שחקנים",
+   "artist": null,
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%90%D7%9C-%D7%99%D7%9D_%D7%A7%D7%A0%D7%A6%D7%A4%D7%95%D7%9C%D7%A1%D7%A7%D7%99",
+   "youtube": [
+    "WRneo8GPXu0"
+   ],
+   "original": true
+  },
+  {
+   "name": "אלייז'ה בראיינט",
+   "category": "שירי שחקנים",
+   "artist": null,
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%90%D7%9C%D7%99%D7%99%D7%96%27%D7%94_%D7%91%D7%A8%D7%90%D7%99%D7%99%D7%A0%D7%98",
+   "youtube": [
+    "ErklElxgoNU"
+   ],
+   "original": true
+  },
+  {
+   "name": "אליניב ברדה",
+   "category": "שירי שחקנים",
+   "artist": null,
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%90%D7%9C%D7%99%D7%A0%D7%99%D7%91_%D7%91%D7%A8%D7%93%D7%94",
+   "youtube": [
+    "vKJvaI5JdcM"
+   ],
+   "original": true
+  },
+  {
    "name": "אמרו לו",
    "category": "שירים",
    "artist": null,
@@ -236,12 +276,42 @@
    "original": false
   },
   {
+   "name": "אנאס מחאמיד",
+   "category": "שירי שחקנים",
+   "artist": "עוזי חיטמן",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%90%D7%A0%D7%90%D7%A1_%D7%9E%D7%97%D7%90%D7%9E%D7%99%D7%93",
+   "youtube": [
+    "Su4Gv-cwpWI"
+   ],
+   "original": true
+  },
+  {
+   "name": "אנדריאן קרייב",
+   "category": "שירי שחקנים",
+   "artist": "טל שגב",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%90%D7%A0%D7%93%D7%A8%D7%99%D7%90%D7%9F_%D7%A7%D7%A8%D7%99%D7%99%D7%91",
+   "youtube": [
+    "wVpLBgwyuoI"
+   ],
+   "original": true
+  },
+  {
    "name": "אנחנו לא שכירי חרב",
    "category": "שירים מהיציע",
    "artist": null,
    "wiki": "https://wiki.red-fans.com/index.php?title=אנחנו_לא_שכירי_חרב",
    "youtube": [
     "Nmb80HXWsFQ"
+   ],
+   "original": true
+  },
+  {
+   "name": "אנטוניו בלייקני",
+   "category": "שירי שחקנים",
+   "artist": "פופלקס",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%90%D7%A0%D7%98%D7%95%D7%A0%D7%99%D7%95_%D7%91%D7%9C%D7%99%D7%99%D7%A7%D7%A0%D7%99",
+   "youtube": [
+    "wiSAhfPtAg4"
    ],
    "original": true
   },
@@ -272,6 +342,16 @@
    "wiki": "https://wiki.red-fans.com/index.php?title=אנשים_רק_מדברים",
    "youtube": [
     "h7ddNsV-QLI"
+   ],
+   "original": true
+  },
+  {
+   "name": "אסף צור",
+   "category": "שירי שחקנים",
+   "artist": "אביב גפן",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%90%D7%A1%D7%A3_%D7%A6%D7%95%D7%A8",
+   "youtube": [
+    "1XtsdZfcRu0"
    ],
    "original": true
   },
@@ -396,6 +476,16 @@
    "original": true
   },
   {
+   "name": "בר טימור",
+   "category": "שירי שחקנים",
+   "artist": null,
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%91%D7%A8_%D7%98%D7%99%D7%9E%D7%95%D7%A8",
+   "youtube": [
+    "Bu7bMJ-5-kM"
+   ],
+   "original": true
+  },
+  {
    "name": "ברוכים הבאים לגיהנום של האדומים",
    "category": "שירים מהיציע",
    "artist": null,
@@ -412,6 +502,16 @@
    "wiki": "https://wiki.red-fans.com/index.php?title=בתאונת_מטוס_קלה",
    "youtube": [
     "WaZZHweZwBI"
+   ],
+   "original": true
+  },
+  {
+   "name": "גיא פלטין",
+   "category": "שירי שחקנים",
+   "artist": null,
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%92%D7%99%D7%90_%D7%A4%D7%9C%D7%98%D7%99%D7%9F",
+   "youtube": [
+    "Prv3wl3X9O4"
    ],
    "original": true
   },
@@ -434,6 +534,46 @@
     "rfvGz953w2k"
    ],
    "original": false
+  },
+  {
+   "name": "דור בנימיני",
+   "category": "שירי שחקנים",
+   "artist": "אלון דה לוקו",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%93%D7%95%D7%A8_%D7%91%D7%A0%D7%99%D7%9E%D7%99%D7%A0%D7%99",
+   "youtube": [
+    "WZXOpB-L34U"
+   ],
+   "original": true
+  },
+  {
+   "name": "דורון ליידנר",
+   "category": "שירי שחקנים",
+   "artist": "פאר טסי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%93%D7%95%D7%A8%D7%95%D7%9F_%D7%9C%D7%99%D7%99%D7%93%D7%A0%D7%A8",
+   "youtube": [
+    "8qTu7LFgouY"
+   ],
+   "original": true
+  },
+  {
+   "name": "דן אוטורו",
+   "category": "שירי שחקנים",
+   "artist": null,
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%93%D7%9F_%D7%90%D7%95%D7%98%D7%95%D7%A8%D7%95",
+   "youtube": [
+    "WHDQ-JHI6Z8"
+   ],
+   "original": true
+  },
+  {
+   "name": "דניאל דאפה",
+   "category": "שירי שחקנים",
+   "artist": "דודו טסה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%93%D7%A0%D7%99%D7%90%D7%9C_%D7%93%D7%90%D7%A4%D7%94",
+   "youtube": [
+    "HHWcnaJXeIY"
+   ],
+   "original": true
   },
   {
    "name": "הבל החן שקר היופי - איתי שכטר",
@@ -738,6 +878,26 @@
    "original": true
   },
   {
+   "name": "טאי אודיאסה",
+   "category": "שירי שחקנים",
+   "artist": null,
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%98%D7%90%D7%99_%D7%90%D7%95%D7%93%D7%99%D7%90%D7%A1%D7%94",
+   "youtube": [
+    "T_1GL2AIUco"
+   ],
+   "original": true
+  },
+  {
+   "name": "טל ארצ'ל",
+   "category": "שירי שחקנים",
+   "artist": "תיסלם",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%98%D7%9C_%D7%90%D7%A8%D7%A6%27%D7%9C",
+   "youtube": [
+    "-PY5m1qxYcw"
+   ],
+   "original": true
+  },
+  {
    "name": "יאללה הפועל - עד המוות",
    "category": "שירים מהיציע",
    "artist": null,
@@ -778,6 +938,16 @@
    "original": true
   },
   {
+   "name": "יונתן פרבר",
+   "category": "שירי שחקנים",
+   "artist": "עומר אדם",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%99%D7%95%D7%A0%D7%AA%D7%9F_%D7%A4%D7%A8%D7%91%D7%A8",
+   "youtube": [
+    "isCbysjdcQ0"
+   ],
+   "original": true
+  },
+  {
    "name": "יוצא היום לקרב",
    "category": "שירים מהיציע",
    "artist": null,
@@ -794,6 +964,16 @@
    "wiki": "https://wiki.red-fans.com/index.php?title=יחד_לעולם",
    "youtube": [
     "pvuN_WvF1to"
+   ],
+   "original": true
+  },
+  {
+   "name": "יפתח זיו",
+   "category": "שירי שחקנים",
+   "artist": null,
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%99%D7%A4%D7%AA%D7%97_%D7%96%D7%99%D7%95",
+   "youtube": [
+    "hSfvAKQUOzM"
    ],
    "original": true
   },
@@ -958,6 +1138,16 @@
    "original": true
   },
   {
+   "name": "לוקאס פלקאו",
+   "category": "שירי שחקנים",
+   "artist": "עומר אדם",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%9C%D7%95%D7%A7%D7%90%D7%A1_%D7%A4%D7%9C%D7%A7%D7%90%D7%95",
+   "youtube": [
+    "_VAQwpv5jpQ"
+   ],
+   "original": true
+  },
+  {
    "name": "לעולם לא תצעדי לבד",
    "category": "שירים",
    "artist": "יפה ירקוני",
@@ -1014,6 +1204,16 @@
    "wiki": "https://wiki.red-fans.com/index.php?title=מונו_-_ויקטור_מרעי",
    "youtube": [
     "v-TvQaCz_tU"
+   ],
+   "original": true
+  },
+  {
+   "name": "מור בוסקילה",
+   "category": "שירי שחקנים",
+   "artist": "משה פרץ",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%9E%D7%95%D7%A8_%D7%91%D7%95%D7%A1%D7%A7%D7%99%D7%9C%D7%94",
+   "youtube": [
+    "NHDuKGNNTc8"
    ],
    "original": true
   },
@@ -1098,6 +1298,16 @@
    "original": true
   },
   {
+   "name": "מרקוס קוקו",
+   "category": "שירי שחקנים",
+   "artist": "החלונות הגבוהים",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%9E%D7%A8%D7%A7%D7%95%D7%A1_%D7%A7%D7%95%D7%A7%D7%95",
+   "youtube": [
+    "Mp-oAudF6yY"
+   ],
+   "original": true
+  },
+  {
    "name": "נאהב אותך לנצח",
    "category": "שירים מהיציע",
    "artist": null,
@@ -1138,6 +1348,16 @@
    "original": true
   },
   {
+   "name": "סתיו טוריאל",
+   "category": "שירי שחקנים",
+   "artist": "שלמה ארצי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%A1%D7%AA%D7%99%D7%95_%D7%98%D7%95%D7%A8%D7%99%D7%90%D7%9C",
+   "youtube": [
+    "2zk_cTSeLUk"
+   ],
+   "original": true
+  },
+  {
    "name": "עד המוות הפועל",
    "category": "שירים מהיציע",
    "artist": null,
@@ -1154,6 +1374,66 @@
    "wiki": "https://wiki.red-fans.com/index.php?title=עדים_לנו_כוכבי_מרום",
    "youtube": [
     "KSoOcvB3p3o"
+   ],
+   "original": true
+  },
+  {
+   "name": "עוז בלייזר",
+   "category": "שירי שחקנים",
+   "artist": "כנסיית השכל",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%A2%D7%95%D7%96_%D7%91%D7%9C%D7%99%D7%99%D7%96%D7%A8",
+   "youtube": [
+    "2G6dj66Dc5o"
+   ],
+   "original": true
+  },
+  {
+   "name": "עופר גלברד",
+   "category": "שירי שחקנים",
+   "artist": "John Newman",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%A2%D7%95%D7%A4%D7%A8_%D7%92%D7%9C%D7%91%D7%A8%D7%93",
+   "youtube": [
+    "CfihYWRWRTQ"
+   ],
+   "original": true
+  },
+  {
+   "name": "עמית למקין",
+   "category": "שירי שחקנים",
+   "artist": "דודו אהרון",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%A2%D7%9E%D7%99%D7%AA_%D7%9C%D7%9E%D7%A7%D7%99%D7%9F",
+   "youtube": [
+    "zMWp-Fsp02E"
+   ],
+   "original": true
+  },
+  {
+   "name": "עמנואל בואטנג (חלוץ)",
+   "category": "שירי שחקנים",
+   "artist": "Earth, Wind & Fire",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%A2%D7%9E%D7%A0%D7%95%D7%90%D7%9C_%D7%91%D7%95%D7%90%D7%98%D7%A0%D7%92_%28%D7%97%D7%9C%D7%95%D7%A5%29",
+   "youtube": [
+    "Gs069dndIYk"
+   ],
+   "original": true
+  },
+  {
+   "name": "פרנאן מאיימבו",
+   "category": "שירי שחקנים",
+   "artist": "שרית חדד",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%A4%D7%A8%D7%A0%D7%90%D7%9F_%D7%9E%D7%90%D7%99%D7%99%D7%9E%D7%91%D7%95",
+   "youtube": [
+    "jRvXRGrX1cU"
+   ],
+   "original": true
+  },
+  {
+   "name": "צ'יקו",
+   "category": "שירי שחקנים",
+   "artist": "הפיג'מות",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%A6%27%D7%99%D7%A7%D7%95",
+   "youtube": [
+    "JybdxlhMlK4"
    ],
    "original": true
   },
@@ -1198,6 +1478,36 @@
    "original": true
   },
   {
+   "name": "רוי ברנס",
+   "category": "שירי שחקנים",
+   "artist": "Madonna",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%A8%D7%95%D7%99_%D7%91%D7%A8%D7%A0%D7%A1",
+   "youtube": [
+    "6p-lDYPR2P8"
+   ],
+   "original": true
+  },
+  {
+   "name": "רוי קורין",
+   "category": "שירי שחקנים",
+   "artist": "ארקדי דוכין",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%A8%D7%95%D7%99_%D7%A7%D7%95%D7%A8%D7%99%D7%9F",
+   "youtube": [
+    "_EtY8t35yb8"
+   ],
+   "original": true
+  },
+  {
+   "name": "רועי אלקוקין",
+   "category": "שירי שחקנים",
+   "artist": "רון שובל",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%A8%D7%95%D7%A2%D7%99_%D7%90%D7%9C%D7%A7%D7%95%D7%A7%D7%99%D7%9F",
+   "youtube": [
+    "vV1WQLR--tE"
+   ],
+   "original": true
+  },
+  {
    "name": "רק בשבילך הפועל כתבתי שיר",
    "category": "שירים מהיציע",
    "artist": null,
@@ -1225,6 +1535,26 @@
    "wiki": "https://wiki.red-fans.com/index.php?title=רק_למענך_נולדנו",
    "youtube": [
     "qN3Y3Z5-3sw"
+   ],
+   "original": true
+  },
+  {
+   "name": "שאנדה סילבה",
+   "category": "שירי שחקנים",
+   "artist": "מוג'דה & רינת בר",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%A9%D7%90%D7%A0%D7%93%D7%94_%D7%A1%D7%99%D7%9C%D7%91%D7%94",
+   "youtube": [
+    "mgg1ttP5es4"
+   ],
+   "original": true
+  },
+  {
+   "name": "שחר פיבן",
+   "category": "שירי שחקנים",
+   "artist": "משה פרץ",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%A9%D7%97%D7%A8_%D7%A4%D7%99%D7%91%D7%9F",
+   "youtube": [
+    "PXyZN8A9XB8"
    ],
    "original": true
   },
@@ -1276,6 +1606,16 @@
    "wiki": "https://wiki.red-fans.com/index.php?title=שלוש_בלילה-בריאן_גרזיצ'יץ'",
    "youtube": [
     "NyRZQko3gIY"
+   ],
+   "original": true
+  },
+  {
+   "name": "תומר גינת",
+   "category": "שירי שחקנים",
+   "artist": "Belinda Carlisle",
+   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%AA%D7%95%D7%9E%D7%A8_%D7%92%D7%99%D7%A0%D7%AA",
+   "youtube": [
+    "j2F4INQFjEI"
    ],
    "original": true
   },
