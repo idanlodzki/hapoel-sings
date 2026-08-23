@@ -21,8 +21,9 @@ import sqlite3
 from datetime import datetime
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DB = os.path.join(HERE, "hapoel.db")
-OUT = os.path.join(HERE, "backups")
+ROOT = os.path.dirname(HERE)
+DB = os.path.join(ROOT, "data", "hapoel.db")
+OUT = os.path.join(ROOT, "backups")
 
 
 def snapshot(stamp):
@@ -91,7 +92,7 @@ def main():
     a = ap.parse_args()
 
     if not os.path.exists(DB):
-        raise SystemExit("hapoel.db not found — run server.py at least once first")
+        raise SystemExit(f"database not found at {DB}")
 
     live = sqlite3.connect(f"file:{DB}?mode=ro", uri=True)
     expected = (
@@ -106,8 +107,8 @@ def main():
     ok, got = verify(db_path, expected)
 
     custom = [s for s in songs if s["custom"]]
-    print(f"backed up -> {os.path.relpath(db_path, HERE)}  ({os.path.getsize(db_path)//1024} KB)")
-    print(f"            {os.path.relpath(json_path, HERE)}")
+    print(f"backed up -> {os.path.relpath(db_path, ROOT)}  ({os.path.getsize(db_path)//1024} KB)")
+    print(f"            {os.path.relpath(json_path, ROOT)}")
     print(f"verified:   {'OK' if ok else 'MISMATCH'}  songs={got[0]} links={got[1]} (live: {expected[0]}/{expected[1]})")
     if custom:
         print(f"includes {len(custom)} hand-added song(s):")

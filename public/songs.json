@@ -1,5 +1,5 @@
 {
- "count": 137,
+ "count": 131,
  "songs": [
   {
    "name": "16 מלאו לנער-ביברס נאתכו",
@@ -818,16 +818,6 @@
    "original": true
   },
   {
-   "name": "כי אני באתי לעשות שואה למכבי",
-   "category": "שירים מהיציע",
-   "artist": null,
-   "wiki": "https://wiki.red-fans.com/index.php?title=כי_אני_באתי_לעשות_שואה_למכבי",
-   "youtube": [
-    "1RiqOuKCCa4"
-   ],
-   "original": true
-  },
-  {
    "name": "כי רק בזכותך אני עוד חי וקיים",
    "category": "שירים מהיציע",
    "artist": null,
@@ -1098,26 +1088,6 @@
    "original": true
   },
   {
-   "name": "מכבי זה קקי",
-   "category": "שירים מהיציע",
-   "artist": null,
-   "wiki": "https://wiki.red-fans.com/index.php?title=מכבי_זה_קקי",
-   "youtube": [
-    "brv7X6x3Prg"
-   ],
-   "original": true
-  },
-  {
-   "name": "מכבי שואה",
-   "category": "שירים מהיציע",
-   "artist": null,
-   "wiki": "https://wiki.red-fans.com/index.php?title=מכבי_שואה",
-   "youtube": [
-    "FqSSdSw2XSU"
-   ],
-   "original": true
-  },
-  {
    "name": "מצצי (יא בת שרמוטה)",
    "category": "שירים מהיציע",
    "artist": null,
@@ -1154,16 +1124,6 @@
    "wiki": "https://wiki.red-fans.com/index.php?title=נעימת_השיכורים",
    "youtube": [
     "iAGJjnQ73JU"
-   ],
-   "original": true
-  },
-  {
-   "name": "סדאם תיקח כבר את מכבי מכאן",
-   "category": "שירים מהיציע",
-   "artist": null,
-   "wiki": "https://wiki.red-fans.com/index.php?title=סדאם_תיקח_כבר_את_מכבי_מכאן",
-   "youtube": [
-    "i4HViPVymlo"
    ],
    "original": true
   },
@@ -1316,26 +1276,6 @@
    "wiki": "https://wiki.red-fans.com/index.php?title=שלוש_בלילה-בריאן_גרזיצ'יץ'",
    "youtube": [
     "NyRZQko3gIY"
-   ],
-   "original": true
-  },
-  {
-   "name": "שמעון מזרחי מאפיה",
-   "category": "שירים מהיציע",
-   "artist": null,
-   "wiki": "https://wiki.red-fans.com/index.php?title=שמעון_מזרחי_מאפיה",
-   "youtube": [
-    "SGak50EhVlQ"
-   ],
-   "original": true
-  },
-  {
-   "name": "שמעון מזרחי תתאבד כבר",
-   "category": "שירים מהיציע",
-   "artist": null,
-   "wiki": "https://wiki.red-fans.com/index.php?title=שמעון_מזרחי_תתאבד_כבר",
-   "youtube": [
-    "DonEXdMvwYg"
    ],
    "original": true
   },

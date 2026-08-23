@@ -12,6 +12,7 @@ import os
 import sqlite3
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(HERE)
 
 HOW = {
     "wiki-field": ("משדה “שיר מקורי” בוויקי", "w"),
@@ -19,7 +20,7 @@ HOW = {
     "trim": ("היה תקין — צומצם לקישור אחד", "t"),
 }
 
-c = sqlite3.connect(f"file:{HERE}/hapoel.db?mode=ro", uri=True)
+c = sqlite3.connect(f"file:{ROOT}/data/hapoel.db?mode=ro", uri=True)
 c.row_factory = sqlite3.Row
 songs = {r["id"]: dict(r) for r in c.execute("SELECT * FROM songs")}
 links = collections.defaultdict(list)
@@ -162,8 +163,8 @@ document.querySelectorAll('.tools button').forEach(b=>b.addEventListener('click'
 </script>
 </body></html>"""
 
-out = os.path.join(HERE, "game", "found.html")
+out = os.path.join(ROOT, "public", "found.html")
 open(out, "w", encoding="utf-8").write(doc)
-print(f"{len(rows)} songs -> {os.path.relpath(out, HERE)}")
+print(f"{len(rows)} songs -> {os.path.relpath(out, ROOT)}")
 print(f"  wiki-field={counts.get('wiki-field',0)} search={counts.get('search',0)} trim={counts.get('trim',0)}")
 print(f"  low-confidence rows flagged: {len(low)}")
