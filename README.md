@@ -1,0 +1,114 @@
+# הפועל שרים — Hapoel Sings
+
+A "name that tune" party game built on the songs of Hapoel Tel Aviv. A song
+plays, players buzz in by name, the host marks them right or wrong.
+
+**137 songs · 143 videos.** Song titles and links only — for the words, follow
+the wiki link shown when a song is revealed.
+
+## Play
+
+The site is static. Anything that serves a folder will do:
+
+```bash
+cd public && python3 -m http.server 8791     # http://localhost:8791
+```
+
+Needs an internet connection: the songs stream from YouTube. It must be served
+over http — the YouTube player refuses to run from a `file://` page.
+
+### A round
+
+1. Enter the players (1–10). Names are remembered between sessions.
+2. Optionally open **בחירת שירים** and untick songs you don't want tonight.
+   Your selection is remembered per-browser.
+3. Press **התחלה** — a random song plays, hidden so nobody can read the title.
+4. Whoever recognises it: tap their card, or press their number key `1`–`9`.
+   The music pauses and the song is revealed.
+5. **צדק** = +1, **טעה** = −1. Then on to the next.
+
+Also: pause/resume (`Space`), restart the clip, *אף אחד לא ידע* to reveal with
+no score, *שיר אחר* to skip.
+
+Songs never repeat — the list is shuffled once and dealt out.
+
+## Adding a song
+
+`public/songs.json` is the whole database. Three ways in, easiest first:
+
+**1. On GitHub, in the browser.** Open `public/songs.json`, hit edit, add an
+entry, commit. Vercel redeploys automatically.
+
+```json
+{
+ "name": "שם השיר",
+ "category": "שירים מהיציע",
+ "artist": "מי מבצע את הלחן המקורי",
+ "wiki": null,
+ "youtube": ["dQw4w9WgXcQ"],
+ "original": true
+}
+```
+
+`youtube` accepts a bare video id *or* a full URL you pasted — the site reads
+either.
+
+**2. With the helper script**, which checks the video actually plays and
+refuses duplicates:
+
+```bash
+python3 scripts/add-song.py "שם השיר" "https://youtu.be/VIDEOID" --artist "שם האמן"
+git add -A && git commit -m "add song" && git push
+```
+
+**3. Check your work** before pushing:
+
+```bash
+python3 scripts/validate.py                 # structure, duplicates, ids
+python3 scripts/validate.py --check-videos  # also asks YouTube if each still plays
+```
+
+## Layout
+
+```
+public/            the site Vercel serves
+  index.html       the game
+  songs.json       the song database — this is the file you edit
+  found.html       review page: every song with its source tune
+scripts/           add-song, validate, export-db, server (local editor), backup
+research/          how the list was built: scrapers, classifiers, reports
+data/hapoel.db     SQLite copy used during curation, kept for provenance
+```
+
+`public/songs.json` is the source of truth. `data/hapoel.db` is an archive of
+the curation work — if you ever edit it, re-export with
+`python3 scripts/export-db.py`.
+
+## Where the songs came from
+
+Scraped from [ויקיפועל](https://wiki.red-fans.com) — every page under
+`קטגוריה:שירים` and its subcategories — then filtered down by hand.
+
+For 118 of the 137, the link is the **original tune** the terrace chant was
+built on, not a crowd recording. Those were found by reading the wiki's
+`|שיר מקורי=` and `|מנגינה=` infobox fields, and where the wiki only named a
+tune, by searching YouTube and accepting a match only when the video title
+matched that name. Every link was checked against YouTube before being kept.
+
+`public/found.html` lists all 118 with their sources, and flags the three that
+were matched at low confidence and deserve a listen.
+
+## Deploying
+
+Hosted on Vercel as a static site — no build step, no server.
+
+1. Import the repo at [vercel.com/new](https://vercel.com/new)
+2. Framework preset: **Other**. `vercel.json` already sets the output directory
+   to `public`.
+3. Deploy. Every push to `main` redeploys.
+
+## Note on content
+
+This repository holds song **titles and links only**. Lyrics are not included
+and are not republished — `wikitext-cache.json`, the local scrape of full wiki
+page source, is deliberately excluded via `.gitignore`.

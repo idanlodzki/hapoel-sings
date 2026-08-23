@@ -1,0 +1,1263 @@
+<!doctype html>
+<html lang="he" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>השירים שנמצאו — הפועל שרים</title>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--red:#E2001A;--ink:#0C0C0E;--ink2:#16161A;--ink3:#1F1F25;--line:#2C2C34;--white:#F6F5F3;--grey:#9A9AA4;--green:#20A96A}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--ink);color:var(--white);font-family:Assistant,system-ui,sans-serif;padding:clamp(16px,3vw,40px)}
+h1{font-family:Heebo;font-weight:900;font-size:clamp(1.8rem,5vw,2.8rem);letter-spacing:-.02em}
+.sub{color:var(--grey);margin:8px 0 22px}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+.stat{background:var(--ink2);border:1px solid var(--line);border-radius:12px;padding:12px 18px}
+.stat b{display:block;font-family:Heebo;font-weight:900;font-size:1.7rem;color:var(--red)}
+.stat span{font-size:.8rem;color:var(--grey)}
+.tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.tools input{flex:1;min-width:200px;background:var(--ink2);border:1.5px solid var(--line);color:var(--white);border-radius:9px;padding:11px 14px}
+.tools input:focus{border-color:var(--red);outline:none}
+.tools button{background:none;border:1px solid var(--line);color:var(--grey);border-radius:9px;padding:10px 15px;font:inherit;font-weight:700;cursor:pointer}
+.tools button:hover,.tools button[aria-pressed=true]{border-color:var(--red);color:var(--white)}
+table{width:100%;border-collapse:collapse;background:var(--ink2);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+th{background:var(--ink3);font-family:Heebo;font-size:.7rem;letter-spacing:.12em;color:var(--grey);text-align:start;padding:11px 12px}
+td{padding:11px 12px;border-top:1px solid var(--line);vertical-align:top;font-size:.92rem}
+tr.warn td{background:rgba(226,0,26,.07)}
+.n b{font-weight:700}
+.art{display:block;font-size:.75rem;color:var(--red);margin-top:2px}
+.extra{display:block;font-size:.7rem;color:var(--grey);margin-top:2px}
+.c{color:var(--grey);font-size:.8rem;white-space:nowrap}
+.tag{display:inline-block;font-size:.65rem;font-family:Heebo;border-radius:999px;padding:2px 8px;white-space:nowrap}
+.tag--w{color:#7fd6a3;border:1px solid #2c6b48}
+.tag--s{color:#f0c86a;border:1px solid #6b5423}
+.tag--t{color:var(--grey);border:1px solid var(--line)}
+.conf{display:inline-block;margin-inline-start:6px;font-family:Heebo;font-size:.7rem;color:var(--grey)}
+.l a{color:var(--white);text-decoration:none;font-weight:700;font-size:.85rem;border-bottom:2px solid var(--red);margin-inline-end:10px}
+.l a:hover{color:var(--red)}
+.ttl{display:block;color:var(--grey);font-size:.72rem;margin-top:4px}
+.note{background:#3a2a00;border:1px solid #7a5c00;color:#f0d68a;border-radius:10px;padding:12px 15px;margin-bottom:18px;font-size:.9rem}
+</style></head><body>
+<h1>השירים שנמצאו</h1>
+<p class="sub">כל שיר שיש לו כעת קישור לשיר המקורי — עם הקישור, המקור, ואיך הוא נמצא.</p>
+
+<div class="stats">
+  <div class="stat"><b>118</b><span>שירים עם מקור</span></div>
+  <div class="stat"><b>37</b><span>משדה הוויקי</span></div>
+  <div class="stat"><b>12</b><span>מחיפוש ביוטיוב</span></div>
+  <div class="stat"><b>12</b><span>היו תקינים</span></div>
+  <div class="stat"><b>19</b><span>עדיין ללא מקור</span></div>
+</div>
+
+<p class="note">שתי שורות מסומנות באדום נמצאו בחיפוש בביטחון נמוך — כדאי להאזין ולוודא.</p>
+
+<div class="tools">
+  <input id="q" type="search" placeholder="חיפוש שיר, מקור או קטגוריה…">
+  <button data-f="all" aria-pressed="true">הכל</button>
+  <button data-f="s">רק מחיפוש</button>
+  <button data-f="warn">רק לבדיקה</button>
+</div>
+
+<table><thead><tr><th>שיר</th><th>קטגוריה</th><th>איך נמצא</th><th>קישורים</th></tr></thead>
+<tbody id="tb">
+<tr>
+  <td class="n"><b>הפועל אתן הכל בשבילך</b></td>
+  <td class="c">Hapoel Songs in Foreign Languages</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=01SBf0tsLyI" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=Hapoel_Ani_Eten_Hakol_Bishvilech" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Original Song</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>הפועל כמוך אין אף אחת</b></td>
+  <td class="c">Hapoel Songs in Foreign Languages</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=LNBjMRvOB5M" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=Hapoel_Kamoch_Ein_Af_Achat" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Original Song</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>מהיום שבו נולדתי</b></td>
+  <td class="c">Hapoel Songs in Foreign Languages</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=lmaexcD8eak" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=Miyom_Schenoladeti_Rak_Davar_Ehad" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Original tune</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>תראו הפועל הינה מה שסיכמנו</b></td>
+  <td class="c">Hapoel Songs in Foreign Languages</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=fPDJhzjSly4" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=Tiru_Hapoel_Hine_Ma_Sche_Sikamnu" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Sung by Hapoel Fans</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>ציקו</b><span class="art">אילן לבניין</span></td>
+  <td class="c">שחקנים</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=rUt_PXjRha8" target="_blank" rel="noopener">▶ יוטיוב</a>
+    
+    <span class="ttl"></span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>I&#x27;m Mr Lonely-רמזי ספורי</b></td>
+  <td class="c">שירי שחקנים</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=kGhjOPeOMmE" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=I&#x27;m_Mr_Lonely-רמזי_ספורי" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">הביצוע המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>Let the sunshine in - אבי כנפו, אורי שלף</b></td>
+  <td class="c">שירי שחקנים</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=dxNvFVI2G38" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=Let_the_sunshine_in_-_אבי_כנפו,_אורי_שלף" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">הביצוע המקורי של השיר מתוך הסרט &quot;שיער&quot;</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>South Africa-ישראל זגורי</b><span class="art">שאקירה</span></td>
+  <td class="c">שירי שחקנים</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=BgyJY9yndv4" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=South_Africa-ישראל_זגורי" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">הביצוע המקורי של שאקירה</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>Under The Sea-אוראל דגני</b></td>
+  <td class="c">שירי שחקנים</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=5qOFS-6Zt9E" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=Under_The_Sea-אוראל_דגני" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">השיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>Volare - סלים טועמה</b><span class="extra">+2 קישורים</span></td>
+  <td class="c">שירי שחקנים</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=Z-DVi0ugelc" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=Volare_-_סלים_טועמה" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">הביצוע המקורי של השיר</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>אני שוב מתאהב- איליה יבוריאן, ניר גלאון, נייט רובינסון</b><span class="art">גידי גוב</span></td>
+  <td class="c">שירי שחקנים</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=qoGurrdtz6Q" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=אני_שוב_מתאהב-_איליה_יבוריאן,_ניר_גלאון,_נייט_רובינסון" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">הביצוע המקורי של גידי גוב</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>במדינת הגמדים - מהראן לאלה</b><span class="art">אריק אינשטיין</span></td>
+  <td class="c">שירי שחקנים</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=4j6F-QHgOv4" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=במדינת_הגמדים_-_מהראן_לאלה" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">השיר המקורי בביצועו של אריק אינשטיין</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>השפן הקטן-לוקאש סאשה</b></td>
+  <td class="c">שירי שחקנים</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=-qH8J3gZ-gI" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=השפן_הקטן-לוקאש_סאשה" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">הביצוע המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>חלומות - פאביו ג&#x27;וניור</b><span class="art">אייל גולן</span></td>
+  <td class="c">שירי שחקנים</td>
+  <td class="h"><span class="tag tag--t">היה תקין — צומצם לקישור אחד</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=ofa-ehYZbwQ" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=חלומות_-_פאביו_ג&#x27;וניור" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">פאביו ג&#x27;וניור</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>כפיים-ריף מסיקה</b><span class="art">יהודה פוליקר</span></td>
+  <td class="c">שירי שחקנים</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=sFdSCsTkU1s" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=כפיים-ריף_מסיקה" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">הביצוע המקורי של יהודה פוליקר</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>מונו - ויקטור מרעי</b><span class="art">שלומי סרנגה</span></td>
+  <td class="c">שירי שחקנים</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=v-TvQaCz_tU" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=מונו_-_ויקטור_מרעי" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">השיר המקורי של שלומי סרנגה</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>סיגל-דני עמוס</b></td>
+  <td class="c">שירי שחקנים</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=yn8Q6PLWQQs" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=סיגל-דני_עמוס" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">השיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>שיר ההבדלה - שביט אלימלך</b><span class="extra">+1 קישורים</span></td>
+  <td class="c">שירי שחקנים</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=mD21Wh-2ac4" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=שיר_ההבדלה_-_שביט_אלימלך" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">השיר המקורי בביצוע עופרה חזה מתוך הסדרה &quot;סיפורי השכונה&quot;</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>שלוש בלילה-בריאן גרזיצ&#x27;יץ&#x27;</b></td>
+  <td class="c">שירי שחקנים</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=NyRZQko3gIY" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=שלוש_בלילה-בריאן_גרזיצ&#x27;יץ&#x27;" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">השיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>תפילה - גילי ורמוט</b><span class="art">עופרה חזה</span></td>
+  <td class="c">שירי שחקנים</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=bnh5VZwnp0U" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=תפילה_-_גילי_ורמוט" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">הביצוע המקורי של עופרה חזה</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>אדומה שלי</b></td>
+  <td class="c">שירים</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=m2rGnG2HyUM" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=אדומה_שלי" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">הוידאוקליפ המקורי של השיר</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>אמרו לו</b></td>
+  <td class="c">שירים</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=ykkSqpoJPKI" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=אמרו_לו" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">האזנה לשיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>הפועל תל אביב המנון האוהדים והשחקנים</b></td>
+  <td class="c">שירים</td>
+  <td class="h"><span class="tag tag--t">היה תקין — צומצם לקישור אחד</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=MuA7LWFAXus" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=הפועל_תל_אביב_המנון_האוהדים_והשחקנים" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">הפועל תל אביב שיר הדאבל 99/2000 - אריאל זילבר בליווי להקת אנרגיה חולני</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>כמו פעם אוסישקין</b></td>
+  <td class="c">שירים</td>
+  <td class="h"><span class="tag tag--t">היה תקין — צומצם לקישור אחד</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=lJ0akKvq9AE" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=כמו_פעם_אוסישקין" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Osishkin</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>לעולם לא תצעדי לבד</b><span class="art">יפה ירקוני</span></td>
+  <td class="c">שירים</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=Dd9qP-taSes" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=לעולם_לא_תצעדי_לבד" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">הביצוע המקורי של יפה ירקוני</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>אוהב אותך אני שלך</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=JhbYESVx9qE" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=אוהב_אותך_אני_שלך" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">השיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>אומרים לי שזה רק כדורגל</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=fNThHjoimrY" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=אומרים_לי_שזה_רק_כדורגל" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl"></span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>אותך אני אוהב</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=OMOGaugKpzs" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=אותך_אני_אוהב" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">השיר המקורי - Every Breath You Take</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>אחרייך הפועל אני בא בכל מצב</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=yHfZMgI5q6Y" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=אחרייך_הפועל_אני_בא_בכל_מצב" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl"></span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>אין לי גרוש ועדיין בא</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=IFLgChjqRUA" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=אין_לי_גרוש_ועדיין_בא" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">No Tengo Un Mango Y Voy Igual</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>איפה שתגידי אני מתייצב</b><span class="art">אוהדי אריס</span></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=4F8N2gQC9f8" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=איפה_שתגידי_אני_מתייצב" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">ביצוע במקור של אוהדי אריס</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>איתך עד המוות גם אם אשתגע</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--s">נמצא בחיפוש ביוטיוב</span><span class="conf">1.0</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=cl5HbmhEUBM" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=איתך_עד_המוות_גם_אם_אשתגע" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Los Fabulosos Cadillacs - Siguiendo la Luna (Cover Audio)</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>אמרו עליי הכל</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=d63zhQZDQeo" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=אמרו_עליי_הכל" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Righeira - L&#x27;Estate Sta Finendo (1985)</span>
+  </td>
+</tr>
+<tr class="warn">
+  <td class="n"><b>אנחנו לא שכירי חרב</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--s">נמצא בחיפוש ביוטיוב</span><span class="conf">0.75</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=Nmb80HXWsFQ" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=אנחנו_לא_שכירי_חרב" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Carlos Vives - La Gota Fría (Oficial) (1993)</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>אני לא רגוע</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=QeooG13vzdw" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=אני_לא_רגוע" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">ביצוע לשיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>אנשים רק מדברים</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=h7ddNsV-QLI" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=אנשים_רק_מדברים" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">רוני דואני - סופרסטאר</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>אשתו של אובארוב</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=cfAHLES_Yd8" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=אשתו_של_אובארוב" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">השיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>את זאת שאהבתי</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=rkcTUMuIQKo" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=את_זאת_שאהבתי" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">הרצל קביליו ושחקני מכבי יפו - עוד שבת של כדורגל (עמי אסא)</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>את לא דומה לשום דבר אחר</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--s">נמצא בחיפוש ביוטיוב</span><span class="conf">1.0</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=qRKjWL5a2-E" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=את_לא_דומה_לשום_דבר_אחר" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">יזהר אשדות | בכל פעם שאני מתאהב בך מחדש</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>בחורים שותים קצת יין</b><span class="art">הג&#x27;ירפות</span></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=Et8aqlwCeh4" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=בחורים_שותים_קצת_יין" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">השיר המקורי של הג&#x27;ירפות</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>בכל העולם</b><span class="art">מייקל ג&#x27;קסון</span></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=pAyKJAtDNCw" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=בכל_העולם" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">השיר המקורי של מייקל ג&#x27;קסון</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>בכל מקום בכל מגרש</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=n4RjJKxsamQ" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=בכל_מקום_בכל_מגרש" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">ביצוע השיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>בכל שבוע קרנבל</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=tKJwvQfraY8" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=בכל_שבוע_קרנבל" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">ביצוע השיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>בניצחון בכשלון אני שלך</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=U6AOviMQoN0" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=בניצחון_בכשלון_אני_שלך" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">השיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>ברוכים הבאים לגיהנום של האדומים</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=LHcP4MWABGY" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=ברוכים_הבאים_לגיהנום_של_האדומים" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">U2 - Pride (In The Name Of Love) (Official Music Video)</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>בתאונת מטוס קלה</b><span class="art">צביקה פיק</span></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=WaZZHweZwBI" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=בתאונת_מטוס_קלה" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">הביצוע המקורי של צביקה פיק</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>גם אם תשחקי בשדה מוקשים</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=SzGr282fgAM" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=גם_אם_תשחקי_בשדה_מוקשים" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">האזנה לשיר המקורי - יוטיוב</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>המורי הזקן</b><span class="art">דקלון</span></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=TeCEFML_ssM" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=המורי_הזקן" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">הביצוע המקורי של דקלון</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>המקל בתוף פוגע</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=t-PhGnkn_hU" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=המקל_בתוף_פוגע" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">ביצוע השיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>העיר הזאת שלך</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=D2Zu1fkmpwg" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=העיר_הזאת_שלך" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">מיקי גבע ומונה לופה- כל היופי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>הפועל אחרייך</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=bKcv-D2YwP0" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=הפועל_אחרייך" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">ביצוע השיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>הפועל אני אמות אם צריך</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=fY275qCUbKA" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=הפועל_אני_אמות_אם_צריך" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">השיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>הפועל אני אתן הכל בשבילך</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=szIx2hOiVWs" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=הפועל_אני_אתן_הכל_בשבילך" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">O.M.D ENOLA GAY (LIVE)</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>הפועל זה החיים (שיר)</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=WI2NYRhlM30" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=הפועל_זה_החיים_(שיר)" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">ביצוע השיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>הפועל זו דת</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--s">נמצא בחיפוש ביוטיוב</span><span class="conf">1.0</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=16y1AkoZkmQ" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=הפועל_זו_דת" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Boney M. - Rasputin (Sopot Festival 1979)</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>הפועל כמוך אין אף אחת</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=GER396B6M7w" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=הפועל_כמוך_אין_אף_אחת" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Pet Shop Boys - Go West (Live - Fundamental Tour) [Official Video]</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>הפועל לכל מקום שתלכי</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=FJRfLp64sPE" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=הפועל_לכל_מקום_שתלכי" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">amor clasificado &quot;el potro rodrigo&quot;</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>הפועל מה את עושה לי</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=awwgoKgrrqk" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=הפועל_מה_את_עושה_לי" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">KATUNGA &quot;Me lo dijo una Gitana&quot;</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>הפועל עולה</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=c-aTdb7Bt6Q" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=הפועל_עולה" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Men Without Hats - Pop Goes the World</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>הפועל עולה עולה או</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=Jv8x1LoN_Ds" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=הפועל_עולה_עולה_או" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">יהורם גאון - אולי על שפת הים</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>הפועל שיגעת אותי</b><span class="extra">+2 קישורים</span></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=x9_R75LjnZg" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=הפועל_שיגעת_אותי" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">השיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>הפועל שלי אני איתך לעולמים</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--s">נמצא בחיפוש ביוטיוב</span><span class="conf">1.0</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=n__raqTpqfg" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=הפועל_שלי_אני_איתך_לעולמים" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">החדר מבולגן | שיר מתוך הסדרה אלי החתול 🎵</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>הפועל תראי מה קרה לי</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--s">נמצא בחיפוש ביוטיוב</span><span class="conf">1.0</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=5zdfSP1VtUU" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=הפועל_תראי_מה_קרה_לי" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Los del Fuego - Jurabas Tu | Video con Letra</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>הפועל, תקשיבו לנו</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=MNAGFfgcXaY" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=הפועל,_תקשיבו_לנו" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Boby Mi buen amigo - propaganda año 1981 - ARG ITL ZIA 084</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>הפרח בגני</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=vcpgpEUlKfk" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=הפרח_בגני" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">ביצוע השיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>הקבוצה שלי הפועל</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=ZmIENA6qhjE" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=הקבוצה_שלי_הפועל" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Ilarié</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>ויוה הפועל</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=99NgfUpS4rk" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=ויוה_הפועל" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Imca Marina - Y Viva España (1972)</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>זיכרון ישן</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--t">היה תקין — צומצם לקישור אחד</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=zRIn7W-kXhs" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=זיכרון_ישן" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">אליעד - מסע</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>חוץ ממך אין עוד אחרת</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=dgTraS02Zyc" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=חוץ_ממך_אין_עוד_אחרת" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">יש פרחים - צוות הווי נח&quot;ל (סולנית: נגה אשד)</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>יאללה הפועל - עד המוות</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=_3dmm4jpvr0" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=יאללה_הפועל_-_עד_המוות" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">La Nueva Luna - Iluminara - Choque de Cometas - Encuentro en el Estudi</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>יאללה הפועל שלי</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=244y56-vLWE" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=יאללה_הפועל_שלי" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Los Autenticos Decadentes - Veni Raquel (Vivo Pepsi Music 2010) HD</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>יאללה יאללה הפועל - כולם עכשיו לקפוץ</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--t">היה תקין — צומצם לקישור אחד</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=Ry9ijNhIw-w" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=יאללה_יאללה_הפועל_-_כולם_עכשיו_לקפוץ" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">שלמה ארצי - תגידי</span>
+  </td>
+</tr>
+<tr class="warn">
+  <td class="n"><b>יאללה יאללה כפיים</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--s">נמצא בחיפוש ביוטיוב</span><span class="conf">0.5</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=_dmZOAm-8dc" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=יאללה_יאללה_כפיים" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">קונטרה דיכאון</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>יוצא היום לקרב</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--t">היה תקין — צומצם לקישור אחד</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=7Mn1WN5yeag" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=יוצא_היום_לקרב" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Agnostic Front - &quot;Gotta Go&quot; Epitaph Records</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>יחד לעולם</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=pvuN_WvF1to" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=יחד_לעולם" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Lil Dicky - Earth (Official Music Video)</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>כדי להיות אוהד של הפועל</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=oxPWVX-qSrQ" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=כדי_להיות_אוהד_של_הפועל" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">השיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>כי אני באתי לעשות שואה למכבי</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=1RiqOuKCCa4" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=כי_אני_באתי_לעשות_שואה_למכבי" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">שלמה ארצי - נצמדנו (קליפ)</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>כי רק בזכותך אני עוד חי וקיים</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=zoMYU_nOGNg" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=כי_רק_בזכותך_אני_עוד_חי_וקיים" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Yves LaRock - Rise Up</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>כל החיים שלי אני פה איתך</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=rgww_W_MvJg" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=כל_החיים_שלי_אני_פה_איתך" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Peñarol Barra Amsterdam - &quot;Es para vos gallina, lo de maldonado no se </span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>כל היום אני רק עלייך</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=2u33EXxwzVc" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=כל_היום_אני_רק_עלייך" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Sputnik Hi Fi | ספוטניק היי פיי | גלגל</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>כל העולם כולו</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=x5tdi0zzvDM" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=כל_העולם_כולו" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">השיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>כמו עיוור אני הולך</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=7K8q9Xh_aJw" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=כמו_עיוור_אני_הולך" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Estelares - Ella dijo (video oficial) [HD]</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>כשאת עולה למגרש</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--s">נמצא בחיפוש ביוטיוב</span><span class="conf">1.0</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=pjPA7CXutDw" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=כשאת_עולה_למגרש" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Los Fabulosos Cadillacs - Matador (Official Video)</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>כשהשטן יקח אותנו</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--s">נמצא בחיפוש ביוטיוב</span><span class="conf">1.0</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=IS_J2Nm6d4Y" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=כשהשטן_יקח_אותנו" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Soy de Attaque</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>לא יודע להסביר</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=WPiEbYSF9kE" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=לא_יודע_להסביר" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">וידאוקליפ של השיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>לא משנה מה שיהיה</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=rkdtSFaKY7A" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=לא_משנה_מה_שיהיה" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">בעז שרעבי - יש לי כח להמשיך</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>לפעמים</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=bh9JerE0daA" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=לפעמים" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">ביצוע השיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>מה אני אני רק בן אדם</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=LhEVbDprJ8s" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=מה_אני_אני_רק_בן_אדם" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">ביצוע השיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>מהיום שבו נולדתי (שיר הילדים)</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=lmaexcD8eak" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=מהיום_שבו_נולדתי_(שיר_הילדים)" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">MÍRALA QUE LINDA VIENE AMERICA DEL 55</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>מזמן, ידעתי שהפועל היא כל החיים</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=kJQP7kiw5Fk" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=מזמן,_ידעתי_שהפועל_היא_כל_החיים" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Luis Fonsi - Despacito ft. Daddy Yankee</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>מחכה כבר שעות</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=KjeK0Kg2Pa4" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=מחכה_כבר_שעות" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">האזנה השיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>מחכים כל השבוע לצבוע את היציעים</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=C4AqHJKorsE" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=מחכים_כל_השבוע_לצבוע_את_היציעים" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Pier - Jaque mate (video oficial) HD</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>מטריפה לי את המוח</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=i54fb_5J4cE" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=מטריפה_לי_את_המוח" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">השיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>מי המציא את המילה</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=hc7_fC4pnlY" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=מי_המציא_את_המילה" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">גילי ארגוב   מי המציא את המילה</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>מיום הולדתי אני כולי שלך</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--t">היה תקין — צומצם לקישור אחד</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=YUU9W55KFf8" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=מיום_הולדתי_אני_כולי_שלך" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Los autenticos decadentes - Loco tu forma de ser</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>מיום שנולדתי רק דבר אחד</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=LH-i8IvYIcg" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=מיום_שנולדתי_רק_דבר_אחד" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">וידאוקליפ של השיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>מכבי זה קקי</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--t">היה תקין — צומצם לקישור אחד</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=brv7X6x3Prg" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=מכבי_זה_קקי" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Ya me da igual - Los Autenticos Decadentes</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>מכבי שואה</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=FqSSdSw2XSU" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=מכבי_שואה" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">האזנה לשיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>מצצי (יא בת שרמוטה)</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=TzW_N8YnTpw" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=מצצי_(יא_בת_שרמוטה)" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">השיר המקורי בביצוע ישי לוי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>נאהב אותך לנצח</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=h8VGQTtENSs" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=נאהב_אותך_לנצח" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Bonnie Tyler  It&#x27;s A Heartache</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>נה נה נה אבי נימני בן זונה</b><span class="art">בועז שרעבי</span></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=x9_iYKQb39o" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=נה_נה_נה_אבי_נימני_בן_זונה" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">השיר המקורי בביצוע של בועז שרעבי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>נעימת השיכורים</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=iAGJjnQ73JU" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=נעימת_השיכורים" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">יוני רועה - נעימת השיכורים</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>סדאם תיקח כבר את מכבי מכאן</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=i4HViPVymlo" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=סדאם_תיקח_כבר_את_מכבי_מכאן" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">מוש בן ארי ולהקת שבע - סלאם | Mosh Ben Ari &amp; Sheva - Salam</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>עד המוות הפועל</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=g9d0E0tJSeU" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=עד_המוות_הפועל" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">רוחמה רז - חלומות</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>עדים לנו כוכבי מרום</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--t">היה תקין — צומצם לקישור אחד</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=KSoOcvB3p3o" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=עדים_לנו_כוכבי_מרום" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">salar-עדים לנו כוכבי מרום</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>צועניה נפלאה</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--t">היה תקין — צומצם לקישור אחד</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=pz6TeRhHIUo" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=צועניה_נפלאה" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Campanera (Joselito)</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>קוקאין ואלכוהול</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--t">היה תקין — צומצם לקישור אחד</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=2hUe1rUEBhk" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=קוקאין_ואלכוהול" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">La Mosca Tse-Tse - Hoy Estoy Peor Que Ayer</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>קם וחושב רק עלייך</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--s">נמצא בחיפוש ביוטיוב</span><span class="conf">0.86</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=3AxwmES4ZyE" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=קם_וחושב_רק_עלייך" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">los fabulosos cadillacs  y  celia cruz /  vasos vacios.3gp</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>רק בשבילך הפועל כתבתי שיר</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--t">היה תקין — צומצם לקישור אחד</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=-9f24o5V60k" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=רק_בשבילך_הפועל_כתבתי_שיר" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Fito Páez - Y dale alegría a mi corazón</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>רק הפועל</b><span class="extra">+1 קישורים</span></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=NOh4KdVd0uM" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=רק_הפועל" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">הנעימה המקורית</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>רק למענך נולדנו</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=qN3Y3Z5-3sw" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=רק_למענך_נולדנו" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Attaque 77 - No me arrepiento de este amor</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>שימו את ירושלים בירדן</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--s">נמצא בחיפוש ביוטיוב</span><span class="conf">1.0</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=jYZYBR-_hQs" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=שימו_את_ירושלים_בירדן" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">שישו את ירושלים</span>
+  </td>
+</tr>
+<tr class="warn">
+  <td class="n"><b>שיר העמותה</b><span class="art">הגבעתרון</span></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--s">נמצא בחיפוש ביוטיוב</span><span class="conf">0.67</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=EdfxwaHVnAk" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=שיר_העמותה" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">HaGevatron | החגיגה נגמרת - הגבעטרון - גוונים</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>שלום עליכם</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=EKlLpiBuxIA" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=שלום_עליכם" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">שלום עליכם || Shalom Aleichem</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>שמעון מזרחי מאפיה</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=SGak50EhVlQ" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=שמעון_מזרחי_מאפיה" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">ביצוע מקורי (פנאתינייקוס)</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>שמעון מזרחי תתאבד כבר</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=DonEXdMvwYg" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=שמעון_מזרחי_תתאבד_כבר" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">השיר המקורי</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>תראו הפועל הנה מה שסיכמנו</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=fPDJhzjSly4" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=תראו_הפועל_הנה_מה_שסיכמנו" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">Rubén Rada - Muriendo de Plena</span>
+  </td>
+</tr>
+<tr>
+  <td class="n"><b>תראי את היציע צבוע אדום</b></td>
+  <td class="c">שירים מהיציע</td>
+  <td class="h"><span class="tag tag--w">משדה “שיר מקורי” בוויקי</span></td>
+  <td class="l">
+    <a href="https://www.youtube.com/watch?v=IpNdoz6QGmk" target="_blank" rel="noopener">▶ יוטיוב</a>
+    <a href="https://wiki.red-fans.com/index.php?title=תראי_את_היציע_צבוע_אדום" target="_blank" rel="noopener">ויקיפועל</a>
+    <span class="ttl">שמעון בוסקילה - הלילה שלך</span>
+  </td>
+</tr>
+</tbody></table>
+
+<script>
+const rows=[...document.querySelectorAll('#tb tr')];
+let mode='all';
+const FIN={'ך':'כ','ם':'מ','ן':'נ','ף':'פ','ץ':'צ'};
+const norm=s=>s.toLowerCase().replace(/[ךםןףץ]/g,c=>FIN[c]).replace(/["'׳״]/g,'');
+function apply(){
+  const q=norm(document.getElementById('q').value.trim());
+  rows.forEach(r=>{
+    const okQ=!q||norm(r.textContent).includes(q);
+    const okM=mode==='all'||(mode==='warn'&&r.classList.contains('warn'))
+             ||(mode==='s'&&r.querySelector('.tag--s'));
+    r.style.display=(okQ&&okM)?'':'none';
+  });
+}
+document.getElementById('q').addEventListener('input',apply);
+document.querySelectorAll('.tools button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.tools button').forEach(x=>x.setAttribute('aria-pressed','false'));
+  b.setAttribute('aria-pressed','true'); mode=b.dataset.f; apply();
+}));
+</script>
+</body></html>

@@ -1,0 +1,11 @@
+# Full wiki page source — contains song LYRICS, which must not be republished.
+# Regenerate locally with: python3 research/fetch-wikitext.py
+wikitext-cache.json
+
+# local snapshots
+backups/
+
+__pycache__/
+*.pyc
+.DS_Store
+.vercel

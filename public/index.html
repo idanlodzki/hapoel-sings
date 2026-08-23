@@ -1,0 +1,812 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>הפועל שרים</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#E2001A;
+  --red-dark:#B00014;
+  --ink:#0C0C0E;
+  --ink-2:#16161A;
+  --ink-3:#1F1F25;
+  --line:#2C2C34;
+  --white:#F6F5F3;
+  --grey:#9A9AA4;
+  --green:#20A96A;
+  --f-d:"Heebo","Arial Hebrew",system-ui,sans-serif;
+  --f-b:"Assistant","Arial Hebrew",system-ui,sans-serif;
+  --ease:cubic-bezier(.2,.7,.3,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family:var(--f-b);background:var(--ink);color:var(--white);
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+h1,h2,h3{font-family:var(--f-d);font-weight:900;line-height:1.05;letter-spacing:-.02em}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+input{font:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1100px;margin-inline:auto;padding:clamp(16px,3vw,32px)}
+.hide{display:none!important}
+
+/* ---------- shared bits ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-weight:700;padding:14px 26px;border-radius:10px;min-height:52px;
+  transition:transform .12s var(--ease),background .15s var(--ease);
+}
+.btn:active{transform:translateY(1px)}
+.btn--red{background:var(--red);color:#fff}
+.btn--red:hover{background:var(--red-dark)}
+.btn--ghost{border:1.5px solid var(--line);color:var(--white)}
+.btn--ghost:hover{border-color:var(--white)}
+.btn--green{background:var(--green);color:#fff}
+.btn--green:hover{filter:brightness(1.1)}
+.btn--lg{font-size:1.15rem;padding:18px 40px;min-height:62px}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.eyebrow{font-family:var(--f-d);font-size:.72rem;letter-spacing:.2em;color:var(--grey);font-weight:700}
+
+/* ---------- brand ---------- */
+.brand{display:flex;align-items:center;gap:12px;justify-content:center}
+.brand__mark{
+  width:44px;height:44px;border-radius:50%;background:var(--red);
+  display:grid;place-items:center;font-family:var(--f-d);font-weight:900;
+  font-size:1.4rem;color:#fff;flex:none;
+}
+.brand h1{font-size:clamp(2.2rem,7vw,3.6rem)}
+
+/* ---------- setup ---------- */
+#setup{min-height:100dvh;display:grid;place-items:center;padding:24px}
+.setup-card{width:100%;max-width:560px;text-align:center}
+.setup-card > .tagline{color:var(--grey);margin:14px 0 30px;font-size:1.05rem}
+.plist{display:flex;flex-direction:column;gap:10px;margin-bottom:16px;text-align:start}
+.prow{display:flex;gap:10px;align-items:center}
+.prow__n{
+  width:38px;height:52px;flex:none;display:grid;place-items:center;
+  font-family:var(--f-d);font-weight:900;color:var(--red);font-size:1.1rem;
+}
+.prow input{
+  flex:1;min-width:0;background:var(--ink-2);border:1.5px solid var(--line);
+  color:var(--white);border-radius:10px;padding:14px 16px;font-size:1.05rem;
+}
+.prow input:focus{border-color:var(--red);outline:none}
+.prow__x{
+  width:44px;height:44px;flex:none;border-radius:10px;color:var(--grey);
+  display:grid;place-items:center;font-size:1.3rem;
+}
+.prow__x:hover{background:var(--ink-3);color:var(--red)}
+.setup-actions{display:flex;flex-direction:column;gap:12px;margin-top:8px}
+.toggle{
+  display:flex;align-items:flex-start;gap:12px;text-align:start;cursor:pointer;
+  background:var(--ink-2);border:1.5px solid var(--line);border-radius:12px;padding:14px 16px;
+}
+.toggle:hover{border-color:var(--red)}
+.toggle input{width:22px;height:22px;flex:none;accent-color:var(--red);margin-top:2px}
+.toggle b{display:block;font-family:var(--f-d);font-weight:700;font-size:1rem}
+.toggle small{display:block;color:var(--grey);font-size:.85rem;margin-top:3px}
+/* ---------- song picker ---------- */
+.picker{
+  background:var(--ink-2);border:1.5px solid var(--line);border-radius:12px;
+  text-align:start;overflow:hidden;
+}
+.picker__top{display:flex;gap:8px;flex-wrap:wrap;padding:12px;border-bottom:1px solid var(--line)}
+.picker__top input{
+  flex:1;min-width:150px;background:var(--ink);border:1.5px solid var(--line);
+  color:var(--white);border-radius:9px;padding:10px 13px;font-size:.95rem;
+}
+.picker__top input:focus{border-color:var(--red);outline:none}
+.picker__acts{display:flex;gap:6px}
+.mini{
+  border:1px solid var(--line);border-radius:8px;padding:8px 12px;
+  font-size:.82rem;font-weight:700;color:var(--grey);white-space:nowrap;
+}
+.mini:hover{border-color:var(--red);color:var(--white)}
+.mini--add{border-color:var(--red);color:var(--red)}
+.mini--add:hover{background:var(--red);color:#fff}
+.picker__head,.songrow{
+  display:grid;grid-template-columns:26px 1fr 96px 40px;
+  gap:10px;align-items:center;padding:8px 12px;
+}
+.songrow__acts{display:flex;gap:4px;justify-content:flex-end}
+.iconbtn{
+  width:26px;height:26px;border-radius:6px;display:grid;place-items:center;
+  color:var(--grey);font-size:.85rem;border:1px solid transparent;
+}
+.iconbtn:hover{border-color:var(--red);color:var(--white);background:var(--ink)}
+
+.picker__head{
+  font-family:var(--f-d);font-size:.68rem;letter-spacing:.14em;color:var(--grey);
+  border-bottom:1px solid var(--line);background:var(--ink-3);
+}
+.picker__body{max-height:min(46vh,340px);overflow-y:auto;overscroll-behavior:contain}
+.songrow{border-bottom:1px solid var(--line);cursor:pointer;font-size:.92rem}
+.songrow:hover{background:var(--ink-3)}
+.songrow input{width:18px;height:18px;accent-color:var(--red);pointer-events:none}
+.songrow__name{word-break:break-word;line-height:1.25}
+.songrow[data-off="true"] .songrow__name{color:var(--grey);text-decoration:line-through}
+.songrow__cat,.songrow__n{font-size:.76rem;color:var(--grey);font-family:var(--f-d)}
+.songrow__n{font-variant-numeric:tabular-nums;text-align:center}
+.songrow__badge{
+  display:inline-block;margin-inline-start:6px;font-size:.62rem;font-family:var(--f-d);
+  letter-spacing:.1em;color:var(--red);border:1px solid var(--red);border-radius:999px;padding:1px 6px;
+}
+.picker__foot{padding:10px 12px;font-size:.85rem;color:var(--grey);border-top:1px solid var(--line)}
+.picker__empty{padding:26px 12px;text-align:center;color:var(--grey);font-size:.9rem}
+
+.err{color:var(--red);font-weight:700;min-height:22px;font-size:.95rem}
+
+/* ---------- game shell ---------- */
+#game{min-height:100dvh;display:flex;flex-direction:column}
+.topbar{
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  padding:14px clamp(16px,3vw,32px);border-bottom:1px solid var(--line);
+}
+.topbar__brand{display:flex;align-items:center;gap:9px;font-family:var(--f-d);font-weight:900;font-size:1.15rem}
+.topbar__brand i{width:26px;height:26px;border-radius:50%;background:var(--red);display:grid;place-items:center;font-size:.85rem;font-style:normal;color:#fff}
+.round{
+  margin-inline-start:auto;font-family:var(--f-d);font-weight:700;color:var(--grey);
+  font-size:.9rem;letter-spacing:.06em;
+}
+
+/* stage */
+.stage{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;padding:clamp(20px,4vw,44px) 20px}
+
+/* the player is present but never visible: the whole point is to hear it */
+.ytbox{position:absolute;width:320px;height:180px;opacity:.001;pointer-events:none;top:-9999px;left:-9999px}
+
+.nowplaying{text-align:center;display:flex;flex-direction:column;align-items:center;gap:18px}
+.eq{display:flex;align-items:flex-end;gap:6px;height:78px}
+.eq i{width:10px;background:var(--red);border-radius:3px;height:20%;animation:bounce 1s var(--ease) infinite}
+.eq i:nth-child(2){animation-delay:.15s}
+.eq i:nth-child(3){animation-delay:.3s}
+.eq i:nth-child(4){animation-delay:.45s}
+.eq i:nth-child(5){animation-delay:.6s}
+.eq i:nth-child(6){animation-delay:.75s}
+.eq i:nth-child(7){animation-delay:.9s}
+@keyframes bounce{0%,100%{height:18%}50%{height:100%}}
+.eq[data-paused="true"] i{animation-play-state:paused;background:var(--grey)}
+.nowplaying h2{font-size:clamp(1.5rem,4.5vw,2.4rem)}
+.nowplaying p{color:var(--grey)}
+
+/* buzz grid */
+.buzz{
+  display:grid;gap:12px;width:100%;max-width:900px;
+  grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+}
+.buzzbtn{
+  background:var(--ink-2);border:2px solid var(--line);border-radius:14px;
+  padding:20px 16px;display:flex;flex-direction:column;align-items:center;gap:6px;
+  transition:border-color .14s var(--ease),background .14s var(--ease),transform .12s var(--ease);
+  min-height:104px;
+}
+.buzzbtn:hover{border-color:var(--red);background:var(--ink-3)}
+.buzzbtn:active{transform:scale(.98)}
+.buzzbtn__k{font-family:var(--f-d);font-size:.7rem;letter-spacing:.16em;color:var(--grey)}
+.buzzbtn__name{font-family:var(--f-d);font-weight:900;font-size:1.25rem;line-height:1.15;word-break:break-word}
+.buzzbtn__score{font-family:var(--f-d);font-weight:700;color:var(--red);font-size:.95rem}
+
+.controls{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.controls .btn{padding:11px 18px;min-height:44px;font-size:.95rem}
+
+/* ---------- reveal ---------- */
+.reveal{width:100%;max-width:680px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:18px}
+.songcard{
+  width:100%;background:var(--ink-2);border:2px solid var(--red);border-radius:18px;
+  padding:clamp(22px,4vw,36px);display:flex;flex-direction:column;gap:12px;
+  animation:pop .3s var(--ease);
+}
+@keyframes pop{from{opacity:0;transform:scale(.96) translateY(8px)}}
+.songcard h2{font-size:clamp(1.5rem,5vw,2.5rem);text-wrap:balance}
+.songcard .cat{
+  align-self:center;font-family:var(--f-d);font-size:.75rem;letter-spacing:.14em;
+  color:var(--red);border:1px solid var(--red);border-radius:999px;padding:5px 14px;
+}
+.rvartist{color:var(--grey);font-size:1rem;font-weight:700}
+.links{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:4px}
+.links a{
+  color:var(--white);text-decoration:none;font-size:.95rem;font-weight:700;
+  border-bottom:2px solid var(--red);padding-bottom:2px;
+}
+.links a:hover{color:var(--red)}
+.verdict{width:100%;display:flex;flex-direction:column;gap:12px;align-items:center}
+.verdict__who{font-size:1.1rem}
+.verdict__who b{font-family:var(--f-d);font-weight:900;color:var(--red);font-size:1.35rem}
+.verdict__btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.verdict__btns .btn{min-width:170px}
+
+/* ---------- scoreboard ---------- */
+.scores{border-top:1px solid var(--line);padding:14px clamp(16px,3vw,32px);background:var(--ink-2)}
+.scores__list{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.chip{
+  display:flex;align-items:center;gap:9px;background:var(--ink-3);
+  border:1px solid var(--line);border-radius:999px;padding:7px 15px;font-weight:700;
+}
+.chip[data-lead="true"]{border-color:var(--red)}
+.chip b{font-family:var(--f-d);font-weight:900;color:var(--red);font-variant-numeric:tabular-nums}
+.chip[data-neg="true"] b{color:var(--grey)}
+
+/* ---------- end screen ---------- */
+#end{min-height:100dvh;display:grid;place-items:center;padding:24px}
+.final{width:100%;max-width:560px;text-align:center}
+.standings{display:flex;flex-direction:column;gap:10px;margin:26px 0}
+.standing{
+  display:flex;align-items:center;gap:14px;background:var(--ink-2);
+  border:1.5px solid var(--line);border-radius:12px;padding:16px 18px;
+}
+.standing[data-first="true"]{border-color:var(--red);background:var(--ink-3)}
+.standing__pos{font-family:var(--f-d);font-weight:900;font-size:1.3rem;color:var(--grey);width:34px;flex:none}
+.standing[data-first="true"] .standing__pos{color:var(--red)}
+.standing__name{font-family:var(--f-d);font-weight:900;font-size:1.2rem;flex:1;text-align:start;word-break:break-word}
+.standing__pts{font-family:var(--f-d);font-weight:900;font-size:1.3rem;font-variant-numeric:tabular-nums}
+
+.toast{
+  position:fixed;bottom:20px;inset-inline-start:50%;transform:translate(50%,20px);
+  background:var(--ink-3);border:1px solid var(--line);color:var(--white);
+  padding:12px 20px;border-radius:10px;font-weight:700;opacity:0;pointer-events:none;
+  transition:all .25s var(--ease);z-index:50;max-width:90vw;text-align:center;
+}
+.toast[data-on="true"]{opacity:1;transform:translate(50%,0)}
+</style>
+</head>
+<body>
+
+<!-- ============ SETUP ============ -->
+<section id="setup">
+  <div class="setup-card">
+    <div class="brand">
+      <span class="brand__mark">ה</span>
+      <h1>הפועל שרים</h1>
+    </div>
+    <p class="tagline">שיר של הפועל מתנגן. מי מזהה ראשון?</p>
+
+    <div class="plist" id="plist"></div>
+
+    <div class="setup-actions">
+      <button class="btn btn--ghost" id="addP">+ הוספת משתתף</button>
+
+      <button class="btn btn--ghost" id="pickToggle" aria-expanded="false">
+        בחירת שירים <span id="pickCount"></span>
+      </button>
+
+      <div class="picker hide" id="picker">
+        <div class="picker__top">
+          <input type="search" id="pickSearch" placeholder="חיפוש שיר…" autocomplete="off">
+          <div class="picker__acts">
+            <button class="mini" data-act="all">סמן הכל</button>
+            <button class="mini" data-act="none">נקה הכל</button>
+            <button class="mini" data-act="invert">היפוך</button>
+          </div>
+        </div>
+        <div class="picker__head">
+          <span></span><span>שיר</span><span>קטגוריה</span><span>סרטונים</span>
+        </div>
+        <div class="picker__body" id="pickBody"></div>
+        <p class="picker__foot" id="pickFoot"></p>
+      </div>
+
+      <p class="err" id="setupErr"></p>
+      <button class="btn btn--red btn--lg" id="startBtn">התחלה</button>
+      <p style="color:var(--grey);font-size:.9rem" id="poolInfo"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GAME ============ -->
+<section id="game" class="hide">
+  <div class="topbar">
+    <span class="topbar__brand"><i>ה</i> הפועל שרים</span>
+    <span class="round" id="roundInfo"></span>
+  </div>
+
+  <div class="stage">
+    <!-- playing -->
+    <div id="phasePlay" class="nowplaying">
+      <div class="eq" id="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <h2 id="playTitle">השיר מתנגן…</h2>
+      <p id="playHint">מי שמזהה — לוחצים על השם</p>
+
+      <!-- Browsers block un-muted autoplay outside a click, and a song that
+           auto-skips after an error lands outside that window. This gate gives
+           the gesture back. -->
+      <button class="btn btn--red btn--lg hide" id="playGate">▶ להפעלת השיר</button>
+
+      <div class="buzz" id="buzzGrid"></div>
+
+      <div class="controls">
+        <button class="btn btn--ghost" id="pauseBtn">השהיה</button>
+        <button class="btn btn--ghost" id="replayBtn">מהתחלה</button>
+        <button class="btn btn--ghost" id="revealBtn">אף אחד לא ידע</button>
+        <button class="btn btn--ghost" id="skipBtn">שיר אחר</button>
+      </div>
+    </div>
+
+    <!-- revealed -->
+    <div id="phaseReveal" class="reveal hide">
+      <span class="eyebrow">השיר היה</span>
+      <div class="songcard">
+        <span class="cat" id="rvCat"></span>
+        <h2 id="rvName"></h2>
+        <p class="rvartist hide" id="rvArtist"></p>
+        <div class="links">
+          <a id="rvWiki" target="_blank" rel="noopener">דף בוויקיפועל</a>
+          <a id="rvYt" target="_blank" rel="noopener">הסרטון ביוטיוב</a>
+        </div>
+      </div>
+
+      <div class="verdict" id="verdict">
+        <p class="verdict__who">ניחש: <b id="rvWho"></b></p>
+        <div class="verdict__btns">
+          <button class="btn btn--green" id="correctBtn">צדק · נקודה +</button>
+          <button class="btn btn--red" id="wrongBtn">טעה · נקודה −</button>
+        </div>
+      </div>
+
+      <button class="btn btn--red btn--lg hide" id="nextBtn">השיר הבא</button>
+      <button class="btn btn--ghost" id="endBtn">סיום המשחק</button>
+    </div>
+  </div>
+
+  <div class="scores">
+    <div class="scores__list" id="scoreList"></div>
+  </div>
+</section>
+
+<!-- ============ END ============ -->
+<section id="end" class="hide">
+  <div class="final">
+    <span class="eyebrow">סוף המשחק</span>
+    <h1 style="font-size:clamp(2rem,6vw,3rem);margin-top:10px">התוצאות</h1>
+    <div class="standings" id="standings"></div>
+    <button class="btn btn--red btn--lg" id="againBtn">משחק חדש</button>
+  </div>
+</section>
+
+<div class="toast" id="toast"></div>
+<div class="ytbox"><div id="yt"></div></div>
+
+<script>
+(function () {
+  "use strict";
+
+  const $ = (id) => document.getElementById(id);
+  /* One static songs.json, fetched at load. No server, no build step —
+     which is what lets this deploy to Vercel as a plain static site. */
+  let SONGS = [];
+
+  // tolerate a pasted URL as well as a bare id, so hand-edits to songs.json
+  // on GitHub work whichever way someone writes them
+  const VIDEO_ID = /(?:v=|youtu\.be\/|embed\/|shorts\/)([A-Za-z0-9_-]{11})|^([A-Za-z0-9_-]{11})$/;
+  const toId = (s) => {
+    const m = VIDEO_ID.exec(String(s || "").trim());
+    return m ? (m[1] || m[2]) : null;
+  };
+
+  async function loadSongs() {
+    try {
+      const r = await fetch("songs.json", { cache: "no-cache" });
+      const d = await r.json();
+      SONGS = (d.songs || [])
+        .map((s) => ({
+          n: s.name,
+          c: s.category || "",
+          w: s.wiki || "",
+          a: s.artist || null,
+          y: (s.youtube || []).map(toId).filter(Boolean),
+        }))
+        .filter((s) => s.n && s.y.length);
+    } catch (e) {
+      $("setupErr").textContent = "לא הצלחנו לטעון את רשימת השירים";
+      SONGS = [];
+    }
+    renderPicker();
+    updatePool();
+  }
+
+  const state = {
+    players: [],
+    queue: [],
+    qi: -1,
+    song: null,
+    vidIdx: 0,
+    buzzed: null,
+    scored: false,
+    round: 0,
+    pool: [],
+    dead: new Set(),   // video ids YouTube refuses to play
+  };
+
+  /* ---------------- setup screen ---------------- */
+  const saved = (() => {
+    try { return JSON.parse(localStorage.getItem("hapoel-sings-players") || "null") } catch { return null }
+  })();
+
+  function drawPlayerInputs(names) {
+    $("plist").innerHTML = names.map((n, i) => `
+      <div class="prow">
+        <span class="prow__n">${i + 1}</span>
+        <label class="prow__n" style="display:none" for="p${i}">שם משתתף ${i + 1}</label>
+        <input id="p${i}" type="text" value="${String(n).replace(/"/g, "&quot;")}"
+               placeholder="שם המשתתף" maxlength="24" autocomplete="off">
+        <button class="prow__x" data-rm="${i}" aria-label="הסרת משתתף ${i + 1}">×</button>
+      </div>`).join("");
+    $("plist").querySelectorAll("[data-rm]").forEach((b) =>
+      b.addEventListener("click", () => {
+        const cur = readNames();
+        if (cur.length <= 1) return;
+        cur.splice(Number(b.dataset.rm), 1);
+        drawPlayerInputs(cur);
+      })
+    );
+  }
+  const readNames = () => [...$("plist").querySelectorAll("input")].map((i) => i.value);
+
+  drawPlayerInputs(saved && saved.length ? saved : ["", ""]);
+  /* ---------------- song picker ----------------
+     Excluded songs are keyed by wiki URL, which is unique per page — song
+     titles are not guaranteed to be. */
+  const excluded = new Set((() => {
+    try { return JSON.parse(localStorage.getItem("hapoel-sings-excluded") || "[]") } catch { return [] }
+  })());
+  const saveExcluded = () => {
+    try { localStorage.setItem("hapoel-sings-excluded", JSON.stringify([...excluded])) } catch {}
+  };
+
+  const basePool = () => SONGS;
+  const chosen = () => basePool().filter((s) => !excluded.has(s.w || s.n));
+
+  function updatePool() {
+    const base = basePool(), sel = chosen().length;
+    $("poolInfo").textContent = `${sel} שירים ישוחקו`;
+    $("pickCount").textContent = `(${sel}/${base.length})`;
+    $("pickFoot").textContent = `${sel} נבחרו מתוך ${base.length}`;
+  }
+
+  /* Hebrew final forms are distinct characters: typing "אדום" (final mem)
+     would otherwise never match "אדומה" (regular mem). Fold them together,
+     and strip the punctuation the wiki uses inconsistently, so search
+     behaves the way someone typing actually expects. */
+  const FINALS = { "ך": "כ", "ם": "מ", "ן": "נ", "ף": "פ", "ץ": "צ" };
+  const norm = (s) =>
+    String(s)
+      .toLowerCase()
+      .replace(/[ךםןףץ]/g, (c) => FINALS[c])
+      .replace(/[״"'׳`ְ-ׇ]/g, "")
+      .replace(/[־–—-]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+
+  function renderPicker() {
+    const q = norm($("pickSearch").value);
+    const rows = basePool().filter((s) => !q || norm(s.n).includes(q));
+    if (!rows.length) {
+      $("pickBody").innerHTML = `<p class="picker__empty">לא נמצאו שירים</p>`;
+      return;
+    }
+    $("pickBody").innerHTML = rows.map((s) => {
+      const on = !excluded.has(s.w);
+      const n = s.y.length;
+      return `<label class="songrow" data-off="${!on}" data-w="${esc(s.w || s.n)}">
+        <input type="checkbox" ${on ? "checked" : ""} tabindex="-1">
+        <span class="songrow__name">${esc(s.n)}${s.a ? `<span class="songrow__badge">${esc(s.a)}</span>` : ""}</span>
+        <span class="songrow__cat">${esc(s.c)}</span>
+        <span class="songrow__n">${n}</span>
+      </label>`;
+    }).join("");
+  }
+
+  // one delegated listener rather than 256 of them
+  $("pickBody").addEventListener("click", (e) => {
+    const row = e.target.closest(".songrow");
+    if (!row) return;
+    e.preventDefault();
+    const w = row.dataset.w;
+    if (excluded.has(w)) excluded.delete(w); else excluded.add(w);
+    row.dataset.off = String(excluded.has(w));
+    row.querySelector("input").checked = !excluded.has(w);
+    saveExcluded();
+    updatePool();
+  });
+
+  $("pickToggle").addEventListener("click", () => {
+    const open = $("picker").classList.toggle("hide");
+    $("pickToggle").setAttribute("aria-expanded", String(!open));
+    if (!open) renderPicker();
+  });
+  $("pickSearch").addEventListener("input", renderPicker);
+
+  $("picker").querySelector(".picker__acts").addEventListener("click", (e) => {
+    const act = e.target.dataset.act;
+    if (!act) return;
+    // quick actions apply to what the search is currently showing
+    const q = norm($("pickSearch").value);
+    basePool().filter((s) => !q || norm(s.n).includes(q)).forEach((s) => {
+      if (act === "all") excluded.delete(s.w);
+      else if (act === "none") excluded.add(s.w);
+      else if (excluded.has(s.w)) excluded.delete(s.w); else excluded.add(s.w);
+    });
+    saveExcluded();
+    renderPicker();
+    updatePool();
+  });
+
+  updatePool();
+  loadSongs();
+
+  $("addP").addEventListener("click", () => {
+    const cur = readNames();
+    if (cur.length >= 10) return;
+    cur.push("");
+    drawPlayerInputs(cur);
+    $("plist").querySelector(`#p${cur.length - 1}`).focus();
+  });
+
+  $("startBtn").addEventListener("click", () => {
+    const names = readNames().map((n) => n.trim()).filter(Boolean);
+    if (names.length < 1) { $("setupErr").textContent = "צריך לפחות משתתף אחד עם שם"; return; }
+    if (new Set(names).size !== names.length) { $("setupErr").textContent = "יש שמות כפולים"; return; }
+    if (!SONGS.length) { $("setupErr").textContent = "לא נטענו שירים — בדקו את songs-data.js"; return; }
+    $("setupErr").textContent = "";
+    try { localStorage.setItem("hapoel-sings-players", JSON.stringify(names)) } catch {}
+
+    state.pool = chosen();
+    if (!state.pool.length) {
+      $("setupErr").textContent = "לא נבחרו שירים — בחרו לפחות שיר אחד";
+      return;
+    }
+    state.players = names.map((n) => ({ name: n, score: 0 }));
+    state.queue = shuffle([...state.pool.keys()]);
+    state.qi = -1;
+    state.round = 0;
+    $("setup").classList.add("hide");
+    $("game").classList.remove("hide");
+    drawBuzz();
+    drawScores();
+    nextSong();
+  });
+
+  function shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  /* ---------------- YouTube player ---------------- */
+  let player = null, apiReady = false, pendingVideo = null;
+
+  window.onYouTubeIframeAPIReady = function () {
+    apiReady = true;
+    player = new YT.Player("yt", {
+      height: "180", width: "320",
+      playerVars: {
+        autoplay: 1, controls: 0, disablekb: 1, modestbranding: 1,
+        rel: 0, playsinline: 1, iv_load_policy: 3, fs: 0,
+      },
+      events: {
+        onReady: () => { if (pendingVideo) { play(pendingVideo); pendingVideo = null; } },
+        onError: onPlayerError,
+        onStateChange: onPlayerState,
+      },
+    });
+  };
+  (function loadApi() {
+    const s = document.createElement("script");
+    s.src = "https://www.youtube.com/iframe_api";
+    s.onerror = () => toast("לא הצלחנו לטעון את נגן היוטיוב — צריך חיבור לאינטרנט");
+    document.head.appendChild(s);
+  })();
+
+  let gateTimer = null;
+
+  function play(id) {
+    if (!apiReady || !player || !player.loadVideoById) { pendingVideo = id; return; }
+    player.loadVideoById(id);
+    player.playVideo();
+    armGate();
+  }
+
+  /* If playback has not actually begun shortly after we asked for it, the
+     browser refused. Surface a button so the next attempt carries a gesture. */
+  function armGate() {
+    clearTimeout(gateTimer);
+    gateTimer = setTimeout(() => {
+      const st = player && player.getPlayerState ? player.getPlayerState() : -1;
+      if (st !== YT.PlayerState.PLAYING) {
+        $("playGate").classList.remove("hide");
+        $("playTitle").textContent = "מוכן?";
+        $("eq").dataset.paused = "true";
+      }
+    }, 2200);
+  }
+
+  function onPlayerState(e) {
+    const paused = e.data === YT.PlayerState.PAUSED;
+    $("eq").dataset.paused = String(paused);
+    if (e.data === YT.PlayerState.PLAYING) {
+      clearTimeout(gateTimer);
+      $("playGate").classList.add("hide");
+      $("playTitle").textContent = "השיר מתנגן…";
+      $("pauseBtn").textContent = "השהיה";
+    }
+    if (paused) $("pauseBtn").textContent = "המשך";
+    // a song that runs out on its own is not a dead end — just reveal it
+    if (e.data === YT.PlayerState.ENDED && !state.buzzed) reveal(null);
+  }
+
+  /* Codes 2/5/100/101/150 mean the clip is gone or blocked from embedding.
+     With 659 links scraped from a fan wiki some are always rotten, so fall
+     through to another recording of the same song, then to another song. */
+  function onPlayerError() {
+    const id = currentVideoId();
+    if (id) state.dead.add(id);
+    const list = vids(state.song);
+    const alt = list.find((v) => !state.dead.has(v));
+    if (alt) { state.vidIdx = list.indexOf(alt); play(alt); return; }
+    toast("הסרטון לא זמין — עוברים לשיר אחר");
+    nextSong();
+  }
+
+  const vids = (s) => (s ? s.y : []);
+  const currentVideoId = () => (state.song ? vids(state.song)[state.vidIdx] : null);
+
+  /* ---------------- rounds ---------------- */
+  function nextSong() {
+    state.buzzed = null;
+    state.scored = false;
+
+    // find the next song that still has a playable recording
+    let song = null;
+    while (state.qi < state.queue.length - 1) {
+      state.qi++;
+      const s = state.pool[state.queue[state.qi]];
+      if (vids(s).some((v) => !state.dead.has(v))) { song = s; break; }
+    }
+    if (!song) { endGame(); return; }
+
+    state.song = song;
+    state.vidIdx = vids(song).findIndex((v) => !state.dead.has(v));
+    state.round++;
+
+    $("phaseReveal").classList.add("hide");
+    $("phasePlay").classList.remove("hide");
+    $("nextBtn").classList.add("hide");
+    $("verdict").classList.remove("hide");
+    $("roundInfo").textContent = `סיבוב ${state.round} · ${state.queue.length - state.qi - 1} שירים נותרו`;
+    $("playTitle").textContent = "טוען…";
+    $("eq").dataset.paused = "false";
+
+    play(vids(song)[state.vidIdx]);
+  }
+
+  function buzz(i) {
+    if (state.buzzed !== null) return;
+    state.buzzed = i;
+    if (player && player.pauseVideo) player.pauseVideo();
+    reveal(i);
+  }
+
+  function reveal(playerIdx) {
+    const s = state.song;
+    $("rvCat").textContent = s.c;
+    $("rvName").textContent = s.n;
+    $("rvArtist").textContent = s.a ? `הלחן המקורי: ${s.a}` : "";
+    $("rvArtist").classList.toggle("hide", !s.a);
+    $("rvWiki").href = s.w;
+    $("rvYt").href = "https://www.youtube.com/watch?v=" + currentVideoId();
+
+    if (playerIdx === null) {
+      $("verdict").classList.add("hide");
+      $("nextBtn").classList.remove("hide");
+    } else {
+      $("rvWho").textContent = state.players[playerIdx].name;
+      $("verdict").classList.remove("hide");
+      $("nextBtn").classList.add("hide");
+    }
+    $("phasePlay").classList.add("hide");
+    $("phaseReveal").classList.remove("hide");
+  }
+
+  function score(delta) {
+    if (state.scored || state.buzzed === null) return;
+    state.scored = true;
+    state.players[state.buzzed].score += delta;
+    drawScores();
+    drawBuzz();
+    $("verdict").classList.add("hide");
+    $("nextBtn").classList.remove("hide");
+    toast(`${state.players[state.buzzed].name}: ${delta > 0 ? "+1" : "−1"}`);
+  }
+
+  /* ---------------- rendering ---------------- */
+  function drawBuzz() {
+    $("buzzGrid").innerHTML = state.players.map((p, i) => `
+      <button class="buzzbtn" data-buzz="${i}">
+        <span class="buzzbtn__k">${i + 1}</span>
+        <span class="buzzbtn__name">${esc(p.name)}</span>
+        <span class="buzzbtn__score">${p.score} נק׳</span>
+      </button>`).join("");
+    $("buzzGrid").querySelectorAll("[data-buzz]").forEach((b) =>
+      b.addEventListener("click", () => buzz(Number(b.dataset.buzz)))
+    );
+  }
+
+  function drawScores() {
+    const max = Math.max(...state.players.map((p) => p.score));
+    $("scoreList").innerHTML = state.players.map((p) => `
+      <span class="chip" data-lead="${p.score === max && max > 0}" data-neg="${p.score < 0}">
+        ${esc(p.name)} <b>${p.score}</b>
+      </span>`).join("");
+  }
+
+  function endGame() {
+    if (player && player.stopVideo) player.stopVideo();
+    const ranked = [...state.players].sort((a, b) => b.score - a.score);
+    $("standings").innerHTML = ranked.map((p, i) => `
+      <div class="standing" data-first="${i === 0 && p.score === ranked[0].score}">
+        <span class="standing__pos">${i + 1}</span>
+        <span class="standing__name">${esc(p.name)}</span>
+        <span class="standing__pts">${p.score}</span>
+      </div>`).join("");
+    $("game").classList.add("hide");
+    $("end").classList.remove("hide");
+  }
+
+  const esc = (s) => String(s).replace(/[&<>"']/g, (c) =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+  let toastT;
+  function toast(msg) {
+    $("toast").textContent = msg;
+    $("toast").dataset.on = "true";
+    clearTimeout(toastT);
+    toastT = setTimeout(() => ($("toast").dataset.on = "false"), 2400);
+  }
+
+  /* ---------------- controls ---------------- */
+  $("pauseBtn").addEventListener("click", () => {
+    if (!player || !player.getPlayerState) return;
+    if (player.getPlayerState() === YT.PlayerState.PLAYING) player.pauseVideo();
+    else player.playVideo();
+  });
+  $("replayBtn").addEventListener("click", () => {
+    if (!player || !player.seekTo) return;
+    player.seekTo(0, true);
+    player.playVideo();
+  });
+  $("revealBtn").addEventListener("click", () => { if (player) player.pauseVideo(); reveal(null); });
+  $("skipBtn").addEventListener("click", nextSong);
+  $("playGate").addEventListener("click", () => {
+    $("playGate").classList.add("hide");
+    $("eq").dataset.paused = "false";
+    if (player && player.playVideo) player.playVideo();
+    armGate();
+  });
+  $("correctBtn").addEventListener("click", () => score(1));
+  $("wrongBtn").addEventListener("click", () => score(-1));
+  $("nextBtn").addEventListener("click", nextSong);
+  $("endBtn").addEventListener("click", endGame);
+  $("againBtn").addEventListener("click", () => location.reload());
+
+  // number keys buzz for player 1..9 — quicker than aiming at a button
+  document.addEventListener("keydown", (e) => {
+    if ($("game").classList.contains("hide")) return;
+    if (/^[1-9]$/.test(e.key) && !$("phasePlay").classList.contains("hide")) {
+      const i = Number(e.key) - 1;
+      if (i < state.players.length) buzz(i);
+    }
+    if (e.code === "Space" && !$("phasePlay").classList.contains("hide")) {
+      e.preventDefault(); $("pauseBtn").click();
+    }
+  });
+})();
+</script>
+</body>
+</html>

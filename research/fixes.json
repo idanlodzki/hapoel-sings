@@ -1,0 +1,1128 @@
+{
+  "actions": [
+    {
+      "song": "16 מלאו לנער-ביברס נאתכו",
+      "id": 17,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "Bella Ciao - יניב מזרחי",
+      "id": 18,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "South Africa-ישראל זגורי",
+      "id": 26,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "Speedy Gonzales - גיל מוסינזון, שימון גרשון, ערן יצחק",
+      "id": 27,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "Under The Sea-אוראל דגני",
+      "id": 28,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "Volare - סלים טועמה",
+      "id": 29,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "אגדת השמש והירח - וינסנט אניימה",
+      "id": 30,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "אדום בלב",
+      "id": 66,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "איך הקהל באטרף",
+      "id": 111,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "אין לי גרוש ועדיין בא",
+      "id": 113,
+      "how": "wiki-field",
+      "video": "IFLgChjqRUA",
+      "title": "No Tengo Un Mango Y Voy Igual",
+      "removed": 1
+    },
+    {
+      "song": "אין עוד ריגוש כזה אני יודע",
+      "id": 114,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "איתך עד המוות גם אם אשתגע",
+      "id": 116,
+      "how": "search",
+      "video": "cl5HbmhEUBM",
+      "title": "Los Fabulosos Cadillacs - Siguiendo la Luna (Cover Audio)",
+      "tune": "Los Fabulosos Cadillacs - Siguiendo La Luna",
+      "confidence": 1.0,
+      "removed": 1
+    },
+    {
+      "song": "אמרו עליי הכל",
+      "id": 120,
+      "how": "wiki-field",
+      "video": "d63zhQZDQeo",
+      "title": "Righeira - L'Estate Sta Finendo (1985)",
+      "removed": 1
+    },
+    {
+      "song": "אמריקה - עומרי קנדה",
+      "id": 33,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "אנחנו לא שכירי חרב",
+      "id": 121,
+      "how": "search",
+      "video": "Nmb80HXWsFQ",
+      "title": "Carlos Vives - La Gota Fría (Oficial) (1993)",
+      "tune": "Carlos vives - la gota fria",
+      "confidence": 0.75,
+      "removed": 1
+    },
+    {
+      "song": "אנשים רק מדברים",
+      "id": 126,
+      "how": "wiki-field",
+      "video": "h7ddNsV-QLI",
+      "title": "רוני דואני - סופרסטאר",
+      "removed": 1
+    },
+    {
+      "song": "אף פעם לא תדעי - דני בונדר",
+      "id": 35,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "את זאת שאהבתי",
+      "id": 128,
+      "how": "wiki-field",
+      "video": "rkcTUMuIQKo",
+      "title": "הרצל קביליו ושחקני מכבי יפו - עוד שבת של כדורגל (עמי אסא)",
+      "removed": 1
+    },
+    {
+      "song": "את לא דומה לשום דבר אחר",
+      "id": 130,
+      "how": "search",
+      "video": "qRKjWL5a2-E",
+      "title": "יזהר אשדות | בכל פעם שאני מתאהב בך מחדש",
+      "tune": "בכל פעם שאני מתאהב בך מחדש/יזהר אשדות",
+      "confidence": 1.0,
+      "removed": 1
+    },
+    {
+      "song": "בכל העיר כולם יודעים",
+      "id": 138,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "בכל מקום, בכל פינה",
+      "id": 140,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "ברוכים הבאים לגיהנום של האדומים",
+      "id": 145,
+      "how": "wiki-field",
+      "video": "LHcP4MWABGY",
+      "title": "U2 - Pride (In The Name Of Love) (Official Music Video)",
+      "removed": 1
+    },
+    {
+      "song": "גם כשאת מגמגמת",
+      "id": 72,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "הבל החן שקר היופי - איתי שכטר",
+      "id": 45,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "העולם עוצר בנקודת המפגש",
+      "id": 154,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "העיר הזאת שלך",
+      "id": 156,
+      "how": "wiki-field",
+      "video": "D2Zu1fkmpwg",
+      "title": "מיקי גבע ומונה לופה- כל היופי",
+      "removed": 1
+    },
+    {
+      "song": "הפועל אני אתן הכל בשבילך",
+      "id": 159,
+      "how": "wiki-field",
+      "video": "szIx2hOiVWs",
+      "title": "O.M.D ENOLA GAY (LIVE)",
+      "removed": 1
+    },
+    {
+      "song": "הפועל היום יוצאים למלחמה",
+      "id": 163,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "הפועל ואני",
+      "id": 76,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "הפועל זה החיים",
+      "id": 7,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "הפועל זו דת",
+      "id": 165,
+      "how": "search",
+      "video": "16y1AkoZkmQ",
+      "title": "Boney M. - Rasputin (Sopot Festival 1979)",
+      "tune": "Boney M - Rasputin",
+      "confidence": 1.0,
+      "removed": 3
+    },
+    {
+      "song": "הפועל יאללה זה הזמן לקרב",
+      "id": 166,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "הפועל כמוך אין אף אחת",
+      "id": 167,
+      "how": "wiki-field",
+      "video": "GER396B6M7w",
+      "title": "Pet Shop Boys - Go West (Live - Fundamental Tour) [Official Video]",
+      "removed": 1
+    },
+    {
+      "song": "הפועל לכל מקום שתלכי",
+      "id": 168,
+      "how": "wiki-field",
+      "video": "FJRfLp64sPE",
+      "title": "amor clasificado \"el potro rodrigo\"",
+      "removed": 1
+    },
+    {
+      "song": "הפועל מה את עושה לי",
+      "id": 169,
+      "how": "wiki-field",
+      "video": "awwgoKgrrqk",
+      "title": "KATUNGA \"Me lo dijo una Gitana\"",
+      "removed": 1
+    },
+    {
+      "song": "הפועל מספקת את המנת אדרנלין",
+      "id": 170,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "הפועל עולה",
+      "id": 171,
+      "how": "wiki-field",
+      "video": "c-aTdb7Bt6Q",
+      "title": "Men Without Hats - Pop Goes the World",
+      "removed": 1
+    },
+    {
+      "song": "הפועל עולה עולה או",
+      "id": 172,
+      "how": "wiki-field",
+      "video": "Jv8x1LoN_Ds",
+      "title": "יהורם גאון - אולי על שפת הים",
+      "removed": 3
+    },
+    {
+      "song": "הפועל צועד איתך קדימה",
+      "id": 173,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "הפועל שיגעת אותי",
+      "id": 174,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "הפועל שלי",
+      "id": 77,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "הפועל שלי אני איתך לעולמים",
+      "id": 175,
+      "how": "search",
+      "video": "n__raqTpqfg",
+      "title": "החדר מבולגן | שיר מתוך הסדרה אלי החתול 🎵",
+      "tune": "החדר מבולגן",
+      "confidence": 1.0,
+      "removed": 1
+    },
+    {
+      "song": "הפועל ת\"א עולה עולה",
+      "id": 176,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "הפועל תל אביב (שיר גביע)",
+      "id": 78,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "הפועל תל אביב אנחנו",
+      "id": 177,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "הפועל תל אביב היא האלופה",
+      "id": 79,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "הפועל תל אביב היא קבוצה גדולה (2000)",
+      "id": 80,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "הפועל תל אביב המנון האוהדים והשחקנים",
+      "id": 81,
+      "how": "trim",
+      "video": "MuA7LWFAXus",
+      "title": "הפועל תל אביב שיר הדאבל 99/2000 - אריאל זילבר בליווי להקת אנרגיה חולנית ואוהדים",
+      "removed": 1
+    },
+    {
+      "song": "הפועל תל אביב זו קבוצה גדולה",
+      "id": 82,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "הפועל תל אביב שלנו אלופה",
+      "id": 83,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "הפועל תראי מה קרה לי",
+      "id": 178,
+      "how": "search",
+      "video": "5zdfSP1VtUU",
+      "title": "Los del Fuego - Jurabas Tu | Video con Letra",
+      "tune": "Los Del Fuego - Jurabas Tu",
+      "confidence": 1.0,
+      "removed": 1
+    },
+    {
+      "song": "הפועל, תקשיבו לנו",
+      "id": 179,
+      "how": "wiki-field",
+      "video": "MNAGFfgcXaY",
+      "title": "Boby Mi buen amigo - propaganda año 1981 - ARG ITL ZIA 084",
+      "removed": 4
+    },
+    {
+      "song": "הפסיכיאטר כבר מזמן ויתר",
+      "id": 180,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "הקבוצה שלי הפועל",
+      "id": 182,
+      "how": "wiki-field",
+      "video": "ZmIENA6qhjE",
+      "title": "Ilarié",
+      "removed": 2
+    },
+    {
+      "song": "הקולות של פיראוס - לוסיאנו דה ברונו",
+      "id": 47,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "השדים האדומים (שיר)",
+      "id": 84,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "השדים האדומים אני אתכם לעולמים",
+      "id": 183,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "השיר הזה לך אדון שוטר",
+      "id": 184,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "התאהבתי בך הפועל כבר מזמן",
+      "id": 185,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "התחלה חדשה - מיכאל זנדברג",
+      "id": 49,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "התקוה",
+      "id": 186,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "ואלה שמות",
+      "id": 85,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "ואלה שמות - גרסת הפועל ת\"א",
+      "id": 86,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "ויוה הפועל",
+      "id": 187,
+      "how": "wiki-field",
+      "video": "99NgfUpS4rk",
+      "title": "Imca Marina - Y Viva España (1972)",
+      "removed": 2
+    },
+    {
+      "song": "זיכרון ישן",
+      "id": 188,
+      "how": "trim",
+      "video": "zRIn7W-kXhs",
+      "title": "אליעד - מסע",
+      "removed": 1
+    },
+    {
+      "song": "חוץ ממך אין עוד אחרת",
+      "id": 189,
+      "how": "wiki-field",
+      "video": "dgTraS02Zyc",
+      "title": "יש פרחים - צוות הווי נח\"ל (סולנית: נגה אשד)",
+      "removed": 1
+    },
+    {
+      "song": "חלומות - פאביו ג'וניור",
+      "id": 50,
+      "how": "trim",
+      "video": "ofa-ehYZbwQ",
+      "title": "פאביו ג'וניור",
+      "removed": 1
+    },
+    {
+      "song": "יאללה הפועל - עד המוות",
+      "id": 190,
+      "how": "wiki-field",
+      "video": "_3dmm4jpvr0",
+      "title": "La Nueva Luna - Iluminara - Choque de Cometas - Encuentro en el Estudio [HD]",
+      "removed": 4
+    },
+    {
+      "song": "יאללה הפועל היום שורפים ת'דשא",
+      "id": 191,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "יאללה הפועל לתת ת'לב והנשמה",
+      "id": 192,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "יאללה הפועל שלי",
+      "id": 193,
+      "how": "wiki-field",
+      "video": "244y56-vLWE",
+      "title": "Los Autenticos Decadentes - Veni Raquel (Vivo Pepsi Music 2010) HD",
+      "removed": 6
+    },
+    {
+      "song": "יאללה הפועל! הפועל אימפריה!",
+      "id": 194,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "יאללה יאללה הפועל - כולם עכשיו לקפוץ",
+      "id": 195,
+      "how": "trim",
+      "video": "Ry9ijNhIw-w",
+      "title": "שלמה ארצי - תגידי",
+      "removed": 1
+    },
+    {
+      "song": "יאללה יאללה כפיים",
+      "id": 196,
+      "how": "search",
+      "video": "_dmZOAm-8dc",
+      "title": "קונטרה דיכאון",
+      "tune": "בויאקה - קונטרה דיכאון מחבר",
+      "confidence": 0.5,
+      "removed": 2
+    },
+    {
+      "song": "יוצא היום לקרב",
+      "id": 197,
+      "how": "trim",
+      "video": "7Mn1WN5yeag",
+      "title": "Agnostic Front - \"Gotta Go\" Epitaph Records",
+      "removed": 9
+    },
+    {
+      "song": "יחד לעולם",
+      "id": 198,
+      "how": "wiki-field",
+      "video": "pvuN_WvF1to",
+      "title": "Lil Dicky - Earth (Official Music Video)",
+      "removed": 1
+    },
+    {
+      "song": "ילדה",
+      "id": 87,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "ירושלים לא באירופה",
+      "id": 199,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "ירושלים על הזין",
+      "id": 200,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "יש קבוצה כה דגולה",
+      "id": 88,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "יש רק סמל אחד",
+      "id": 201,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "כולם בטירוף",
+      "id": 203,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "כולם שונאים אותנו",
+      "id": 204,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "כי אני באתי לעשות שואה למכבי",
+      "id": 205,
+      "how": "wiki-field",
+      "video": "1RiqOuKCCa4",
+      "title": "שלמה ארצי - נצמדנו (קליפ)",
+      "removed": 1
+    },
+    {
+      "song": "כי רק בזכותך אני עוד חי וקיים",
+      "id": 206,
+      "how": "wiki-field",
+      "video": "zoMYU_nOGNg",
+      "title": "Yves LaRock - Rise Up",
+      "removed": 2
+    },
+    {
+      "song": "ככה וככה - מזואה אנסומבו",
+      "id": 51,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "כל החיים שלי אני פה איתך",
+      "id": 207,
+      "how": "wiki-field",
+      "video": "rgww_W_MvJg",
+      "title": "Peñarol Barra Amsterdam - \"Es para vos gallina, lo de maldonado no se olvida mas\"",
+      "removed": 1
+    },
+    {
+      "song": "כל היום אני רק עלייך",
+      "id": 208,
+      "how": "wiki-field",
+      "video": "2u33EXxwzVc",
+      "title": "Sputnik Hi Fi | ספוטניק היי פיי | גלגל",
+      "removed": 1
+    },
+    {
+      "song": "כל מי שלובש אדום קופץ",
+      "id": 210,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "כל צהוב צריך לשרוף",
+      "id": 211,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "כמו עיוור אני הולך",
+      "id": 212,
+      "how": "wiki-field",
+      "video": "7K8q9Xh_aJw",
+      "title": "Estelares - Ella dijo (video oficial) [HD]",
+      "removed": 2
+    },
+    {
+      "song": "כמו פעם אוסישקין",
+      "id": 89,
+      "how": "trim",
+      "video": "lJ0akKvq9AE",
+      "title": "Osishkin",
+      "removed": 1
+    },
+    {
+      "song": "כמו פרפר לאור",
+      "id": 213,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "כשאת בוכה את לא יפה - אליניב ברדה",
+      "id": 53,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "כשאת עולה למגרש",
+      "id": 214,
+      "how": "search",
+      "video": "pjPA7CXutDw",
+      "title": "Los Fabulosos Cadillacs - Matador (Official Video)",
+      "tune": "Los fabulosos cadillacs - Matador",
+      "confidence": 1.0,
+      "removed": 5
+    },
+    {
+      "song": "כשהפועל שוב עולה אל המגרש",
+      "id": 215,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "כשהשטן יקח אותנו",
+      "id": 216,
+      "how": "search",
+      "video": "IS_J2Nm6d4Y",
+      "title": "Soy de Attaque",
+      "tune": "Attaque 77 - Soy de Attaque",
+      "confidence": 1.0,
+      "removed": 5
+    },
+    {
+      "song": "לא משנה מה שיהיה",
+      "id": 218,
+      "how": "wiki-field",
+      "video": "rkdtSFaKY7A",
+      "title": "בעז שרעבי - יש לי כח להמשיך",
+      "removed": 2
+    },
+    {
+      "song": "לא שכחתי",
+      "id": 219,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "לא תשברו אותנו",
+      "id": 220,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "לכל מקום שבאתי עשיתי מהומה",
+      "id": 221,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "לעודד אותך היום הגענו",
+      "id": 222,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "לעולם לא תצעד לבד - עידן רז ז\"ל",
+      "id": 90,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "מאמי - אבי אזולאי, יואב בר, יניב גרין",
+      "id": 54,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "מגיל קטן אמרו לי תוותר על זה",
+      "id": 224,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "מהיום שבו אני נולדתי",
+      "id": 226,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "מהיום שבו נולדתי (שיר הילדים)",
+      "id": 227,
+      "how": "wiki-field",
+      "video": "lmaexcD8eak",
+      "title": "MÍRALA QUE LINDA VIENE AMERICA DEL 55",
+      "removed": 3
+    },
+    {
+      "song": "מהרגע שהגעת רק אלייך רוצה לשוב",
+      "id": 228,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "מונו - ויקטור מרעי",
+      "id": 55,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "מזמן, ידעתי שהפועל היא כל החיים",
+      "id": 229,
+      "how": "wiki-field",
+      "video": "kJQP7kiw5Fk",
+      "title": "Luis Fonsi - Despacito ft. Daddy Yankee",
+      "removed": 3
+    },
+    {
+      "song": "מחכים כל השבוע לצבוע את היציעים",
+      "id": 231,
+      "how": "wiki-field",
+      "video": "C4AqHJKorsE",
+      "title": "Pier - Jaque mate (video oficial) HD",
+      "removed": 4
+    },
+    {
+      "song": "מי המציא את המילה",
+      "id": 233,
+      "how": "wiki-field",
+      "video": "hc7_fC4pnlY",
+      "title": "גילי ארגוב   מי המציא את המילה",
+      "removed": 5
+    },
+    {
+      "song": "מיום הולדתי אני כולי שלך",
+      "id": 234,
+      "how": "trim",
+      "video": "YUU9W55KFf8",
+      "title": "Los autenticos decadentes - Loco tu forma de ser",
+      "removed": 4
+    },
+    {
+      "song": "מכבי זה קקי",
+      "id": 236,
+      "how": "trim",
+      "video": "brv7X6x3Prg",
+      "title": "Ya me da igual - Los Autenticos Decadentes",
+      "removed": 1
+    },
+    {
+      "song": "מספר 1 הוא גרמני",
+      "id": 238,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "מעלה מעלה - עמאר מנצור, אליעזר כהן",
+      "id": 56,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "נאהב אותך לנצח",
+      "id": 240,
+      "how": "wiki-field",
+      "video": "h8VGQTtENSs",
+      "title": "Bonnie Tyler  It's A Heartache",
+      "removed": 1
+    },
+    {
+      "song": "נה נה נה אבי נימני בן זונה",
+      "id": 241,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "נעימת השיכורים",
+      "id": 242,
+      "how": "wiki-field",
+      "video": "iAGJjnQ73JU",
+      "title": "יוני רועה - נעימת השיכורים",
+      "removed": 1
+    },
+    {
+      "song": "נרעיד את כל העיר",
+      "id": 243,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "סדאם תיקח כבר את מכבי מכאן",
+      "id": 244,
+      "how": "wiki-field",
+      "video": "i4HViPVymlo",
+      "title": "מוש בן ארי ולהקת שבע - סלאם | Mosh Ben Ari & Sheva - Salam",
+      "removed": 1
+    },
+    {
+      "song": "סע לאט",
+      "id": 92,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "סע לאט ב'",
+      "id": 93,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "עד המוות הפועל",
+      "id": 245,
+      "how": "wiki-field",
+      "video": "g9d0E0tJSeU",
+      "title": "רוחמה רז - חלומות",
+      "removed": 1
+    },
+    {
+      "song": "עדים לנו כוכבי מרום",
+      "id": 246,
+      "how": "trim",
+      "video": "KSoOcvB3p3o",
+      "title": "salar-עדים לנו כוכבי מרום",
+      "removed": 3
+    },
+    {
+      "song": "עדר של עיתונאים",
+      "id": 247,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "עוד נגיע - נמניה וויצ'יצ'ביץ'",
+      "id": 58,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "עומרי, שומע?",
+      "id": 94,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "עונה מהאגדות",
+      "id": 95,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "עוצמה אדומה",
+      "id": 96,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "עכשיו לקפוץ כמו חולים",
+      "id": 248,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "פאק מכבי",
+      "id": 249,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "פתאום מצאתי בך - דאבור רופניק, גאבור הלמאי, תומר אטלס",
+      "id": 59,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "צועניה נפלאה",
+      "id": 250,
+      "how": "trim",
+      "video": "pz6TeRhHIUo",
+      "title": "Campanera (Joselito)",
+      "removed": 2
+    },
+    {
+      "song": "קוקאין ואלכוהול",
+      "id": 251,
+      "how": "trim",
+      "video": "2hUe1rUEBhk",
+      "title": "La Mosca Tse-Tse - Hoy Estoy Peor Que Ayer",
+      "removed": 4
+    },
+    {
+      "song": "קח לך אישה ובנה לה בית - אביחי ידין, קורי קאר",
+      "id": 60,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "קם וחושב רק עלייך",
+      "id": 252,
+      "how": "search",
+      "video": "3AxwmES4ZyE",
+      "title": "los fabulosos cadillacs  y  celia cruz /  vasos vacios.3gp",
+      "tune": "Los Fabulosos con Celia Cruz - Vasos vacios",
+      "confidence": 0.86,
+      "removed": 2
+    },
+    {
+      "song": "רק אותך תמיד אוהב",
+      "id": 253,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "רק בשבילך הפועל כתבתי שיר",
+      "id": 254,
+      "how": "trim",
+      "video": "-9f24o5V60k",
+      "title": "Fito Páez - Y dale alegría a mi corazón",
+      "removed": 5
+    },
+    {
+      "song": "רק הפועל",
+      "id": 255,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "רק למענך נולדנו",
+      "id": 256,
+      "how": "wiki-field",
+      "video": "qN3Y3Z5-3sw",
+      "title": "Attaque 77 - No me arrepiento de este amor",
+      "removed": 1
+    },
+    {
+      "song": "שאול תעזוב את הקבוצה",
+      "id": 257,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "שואה למשטרה",
+      "id": 258,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "שוב בעקבותייך",
+      "id": 259,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "שונא יותר מכל דבר",
+      "id": 260,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "שימו את ירושלים בירדן",
+      "id": 261,
+      "how": "search",
+      "video": "jYZYBR-_hQs",
+      "title": "שישו את ירושלים",
+      "tune": "שישו את ירושלים",
+      "confidence": 1.0,
+      "removed": 3
+    },
+    {
+      "song": "שיר הגביע",
+      "id": 97,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "שיר הדאבל (2009/10)",
+      "id": 98,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "שיר ההבדלה - שביט אלימלך",
+      "id": 61,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "שיר העמותה",
+      "id": 262,
+      "how": "search",
+      "video": "EdfxwaHVnAk",
+      "title": "HaGevatron | החגיגה נגמרת - הגבעטרון - גוונים",
+      "tune": "הגבעתרון-החגיגה נגמרת",
+      "confidence": 0.67,
+      "removed": 3
+    },
+    {
+      "song": "שיר חולוני",
+      "id": 99,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "שירי שואה",
+      "id": 263,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "שלום עליכם",
+      "id": 264,
+      "how": "wiki-field",
+      "video": "EKlLpiBuxIA",
+      "title": "שלום עליכם || Shalom Aleichem",
+      "removed": 3
+    },
+    {
+      "song": "שלום תקווה (שיר)",
+      "id": 100,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "שמעון גרשון מת",
+      "id": 265,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "שער הרחמים - סמואל יבואה",
+      "id": 63,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "שער חמש להתעורר",
+      "id": 268,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "שער חמש תמיד הוא קרנבל",
+      "id": 269,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "שער שש",
+      "id": 101,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "תביא קצת דינרוס - סרגיי קלשנקו, רובן סולצ'אגה, טוהר חיימוביץ'",
+      "id": 64,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "תמיד אנחנו איתך",
+      "id": 270,
+      "how": "skip",
+      "why": "no tune named on the wiki page"
+    },
+    {
+      "song": "תראו הפועל הנה מה שסיכמנו",
+      "id": 271,
+      "how": "wiki-field",
+      "video": "fPDJhzjSly4",
+      "title": "Rubén Rada - Muriendo de Plena",
+      "removed": 6
+    },
+    {
+      "song": "תראי את היציע צבוע אדום",
+      "id": 272,
+      "how": "wiki-field",
+      "video": "IpNdoz6QGmk",
+      "title": "שמעון בוסקילה - הלילה שלך",
+      "removed": 2
+    }
+  ]
+}
