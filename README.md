@@ -107,6 +107,20 @@ Hosted on Vercel as a static site — no build step, no server.
    to `public`.
 3. Deploy. Every push to `main` redeploys.
 
+`main` is protected against **force pushes and deletion**, including for
+admins. Ordinary pushes straight to `main` still work — no pull request and no
+status checks are required, because the thing worth guarding here is the
+history, not the workflow.
+
+If you ever genuinely need to force push, lift the rule, push, then put it
+back:
+
+```bash
+gh api -X DELETE repos/idanlodzki/hapoel-sings/branches/main/protection
+# ... force push ...
+gh api -X PUT repos/idanlodzki/hapoel-sings/branches/main/protection --input .github/branch-protection.json
+```
+
 ## Note on content
 
 This repository holds song **titles and links only**. Lyrics are not included
