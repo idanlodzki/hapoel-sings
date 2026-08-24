@@ -1,5 +1,5 @@
 {
- "count": 141,
+ "count": 137,
  "songs": [
   {
    "name": "16 מלאו לנער-ביברס נאתכו",
@@ -52,7 +52,7 @@
    "original": false
   },
   {
-   "name": "Under The Sea-אוראל דגני",
+   "name": "Under The Sea - אוראל דגני, תומר גינת",
    "category": "שירי שחקנים",
    "artist": null,
    "wiki": "https://wiki.red-fans.com/index.php?title=Under_The_Sea-אוראל_דגני",
@@ -169,16 +169,6 @@
    "wiki": "https://wiki.red-fans.com/index.php?title=%D7%90%D7%9C-%D7%99%D7%9D_%D7%A7%D7%A0%D7%A6%D7%A4%D7%95%D7%9C%D7%A1%D7%A7%D7%99",
    "youtube": [
     "WRneo8GPXu0"
-   ],
-   "original": true
-  },
-  {
-   "name": "אלייז'ה בראיינט",
-   "category": "שירי שחקנים",
-   "artist": null,
-   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%90%D7%9C%D7%99%D7%99%D7%96%27%D7%94_%D7%91%D7%A8%D7%90%D7%99%D7%99%D7%A0%D7%98",
-   "youtube": [
-    "ErklElxgoNU"
    ],
    "original": true
   },
@@ -463,16 +453,6 @@
    "original": true
   },
   {
-   "name": "דן אוטורו",
-   "category": "שירי שחקנים",
-   "artist": null,
-   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%93%D7%9F_%D7%90%D7%95%D7%98%D7%95%D7%A8%D7%95",
-   "youtube": [
-    "WHDQ-JHI6Z8"
-   ],
-   "original": true
-  },
-  {
    "name": "דניאל דאפה",
    "category": "שירי שחקנים",
    "artist": "דודו טסה",
@@ -729,16 +709,6 @@
    "wiki": "https://wiki.red-fans.com/index.php?title=חוץ_ממך_אין_עוד_אחרת",
    "youtube": [
     "dgTraS02Zyc"
-   ],
-   "original": true
-  },
-  {
-   "name": "טאי אודיאסה",
-   "category": "שירי שחקנים",
-   "artist": null,
-   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%98%D7%90%D7%99_%D7%90%D7%95%D7%93%D7%99%D7%90%D7%A1%D7%94",
-   "youtube": [
-    "T_1GL2AIUco"
    ],
    "original": true
   },
@@ -1169,16 +1139,6 @@
    "wiki": "https://wiki.red-fans.com/index.php?title=עדים_לנו_כוכבי_מרום",
    "youtube": [
     "KSoOcvB3p3o"
-   ],
-   "original": true
-  },
-  {
-   "name": "עוז בלייזר",
-   "category": "שירי שחקנים",
-   "artist": "כנסיית השכל",
-   "wiki": "https://wiki.red-fans.com/index.php?title=%D7%A2%D7%95%D7%96_%D7%91%D7%9C%D7%99%D7%99%D7%96%D7%A8",
-   "youtube": [
-    "2G6dj66Dc5o"
    ],
    "original": true
   },
