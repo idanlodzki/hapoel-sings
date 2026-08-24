@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&family=Assistant:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1200px;height:630px;overflow:hidden}
+  body{
+    background:#0C0C0E;
+    font-family:"Assistant",system-ui,sans-serif;
+    color:#F6F5F3;
+    display:flex;flex-direction:column;justify-content:center;
+    padding:0 78px;
+    position:relative;
+  }
+  /* red stage glow, bottom-right where the bars sit */
+  .glow{
+    position:absolute;inset:0;
+    background:radial-gradient(760px 470px at 16% 90%, rgba(226,0,26,.30), transparent 68%);
+  }
+  .rule{position:absolute;inset-inline:0;top:0;height:9px;background:#E2001A}
+
+  .row{display:flex;align-items:center;gap:26px;position:relative}
+  .row img{width:104px;height:104px}
+  h1{
+    font-family:"Heebo",system-ui,sans-serif;font-weight:900;
+    font-size:104px;line-height:1;letter-spacing:-.035em;
+  }
+  .tag{
+    position:relative;
+    margin-top:26px;font-size:39px;font-weight:600;color:#F6F5F3;letter-spacing:-.01em;
+  }
+  .meta{
+    position:relative;
+    margin-top:16px;font-size:27px;color:#A8A8B2;
+  }
+  .meta b{color:#FF5A6E;font-weight:700}
+
+  /* the equalizer from the game's "now playing" state */
+  .eq{
+    position:absolute;bottom:0;left:78px;
+    display:flex;align-items:flex-end;gap:11px;height:190px;
+  }
+  .eq i{width:21px;background:#E2001A;border-radius:5px 5px 0 0;display:block}
+
+  .url{
+    position:absolute;bottom:46px;right:78px;
+    font-size:25px;font-weight:700;color:#A8A8B2;direction:ltr;
+  }
+</style>
+</head>
+<body>
+  <div class="glow"></div>
+  <div class="rule"></div>
+
+  <div class="row">
+    <img src="logo.svg" alt="">
+    <h1>הפועל שרים</h1>
+  </div>
+  <p class="tag">מזהים את השיר לפני כולם?</p>
+  <p class="meta">משחק ניחוש שירים · <b>שירי היציע</b> ושירי השחקנים של הפועל תל אביב</p>
+
+  <div class="eq">
+    <i style="height:38px"></i><i style="height:88px"></i><i style="height:150px"></i>
+    <i style="height:62px"></i><i style="height:116px"></i><i style="height:44px"></i>
+    <i style="height:80px"></i><i style="height:28px"></i>
+  </div>
+  <div class="url">hapoel-sings.vercel.app</div>
+</body>
+</html>

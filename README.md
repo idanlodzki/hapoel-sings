@@ -121,6 +121,25 @@ python3 scripts/build-pages.py      # rewrites site.css, site.js and the 4 pages
 
 Edit `scripts/build-pages.py`, never the generated HTML — it will be overwritten.
 
+## Link previews
+
+`public/og.png` is the card shown when the URL is pasted into WhatsApp, Slack,
+X or iMessage. It is committed, so a normal deploy never rebuilds it. If the
+design changes:
+
+```bash
+python3 scripts/build-og.py     # renders scripts/og/card.html at 1200x630
+```
+
+Two things that silently break previews and are easy to reintroduce: `og:image`
+must be an **absolute** URL (relative paths are ignored by every scraper), and
+it must be a **raster** file — WhatsApp, Facebook and X all refuse SVG. The
+card carries no song count on purpose, so it does not go stale when the list
+changes.
+
+Scrapers cache aggressively. After changing the image, re-scrape at
+<https://developers.facebook.com/tools/debug/> to see it update.
+
 ## Deploying
 
 Hosted on Vercel as a static site — no build step, no server.

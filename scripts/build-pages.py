@@ -24,6 +24,7 @@ LINKEDIN = "https://www.linkedin.com/in/idan-lodzki-755939157/"
 OWNER = "הפועל שרים"
 UPDATED = "אוגוסט 2026"
 REPO = "https://github.com/idanlodzki/hapoel-sings"
+SITE = "https://hapoel-sings.vercel.app"
 
 NAV = [
     ("index.html", "המשחק"),
@@ -229,10 +230,26 @@ def shell(slug, title, desc, body):
 <title>{title} — הפועל שרים</title>
 <meta name="description" content="{desc}">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="{SITE}/{slug}">
+
+<!-- Link preview. og:image must be an absolute URL to a raster file:
+     WhatsApp, Facebook and X all refuse to render SVG previews. -->
+<meta property="og:site_name" content="הפועל שרים">
+<meta property="og:locale" content="he_IL">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{SITE}/{slug}">
 <meta property="og:title" content="{title} — הפועל שרים">
 <meta property="og:description" content="{desc}">
-<meta property="og:type" content="website">
-<meta property="og:image" content="logo.svg">
+<meta property="og:image" content="{SITE}/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="הפועל שרים — משחק ניחוש שירים">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{title} — הפועל שרים">
+<meta name="twitter:description" content="{desc}">
+<meta name="twitter:image" content="{SITE}/og.png">
+<meta name="theme-color" content="#0C0C0E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
