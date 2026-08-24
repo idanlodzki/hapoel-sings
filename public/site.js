@@ -1,7 +1,7 @@
 /* One footer, injected everywhere — including into the game, which has its
    own stylesheet and so gets inline styles here rather than the shared CSS. */
 (function () {
-  var LINKS = [["index.html", "המשחק"], ["rules.html", "כללי המשחק"], ["found.html", "רשימת השירים"], ["accessibility.html", "נגישות"], ["terms.html", "תנאי שימוש"], ["privacy.html", "פרטיות"]];
+  var LINKS = [["index.html", "המשחק"], ["rules.html", "כללי המשחק"], ["accessibility.html", "נגישות"], ["terms.html", "תנאי שימוש"], ["privacy.html", "פרטיות"]];
   var here = location.pathname.split("/").pop() || "index.html";
   var html =
     '<div class="wrap">' +

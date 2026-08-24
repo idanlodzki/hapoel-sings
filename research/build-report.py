@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Build game/found.html — a review page listing every song that now has an
+Build research/found.html — a local review page listing every song that has an
 original tune, with clickable links and how each one was identified.
 
-    python3 build-report.py    ->  http://localhost:8790/found.html
+    python3 build-report.py    ->  research/found.html (not published)
 """
 import collections
 import html
@@ -163,7 +163,7 @@ document.querySelectorAll('.tools button').forEach(b=>b.addEventListener('click'
 </script>
 </body></html>"""
 
-out = os.path.join(ROOT, "public", "found.html")
+out = os.path.join(HERE, "found.html")
 open(out, "w", encoding="utf-8").write(doc)
 print(f"{len(rows)} songs -> {os.path.relpath(out, ROOT)}")
 print(f"  wiki-field={counts.get('wiki-field',0)} search={counts.get('search',0)} trim={counts.get('trim',0)}")

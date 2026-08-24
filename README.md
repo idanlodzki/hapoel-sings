@@ -74,7 +74,6 @@ python3 scripts/validate.py --check-videos  # also asks YouTube if each still pl
 public/            the site Vercel serves
   index.html       the game
   songs.json       the song database — this is the file you edit
-  found.html       review page: every song with its source tune
 scripts/           add-song, validate, export-db, server (local editor), backup
 research/          how the list was built: scrapers, classifiers, reports
 data/hapoel.db     SQLite copy used during curation, kept for provenance
@@ -95,8 +94,9 @@ built on, not a crowd recording. Those were found by reading the wiki's
 tune, by searching YouTube and accepting a match only when the video title
 matched that name. Every link was checked against YouTube before being kept.
 
-`public/found.html` lists all 118 with their sources, and flags the three that
-were matched at low confidence and deserve a listen.
+`research/build-report.py` regenerates a local review page listing every song
+with its source tune, flagging any matched at low confidence. It is not part
+of the published site.
 
 ## Deploying
 

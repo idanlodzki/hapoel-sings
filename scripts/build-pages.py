@@ -27,7 +27,6 @@ REPO = "https://github.com/idanlodzki/hapoel-sings"
 NAV = [
     ("index.html", "המשחק"),
     ("rules.html", "כללי המשחק"),
-    ("found.html", "רשימת השירים"),
     ("accessibility.html", "נגישות"),
     ("terms.html", "תנאי שימוש"),
     ("privacy.html", "פרטיות"),
