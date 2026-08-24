@@ -584,6 +584,8 @@ input{font:inherit}
       return;
     }
     state.players = names.map((n) => ({ name: n, score: 0 }));
+    stat("game-start");
+    stat("players-" + names.length);          // group size, not who they are
     state.queue = shuffle([...state.pool.keys()]);
     state.qi = -1;
     state.round = 0;
@@ -645,6 +647,7 @@ input{font:inherit}
     gateTimer = setTimeout(() => {
       const st = player && player.getPlayerState ? player.getPlayerState() : -1;
       if (st !== YT.PlayerState.PLAYING) {
+        stat("play-gate");
         $("playGate").classList.remove("hide");
         $("playTitle").textContent = "מוכן?";
         $("eq").dataset.paused = "true";
@@ -671,7 +674,7 @@ input{font:inherit}
      through to another recording of the same song, then to another song. */
   function onPlayerError() {
     const id = currentVideoId();
-    if (id) state.dead.add(id);
+    if (id) { state.dead.add(id); stat("video-error-" + id); }
     const list = vids(state.song);
     const alt = list.find((v) => !state.dead.has(v));
     if (alt) { state.vidIdx = list.indexOf(alt); play(alt); return; }
@@ -699,6 +702,7 @@ input{font:inherit}
     state.song = song;
     state.vidIdx = vids(song).findIndex((v) => !state.dead.has(v));
     state.round++;
+    stat("round-played");
 
     $("phaseReveal").classList.add("hide");
     $("phasePlay").classList.remove("hide");
@@ -743,6 +747,7 @@ input{font:inherit}
     if (state.scored || state.buzzed === null) return;
     state.scored = true;
     state.players[state.buzzed].score += delta;
+    stat(delta > 0 ? "answer-correct" : "answer-wrong");
     drawScores();
     drawBuzz();
     $("verdict").classList.add("hide");
@@ -773,6 +778,12 @@ input{font:inherit}
 
   function endGame() {
     if (player && player.stopVideo) player.stopVideo();
+    // the arm-gate timer outlives the round it belongs to: without this the
+    // play button pops up over the results screen 2s after the game ends
+    clearTimeout(gateTimer);
+    $("playGate").classList.add("hide");
+    stat("game-end");
+    stat("rounds-" + (state.round <= 5 ? "1-5" : state.round <= 15 ? "6-15" : "16plus"));
     const ranked = [...state.players].sort((a, b) => b.score - a.score);
     $("standings").innerHTML = ranked.map((p, i) => `
       <div class="standing" data-first="${i === 0 && p.score === ranked[0].score}">
@@ -806,8 +817,12 @@ input{font:inherit}
     player.seekTo(0, true);
     player.playVideo();
   });
-  $("revealBtn").addEventListener("click", () => { if (player) player.pauseVideo(); reveal(null); });
-  $("skipBtn").addEventListener("click", nextSong);
+  $("revealBtn").addEventListener("click", () => {
+    if (player) player.pauseVideo();
+    stat("reveal-nobody");
+    reveal(null);
+  });
+  $("skipBtn").addEventListener("click", () => { stat("skip-song"); nextSong(); });
   $("playGate").addEventListener("click", () => {
     $("playGate").classList.add("hide");
     $("eq").dataset.paused = "false";
@@ -834,6 +849,7 @@ input{font:inherit}
 })();
 </script>
 
+<script src="stats.js"></script>
 <script src="site.js"></script>
 <script src="a11y.js"></script>
 </body>
