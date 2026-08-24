@@ -587,6 +587,8 @@ input{font:inherit}
     apiReady = true;
     player = new YT.Player("yt", {
       height: "180", width: "320",
+      // privacy-enhanced host: no Google cookies until a song actually plays
+      host: "https://www.youtube-nocookie.com",
       playerVars: {
         autoplay: 1, controls: 0, disablekb: 1, modestbranding: 1,
         rel: 0, playsinline: 1, iv_load_policy: 3, fs: 0,
@@ -811,5 +813,6 @@ input{font:inherit}
 </script>
 
 <script src="site.js"></script>
+<script src="a11y.js"></script>
 </body>
 </html>

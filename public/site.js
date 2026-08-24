@@ -10,6 +10,8 @@
           return '<a href="' + l[0] + '"' + (l[0] === here ? ' aria-current="page"' : '') + '>' + l[1] + '</a>';
         }).join('') +
         '<a href="https://github.com/idanlodzki/hapoel-sings" target="_blank" rel="noopener">קוד המקור</a>' +
+        '<a href="https://www.linkedin.com/in/idan-lodzki-755939157/" target="_blank" rel="noopener">LinkedIn</a>' +
+        '<a href="mailto:idan.lut@gmail.com">idan.lut@gmail.com</a>' +
       '</div>' +
       '<div class="foot__legal">' +
         '<span>© הפועל שרים · אתר לא רשמי, ללא קשר למועדון הפועל תל אביב</span>' +

@@ -19,7 +19,8 @@ PUB = os.path.join(ROOT, "public")
 # ---------------------------------------------------------------------------
 # The one thing a human must fill in. Left deliberately obvious rather than
 # guessed at: publishing someone's personal address is their call, not ours.
-CONTACT = "[[ נא למלא כתובת אימייל ליצירת קשר ]]"
+CONTACT = "idan.lut@gmail.com"
+LINKEDIN = "https://www.linkedin.com/in/idan-lodzki-755939157/"
 OWNER = "הפועל שרים"
 UPDATED = "אוגוסט 2026"
 REPO = "https://github.com/idanlodzki/hapoel-sings"
@@ -133,6 +134,8 @@ FOOT_JS = """/* One footer, injected everywhere — including into the game, whi
           return '<a href="' + l[0] + '"' + (l[0] === here ? ' aria-current="page"' : '') + '>' + l[1] + '</a>';
         }).join('') +
         '<a href="%REPO%" target="_blank" rel="noopener">קוד המקור</a>' +
+        '<a href="%LINKEDIN%" target="_blank" rel="noopener">LinkedIn</a>' +
+        '<a href="mailto:%EMAIL%">%EMAIL%</a>' +
       '</div>' +
       '<div class="foot__legal">' +
         '<span>© %OWNER% · אתר לא רשמי, ללא קשר למועדון הפועל תל אביב</span>' +
@@ -235,6 +238,7 @@ def shell(slug, title, desc, body):
 <p class="updated">עודכן לאחרונה: {UPDATED}</p>
 </div></main>
 <script src="site.js"></script>
+<script src="a11y.js"></script>
 </body>
 </html>
 """
@@ -289,10 +293,19 @@ PAGES["accessibility.html"] = ("הצהרת נגישות", "הצהרת הנגיש
 <h1>הצהרת נגישות</h1>
 <p class="lede">אנחנו רוצים שכל אחד יוכל להשתמש באתר. זה מה שעשינו, וזה מה שעדיין לא מושלם.</p>
 
-<div class="box box--warn">
-  <strong>לפני פרסום:</strong> יש להשלים כתובת ליצירת קשר בנושא נגישות בתחתית העמוד,
-  ולוודא שההצהרה משקפת את מצב האתר בפועל. הטקסט הזה נכתב כטיוטה ואינו ייעוץ משפטי.
-</div>
+<h2>כלי הנגישות באתר</h2>
+<p>
+  בכל עמוד, בפינה התחתונה, יש כפתור נגישות (הסמל הכחול). לחיצה עליו פותחת תפריט שמאפשר:
+</p>
+<ul>
+  <li><strong>הגדלה והקטנה של הטקסט</strong> — בין 80% ל-150%.</li>
+  <li><strong>ניגודיות גבוהה</strong> — רקע שחור, טקסט לבן וקישורים בצהוב.</li>
+  <li><strong>גווני אפור</strong> — למי שצבעים מקשים עליו.</li>
+  <li><strong>הדגשת קישורים</strong> — קו תחתון ומסגרת סביב כל קישור.</li>
+  <li><strong>גופן קריא</strong> — מעבר לגופן פשוט עם ריווח אותיות מוגדל.</li>
+  <li><strong>עצירת אנימציות</strong> — לכל התנועה באתר.</li>
+</ul>
+<p>ההגדרות נשמרות בדפדפן שלכם ונשארות גם בביקור הבא. אפשר לאפס אותן בכל רגע מאותו תפריט.</p>
 
 <h2>מה נעשה באתר</h2>
 <ul>
@@ -302,6 +315,7 @@ PAGES["accessibility.html"] = ("הצהרת נגישות", "הצהרת הנגיש
   <li>לכפתורים ולשדות יש תוויות טקסט או <code>aria-label</code> לקוראי מסך.</li>
   <li>יש קישור "דילוג לתוכן" בתחילת כל עמוד.</li>
   <li>מי שהגדיר במערכת ההפעלה שלו העדפה לצמצום תנועה — לא יקבל אנימציות.</li>
+  <li>כפתור הנגישות עצמו נגיש מהמקלדת, נסגר במקש Escape ומחזיר את המיקוד למקומו.</li>
   <li>הטקסט ניתן להגדלה בדפדפן בלי שהתוכן יישבר.</li>
 </ul>
 
@@ -324,11 +338,6 @@ PAGES["accessibility.html"] = ("הצהרת נגישות", "הצהרת הנגיש
 PAGES["terms.html"] = ("תנאי שימוש", "תנאי השימוש באתר הפועל שרים.", f"""
 <h1>תנאי שימוש</h1>
 <p class="lede">אתר חובבים, בחינם, ללא מטרות רווח.</p>
-
-<div class="box box--warn">
-  <strong>לפני פרסום:</strong> הטקסט הזה נכתב כטיוטה שמתארת נכונה את מה שהאתר עושה,
-  אך אינו ייעוץ משפטי. מומלץ שעורך/ת דין יעבור/תעבור עליו.
-</div>
 
 <h2>מה האתר הזה</h2>
 <p>
@@ -373,10 +382,16 @@ PAGES["privacy.html"] = ("מדיניות פרטיות", "איזה מידע נא�
 <h1>מדיניות פרטיות</h1>
 <p class="lede">בקצרה: אנחנו לא מבקשים מכם להירשם, לא אוספים שמות ולא שומרים כלום בשרת שלנו.</p>
 
-<div class="box box--warn">
-  <strong>לפני פרסום:</strong> יש להשלים כתובת ליצירת קשר. הטקסט מתאר נכונה את מה שהאתר עושה,
-  אך אינו ייעוץ משפטי.
-</div>
+<h2>עוגיות</h2>
+<p>
+  <strong>האתר הזה לא שומר עוגיות משלו — אף אחת.</strong> אין באתר עוגיות מעקב, עוגיות פרסום
+  או מזהים כלשהם מטעמנו.
+</p>
+<p>
+  יוצא דופן אחד: נגן היוטיוב המוטמע. הטענו אותו במצב הפרטיות המוגבר של יוטיוב
+  (<code>youtube-nocookie.com</code>), אבל כששיר מתנגן בפועל <strong>גוגל עשויה לשמור
+  עוגיות משלה</strong>. זה קורה מול גוגל ולא מולנו, ואין לנו שליטה על כך.
+</p>
 
 <h2>מה נשמר במכשיר שלכם</h2>
 <p>
@@ -386,7 +401,9 @@ PAGES["privacy.html"] = ("מדיניות פרטיות", "איזה מידע נא�
 <ul>
   <li><strong>שמות המשתתפים</strong> שהזנתם, כדי לא להקליד אותם מחדש בכל משחק.</li>
   <li><strong>רשימת השירים שביטלתם</strong>, כדי שהבחירה תישמר בין משחקים.</li>
+  <li><strong>הגדרות הנגישות</strong> שבחרתם, וסימון שכבר ראיתם את הודעת הפרטיות.</li>
 </ul>
+<p>זה אחסון מקומי (<code>localStorage</code>), לא עוגיות — הוא לא נשלח לשרת בשום שלב.</p>
 
 <h2>מדידת שימוש</h2>
 <p>
@@ -396,12 +413,13 @@ PAGES["privacy.html"] = ("מדיניות פרטיות", "איזה מידע נא�
   סוג מכשיר ומדינה. איננו יכולים לזהות אתכם דרכו.
 </p>
 
-<h2>יוטיוב</h2>
-<p>
-  השירים מתנגנים בנגן מוטמע של יוטיוב. כשנגן כזה נטען, <strong>גוגל עשויה לאסוף מידע
-  ולהשתמש בעוגיות משלה</strong> — זה קורה מולם ולא מולנו, ואין לנו שליטה על כך. חלים על כך
-  <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">תנאי הפרטיות של גוגל</a>.
-</p>
+<h2>שירותים חיצוניים</h2>
+<ul>
+  <li><strong>יוטיוב</strong> — משמיע את השירים. חלים
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">תנאי הפרטיות של גוגל</a>.</li>
+  <li><strong>Google Fonts</strong> — הגופנים של האתר נטענים משרתי גוגל, שרואים את כתובת ה-IP שלכם.</li>
+  <li><strong>Vercel</strong> — מארחת את האתר ומודדת שימוש מצטבר, ללא עוגיות.</li>
+</ul>
 
 <h2>מה איננו עושים</h2>
 <ul>
@@ -421,6 +439,8 @@ def main():
     js = (FOOT_JS
           .replace("%LINKS%", repr([[h, t] for h, t in NAV]).replace("'", '"'))
           .replace("%REPO%", REPO)
+          .replace("%LINKEDIN%", LINKEDIN)
+          .replace("%EMAIL%", CONTACT)
           .replace("%OWNER%", OWNER))
     open(os.path.join(PUB, "site.js"), "w", encoding="utf-8").write(js)
 

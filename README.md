@@ -74,6 +74,8 @@ python3 scripts/validate.py --check-videos  # also asks YouTube if each still pl
 public/            the site Vercel serves
   index.html       the game
   songs.json       the song database — this is the file you edit
+  a11y.js          נגישות widget + privacy notice, on every page
+  site.js          shared header/footer, generated — edit build-pages.py instead
 scripts/           add-song, validate, export-db, server (local editor), backup
 research/          how the list was built: scrapers, classifiers, reports
 data/hapoel.db     SQLite copy used during curation, kept for provenance
@@ -88,7 +90,7 @@ the curation work — if you ever edit it, re-export with
 Scraped from [ויקיפועל](https://wiki.red-fans.com) — every page under
 `קטגוריה:שירים` and its subcategories — then filtered down by hand.
 
-For 118 of the 137, the link is the **original tune** the terrace chant was
+For 131 of the 143, the link is the **original tune** the terrace chant was
 built on, not a crowd recording. Those were found by reading the wiki's
 `|שיר מקורי=` and `|מנגינה=` infobox fields, and where the wiki only named a
 tune, by searching YouTube and accepting a match only when the video title
@@ -97,6 +99,27 @@ matched that name. Every link was checked against YouTube before being kept.
 `research/build-report.py` regenerates a local review page listing every song
 with its source tune, flagging any matched at low confidence. It is not part
 of the published site.
+
+## Accessibility and privacy
+
+Every page carries a floating **נגישות** button (`public/a11y.js`) offering text
+scaling, high contrast, greyscale, link highlighting, a readable font and an
+animation stop. Choices persist per-browser and the widget is fully keyboard
+operable.
+
+The site **sets no cookies of its own**. Player names, song exclusions and
+accessibility settings live in `localStorage`, and Vercel Web Analytics is
+cookieless. The one third party that can set cookies is the YouTube player, so
+it is loaded from `youtube-nocookie.com` and a one-time notice bar says so
+plainly rather than pretending to gate consent we don't need.
+
+The four content pages are generated:
+
+```bash
+python3 scripts/build-pages.py      # rewrites site.css, site.js and the 4 pages
+```
+
+Edit `scripts/build-pages.py`, never the generated HTML — it will be overwritten.
 
 ## Deploying
 
