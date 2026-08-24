@@ -10,7 +10,7 @@
   "use strict";
 
   var KEY = "hapoel-sings-a11y";
-  var NOTICE_KEY = "hapoel-sings-notice";
+  var CONSENT_KEY = "hapoel-sings-consent";
   var STATEMENT = "accessibility.html";
 
   var state = { zoom: 100, contrast: 0, gray: 0, links: 0, font: 0, still: 0 };
@@ -151,29 +151,55 @@
     sync();
   }
 
-  /* ---------- privacy notice ----------
-     We set no cookies of our own. The YouTube player does once a song
-     plays, so this informs rather than pretending to gate consent. */
-  function notice() {
-    try { if (localStorage.getItem(NOTICE_KEY)) return; } catch (e) { return; }
-    var bar = document.createElement("div");
-    bar.setAttribute("role", "region");
-    bar.setAttribute("aria-label", "הודעת פרטיות");
-    bar.setAttribute("style",
-      "position:fixed;inset-inline:0;bottom:0;z-index:8000;background:#14141A;color:#F6F5F3;" +
-      "border-top:1px solid #3A3A44;padding:14px 18px;font-family:Assistant,system-ui,sans-serif;" +
-      "font-size:14px;line-height:1.6;display:flex;gap:14px;flex-wrap:wrap;align-items:center;justify-content:center");
-    bar.innerHTML =
-      "<span style='max-width:70ch'>האתר לא שומר עוגיות משלו. נגן היוטיוב המוטמע עשוי לשמור עוגיות של גוגל " +
-      "כששיר מתנגן. <a href='privacy.html' style='color:#8FA6FF'>מדיניות הפרטיות</a></span>" +
-      "<button style='background:#E2001A;color:#fff;border:0;border-radius:8px;padding:9px 20px;" +
-      "font:inherit;font-weight:700;cursor:pointer'>הבנתי</button>";
-    bar.querySelector("button").addEventListener("click", function () {
-      try { localStorage.setItem(NOTICE_KEY, "1"); } catch (e) {}
+  /* ---------- consent gate ----------
+     Session replay (Clarity) sets cookies and sends data to Microsoft, so
+     unlike the cookieless counting in stats.js it needs real consent. This
+     bar therefore *gates* rather than informs: nothing is recorded until
+     someone says yes, and declining is a first-class answer, not a dark
+     pattern that hides the button.
+
+     Answering either way is remembered. privacy.html carries a control to
+     change it, bound below. */
+  function consentState() {
+    try { return localStorage.getItem(CONSENT_KEY); } catch (e) { return "denied"; }
+  }
+
+  function decide(value, bar) {
+    try { localStorage.setItem(CONSENT_KEY, value); } catch (e) {}
+    if (value === "granted") window.dispatchEvent(new Event("consent-granted"));
+    if (bar) {
       document.documentElement.style.setProperty("--a11y-lift", "0px");
       bar.remove();
       if (fab) fab.focus();
-    });
+    }
+  }
+
+  function gate() {
+    if (consentState()) return;                 // already answered, either way
+
+    var bar = document.createElement("div");
+    bar.setAttribute("role", "region");
+    bar.setAttribute("aria-label", "בקשת הסכמה");
+    bar.setAttribute("style",
+      "position:fixed;inset-inline:0;bottom:0;z-index:8000;background:#14141A;color:#F6F5F3;" +
+      "border-top:1px solid #3A3A44;padding:14px 18px;font-family:Assistant,system-ui,sans-serif;" +
+      "font-size:14px;line-height:1.6;display:flex;gap:12px 16px;flex-wrap:wrap;" +
+      "align-items:center;justify-content:center");
+    bar.innerHTML =
+      "<span style='max-width:74ch'>רוצים לעזור לנו לשפר את המשחק? באישורכם נקליט את " +
+      "השימוש שלכם באתר (Microsoft Clarity), כדי לראות איפה נתקעים. " +
+      "<strong>שמות המשתתפים מוסתרים ולא נשלחים.</strong> השירות משתמש בעוגיות. " +
+      "אפשר לשחק רגיל גם בלי לאשר. " +
+      "<a href='privacy.html' style='color:#8FA6FF'>מדיניות הפרטיות</a></span>" +
+      "<span style='display:flex;gap:8px'>" +
+      "<button data-yes style='background:#E2001A;color:#fff;border:0;border-radius:8px;" +
+      "padding:9px 20px;font:inherit;font-weight:700;cursor:pointer'>מאשר/ת</button>" +
+      "<button data-no style='background:none;color:#F6F5F3;border:1px solid #3A3A44;" +
+      "border-radius:8px;padding:9px 20px;font:inherit;font-weight:700;cursor:pointer'>לא, תודה</button>" +
+      "</span>";
+    bar.querySelector("[data-yes]").addEventListener("click", function () { decide("granted", bar); });
+    bar.querySelector("[data-no]").addEventListener("click", function () { decide("denied", bar); });
+
     document.body.appendChild(bar);
     var lift = function () {
       document.documentElement.style.setProperty("--a11y-lift", bar.offsetHeight + "px");
@@ -182,9 +208,37 @@
     addEventListener("resize", lift);
   }
 
+  /* the withdraw/grant control on privacy.html */
+  function bindConsentControl() {
+    var box = document.getElementById("consentBox");
+    if (!box) return;
+    var render = function () {
+      var s = consentState();
+      box.innerHTML =
+        "<p style='margin-bottom:10px'>הבחירה הנוכחית שלכם: <strong>" +
+        (s === "granted" ? "אישרתם הקלטת סשנים" :
+         s === "denied"  ? "לא אישרתם הקלטת סשנים" : "עדיין לא נשאלתם") +
+        "</strong></p>";
+      var b = document.createElement("button");
+      b.className = "btn-consent";
+      b.textContent = s === "granted" ? "ביטול ההסכמה" : "אישור הקלטת סשנים";
+      b.addEventListener("click", function () {
+        decide(s === "granted" ? "denied" : "granted", null);
+        render();
+        // Reload either way. Granting starts recording immediately; withdrawing
+        // must actually stop it, not leave the recorder running until the next
+        // page load — a withdrawal that does nothing until later is not one.
+        location.reload();
+      });
+      box.appendChild(b);
+    };
+    render();
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     build();
     apply();
-    notice();
+    gate();
+    bindConsentControl();
   });
 })();

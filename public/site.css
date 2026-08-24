@@ -89,4 +89,7 @@ footer.site{border-top:1px solid var(--line);background:var(--ink2);padding:26px
 .foot__help{margin-bottom:14px;color:var(--white)}
 .foot__help a{color:var(--red-lite);text-decoration:underline;text-underline-offset:3px}
 .foot__help a:hover{color:var(--white)}
+.btn-consent{background:var(--red);color:#fff;border:0;border-radius:9px;padding:11px 22px;
+  font:inherit;font-weight:700;cursor:pointer}
+.btn-consent:hover{background:#b30015}
 .foot__legal{display:flex;gap:10px 20px;flex-wrap:wrap;align-items:center;justify-content:space-between}

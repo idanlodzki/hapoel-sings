@@ -31,9 +31,21 @@
     return;
   }
 
-  (function (c, l, a, r, i, t, y) {
-    c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
-    t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-    y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-  })(window, document, "clarity", "script", PROJECT);
+  function load() {
+    if (window.__clarityLoaded) return;
+    window.__clarityLoaded = true;
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+      t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", PROJECT);
+  }
+
+  /* Nothing loads until consent is given. The event lets a fresh "yes" start
+     recording immediately instead of waiting for the next page load. */
+  var consent;
+  try { consent = localStorage.getItem("hapoel-sings-consent"); } catch (e) { return; }
+
+  if (consent === "granted") load();
+  else if (!consent) window.addEventListener("consent-granted", load);
 })();
