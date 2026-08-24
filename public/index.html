@@ -365,7 +365,7 @@ input{font:inherit}
       </div>
 
       <div class="verdict" id="verdict">
-        <p class="verdict__who">ניחש: <b id="rvWho"></b></p>
+        <p class="verdict__who">ניחש: <b id="rvWho" data-clarity-mask="true"></b></p>
         <div class="verdict__btns">
           <button class="btn btn--green" id="correctBtn">צדק · נקודה +</button>
           <button class="btn btn--red" id="wrongBtn">טעה · נקודה −</button>
@@ -392,7 +392,7 @@ input{font:inherit}
   </div>
 </section>
 
-<div class="toast" id="toast"></div>
+<div class="toast" id="toast" data-clarity-mask="true"></div>
 <div class="ytbox"><div id="yt"></div></div>
 
 <script>
@@ -456,7 +456,7 @@ input{font:inherit}
       <div class="prow">
         <span class="prow__n">${i + 1}</span>
         <label class="prow__n" style="display:none" for="p${i}">שם משתתף ${i + 1}</label>
-        <input id="p${i}" type="text" value="${String(n).replace(/"/g, "&quot;")}"
+        <input id="p${i}" data-clarity-mask="true" type="text" value="${String(n).replace(/"/g, "&quot;")}"
                placeholder="שם המשתתף" maxlength="24" autocomplete="off">
         <button class="prow__x" data-rm="${i}" aria-label="הסרת משתתף ${i + 1}">×</button>
       </div>`).join("");
@@ -760,7 +760,7 @@ input{font:inherit}
     $("buzzGrid").innerHTML = state.players.map((p, i) => `
       <button class="buzzbtn" data-buzz="${i}">
         <span class="buzzbtn__k">${i + 1}</span>
-        <span class="buzzbtn__name">${esc(p.name)}</span>
+        <span class="buzzbtn__name" data-clarity-mask="true">${esc(p.name)}</span>
         <span class="buzzbtn__score">${p.score} נק׳</span>
       </button>`).join("");
     $("buzzGrid").querySelectorAll("[data-buzz]").forEach((b) =>
@@ -772,7 +772,7 @@ input{font:inherit}
     const max = Math.max(...state.players.map((p) => p.score));
     $("scoreList").innerHTML = state.players.map((p) => `
       <span class="chip" data-lead="${p.score === max && max > 0}" data-neg="${p.score < 0}">
-        ${esc(p.name)} <b>${p.score}</b>
+        <span data-clarity-mask="true">${esc(p.name)}</span> <b>${p.score}</b>
       </span>`).join("");
   }
 
@@ -788,7 +788,7 @@ input{font:inherit}
     $("standings").innerHTML = ranked.map((p, i) => `
       <div class="standing" data-first="${i === 0 && p.score === ranked[0].score}">
         <span class="standing__pos">${i + 1}</span>
-        <span class="standing__name">${esc(p.name)}</span>
+        <span class="standing__name" data-clarity-mask="true">${esc(p.name)}</span>
         <span class="standing__pts">${p.score}</span>
       </div>`).join("");
     $("game").classList.add("hide");
@@ -850,6 +850,7 @@ input{font:inherit}
 </script>
 
 <script src="stats.js"></script>
+<script src="clarity.js"></script>
 <script src="site.js"></script>
 <script src="a11y.js"></script>
 </body>
