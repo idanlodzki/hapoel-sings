@@ -84,4 +84,9 @@ footer.site{border-top:1px solid var(--line);background:var(--ink2);padding:26px
 .foot__links{display:flex;gap:8px 18px;flex-wrap:wrap;margin-bottom:14px}
 .foot__links a{color:var(--grey);text-decoration:none}
 .foot__links a:hover{color:var(--red-lite);text-decoration:underline}
+.foot__links .foot__icon{display:inline-flex;align-items:center;color:var(--grey)}
+.foot__links .foot__icon:hover{color:var(--red-lite)}
+.foot__help{margin-bottom:14px;color:var(--white)}
+.foot__help a{color:var(--red-lite);text-decoration:underline;text-underline-offset:3px}
+.foot__help a:hover{color:var(--white)}
 .foot__legal{display:flex;gap:10px 20px;flex-wrap:wrap;align-items:center;justify-content:space-between}
