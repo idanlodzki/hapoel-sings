@@ -11,6 +11,7 @@ NOTE: the legal and accessibility text here is a working draft written to be
 accurate about what this site actually does. It is not legal advice — have it
 reviewed before relying on it.
 """
+import datetime
 import os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -522,6 +523,34 @@ PAGES["privacy.html"] = ("מדיניות פרטיות", "איזה מידע נא�
 """)
 
 
+def write_seo():
+    """robots.txt and sitemap.xml, built from NAV so they cannot drift.
+
+    URLs carry .html to match the canonical tags exactly — a sitemap that
+    lists URLs which redirect is a wasted crawl and a mixed signal."""
+    today = datetime.date.today().isoformat()
+    urls = []
+    for slug, _ in NAV:
+        loc = SITE + "/" + ("" if slug == "index.html" else slug)
+        pri = "1.0" if slug == "index.html" else "0.6"
+        urls.append(
+            f"  <url>\n    <loc>{loc}</loc>\n    <lastmod>{today}</lastmod>\n"
+            f"    <priority>{pri}</priority>\n  </url>"
+        )
+    sitemap = ('<?xml version="1.0" encoding="UTF-8"?>\n'
+               '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+               + "\n".join(urls) + "\n</urlset>\n")
+    open(os.path.join(PUB, "sitemap.xml"), "w", encoding="utf-8").write(sitemap)
+
+    robots = ("User-agent: *\n"
+              "Allow: /\n\n"
+              "# nothing here is private, but these are noise for a crawler\n"
+              "Disallow: /songs.json\n\n"
+              f"Sitemap: {SITE}/sitemap.xml\n")
+    open(os.path.join(PUB, "robots.txt"), "w", encoding="utf-8").write(robots)
+    print("wrote public/sitemap.xml, public/robots.txt")
+
+
 def main():
     open(os.path.join(PUB, "site.css"), "w", encoding="utf-8").write(CSS)
     js = (FOOT_JS
@@ -538,6 +567,7 @@ def main():
         open(os.path.join(PUB, slug), "w", encoding="utf-8").write(shell(slug, title, desc, body))
         print(f"wrote public/{slug}")
     print("wrote public/site.css, public/site.js")
+    write_seo()
 
 
 if __name__ == "__main__":

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# nothing here is private, but these are noise for a crawler
+Disallow: /songs.json
+
+Sitemap: https://hapoel-sings.vercel.app/sitemap.xml
