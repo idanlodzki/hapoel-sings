@@ -1,26 +1,14 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "outputDirectory": "public",
-
-  "//": [
-    "cleanUrls is deliberately OFF. Every internal link, canonical and og:url",
-    "in this site uses .html, so cleanUrls only added a 308 hop in front of",
-    "each one and pointed every canonical at a redirecting URL. It also broke",
-    "Google Search Console verification, which fetches the exact .html path,",
-    "and the footer's current-page marker, which matches on the .html name.",
-    "The redirects below keep the extensionless URLs working for anything",
-    "that already linked to them."
-  ],
   "cleanUrls": false,
   "trailingSlash": false,
-
   "redirects": [
     { "source": "/rules", "destination": "/rules.html", "permanent": true },
     { "source": "/accessibility", "destination": "/accessibility.html", "permanent": true },
     { "source": "/terms", "destination": "/terms.html", "permanent": true },
     { "source": "/privacy", "destination": "/privacy.html", "permanent": true }
   ],
-
   "headers": [
     {
       "source": "/songs.json",
