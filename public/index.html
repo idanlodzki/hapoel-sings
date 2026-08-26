@@ -93,12 +93,14 @@ input{font:inherit}
 
 .nowbox{
   background:var(--ink-2);border:1.5px solid var(--red);border-radius:14px;
-  padding:14px;margin-bottom:18px;
+  padding:22px 16px;margin-bottom:18px;text-align:center;
+  display:flex;flex-direction:column;align-items:center;gap:10px;
 }
-.nowbox__player iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:10px;background:#000;display:block}
-.nowbox h3{font-size:1.25rem;margin:12px 0 4px}
-.nowbox p{color:var(--grey);font-size:.9rem;margin-bottom:10px}
-.nowbox__links{display:flex;gap:8px;flex-wrap:wrap}
+.nowbox h2{font-size:clamp(1.2rem,3.4vw,1.6rem);line-height:1.2;word-break:break-word}
+.nowbox p{color:var(--grey);font-size:.9rem}
+.nowbox__links{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.listen__ctrl{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:4px}
+.listen__ctrl .btn{padding:11px 20px;min-height:46px;font-size:.95rem}
 .nowbox__links a,.songitem__links a{
   display:inline-flex;align-items:center;gap:5px;border:1px solid var(--line);border-radius:8px;
   padding:7px 13px;font-size:.85rem;font-weight:700;color:var(--white);text-decoration:none;white-space:nowrap;
@@ -372,8 +374,9 @@ input{font:inherit}
 </section>
 
 <!-- ============ LISTEN ============ -->
-<!-- Not everyone wants to play. This is the same song list, open: name,
-     the original tune, and the two links out. No scoring, nothing hidden. -->
+<!-- Not everyone wants to play. Same songs, same hidden player, but the
+     title is shown and it just keeps going: one song after another, and a
+     song that ends rolls straight into the next. -->
 <section id="listen" class="hide">
   <div class="topbar">
     <span class="topbar__brand"><img src="logo.svg" alt="" width="26" height="26"> הפועל שרים</span>
@@ -381,20 +384,22 @@ input{font:inherit}
   </div>
 
   <div class="listen__wrap">
-    <h1 class="listen__h">כל השירים</h1>
-    <p class="listen__sub" id="listenCount"></p>
-
-    <div class="nowbox hide" id="nowBox">
-      <div class="nowbox__player" id="nowPlayer"></div>
-      <h3 id="nowName"></h3>
+    <div class="nowbox" id="nowBox">
+      <div class="eq" id="listenEq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <h2 id="nowName" aria-live="polite">טוען…</h2>
       <p id="nowMeta"></p>
       <div class="nowbox__links">
         <a id="nowYt" target="_blank" rel="noopener">▶ ביוטיוב</a>
         <a id="nowWiki" target="_blank" rel="noopener">בוויקיפועל</a>
       </div>
-      <button class="mini" id="nowStop">עצירה</button>
+      <button class="btn btn--red btn--lg hide" id="listenGate">▶ להפעלת השיר</button>
+      <div class="listen__ctrl">
+        <button class="btn btn--ghost" id="listenPause">השהיה</button>
+        <button class="btn btn--ghost" id="listenNext">שיר הבא ⏭</button>
+      </div>
     </div>
 
+    <p class="listen__sub" id="listenCount"></p>
     <label for="listenSearch" class="sr-only">חיפוש שיר</label>
     <input type="search" id="listenSearch" placeholder="חיפוש שיר…" autocomplete="off">
     <div id="listenList"></div>
@@ -473,6 +478,7 @@ input{font:inherit}
 
 <div class="toast" id="toast" data-clarity-mask="true"></div>
 <div class="ytbox"><div id="yt"></div></div>
+<div class="ytbox"><div id="ytListen"></div></div>
 
 <script>
 (function () {
@@ -688,6 +694,7 @@ input{font:inherit}
 
   window.onYouTubeIframeAPIReady = function () {
     apiReady = true;
+    makeListenPlayer();
     player = new YT.Player("yt", {
       height: "180", width: "320",
       // privacy-enhanced host: no Google cookies until a song actually plays
@@ -703,6 +710,27 @@ input{font:inherit}
       },
     });
   };
+  /* Listen mode gets its own instance rather than borrowing the game's.
+     Auto-advance needs onStateChange, and two UIs sharing one player is how
+     you get a song playing under the wrong screen. */
+  let listenPlayer = null, listenPending = null;
+
+  function makeListenPlayer() {
+    listenPlayer = new YT.Player("ytListen", {
+      height: "180", width: "320",
+      host: "https://www.youtube-nocookie.com",
+      playerVars: {
+        autoplay: 0, controls: 0, disablekb: 1, modestbranding: 1,
+        rel: 0, playsinline: 1, iv_load_policy: 3, fs: 0,
+      },
+      events: {
+        onReady: () => { if (listenPending !== null) { radioLoad(listenPending); listenPending = null; } },
+        onError: radioError,
+        onStateChange: radioState,
+      },
+    });
+  }
+
   (function loadApi() {
     const s = document.createElement("script");
     s.src = "https://www.youtube.com/iframe_api";
@@ -915,28 +943,103 @@ input{font:inherit}
   $("againBtn").addEventListener("click", () => location.reload());
 
   /* ---------------- listen mode ----------------
-     Deliberately does NOT use the IFrame API player the game owns. A plain
-     embed avoids two players fighting over one API instance, and here there
-     is nothing to hide — the title is the point. */
-  let listenIdx = null;
+     A radio, not a browser: shuffle everything, play one, and when it ends
+     roll into the next. Same hidden player as the game — the video is not
+     the point — but the title is shown, because there is nothing to guess. */
+  const radio = { queue: [], qi: -1, song: null, vidIdx: 0, dead: new Set() };
+  let radioGateT = null;
+
+  function radioReshuffle() {
+    radio.queue = shuffle([...SONGS.keys()]);
+    radio.qi = -1;
+  }
+
+  function radioLoad(i) {
+    const s = SONGS[i];
+    if (!s) return;
+    radio.song = s;
+    radio.vidIdx = s.y.findIndex((v) => !radio.dead.has(v));
+    if (radio.vidIdx < 0) { radioNext(); return; }
+
+    $("nowName").textContent = s.n;
+    $("nowMeta").textContent = s.c + (s.a ? " · הלחן המקורי: " + s.a : "");
+    $("nowYt").href = "https://www.youtube.com/watch?v=" + s.y[radio.vidIdx];
+    $("nowWiki").href = s.w || "#";
+    $("nowWiki").classList.toggle("hide", !s.w);
+    drawListen();
+
+    if (!listenPlayer || !listenPlayer.loadVideoById) { listenPending = i; return; }
+    listenPlayer.loadVideoById(s.y[radio.vidIdx]);
+    listenPlayer.playVideo();
+    radioArmGate();
+  }
+
+  /* Same autoplay problem the game has: a song that starts outside a click
+     gets blocked, so offer the gesture back instead of sitting silent. */
+  function radioArmGate() {
+    clearTimeout(radioGateT);
+    radioGateT = setTimeout(() => {
+      const st = listenPlayer && listenPlayer.getPlayerState ? listenPlayer.getPlayerState() : -1;
+      if (st !== YT.PlayerState.PLAYING) {
+        $("listenGate").classList.remove("hide");
+        $("listenEq").dataset.paused = "true";
+      }
+    }, 2200);
+  }
+
+  function radioNext() {
+    if (!SONGS.length) return;
+    for (let tries = 0; tries < SONGS.length; tries++) {
+      radio.qi++;
+      if (radio.qi >= radio.queue.length) radioReshuffle(), radio.qi = 0;
+      const s = SONGS[radio.queue[radio.qi]];
+      if (s && s.y.some((v) => !radio.dead.has(v))) { radioLoad(radio.queue[radio.qi]); return; }
+    }
+  }
+
+  function radioJump(i) {
+    const at = radio.queue.indexOf(i);
+    if (at >= 0) radio.qi = at;
+    radioLoad(i);
+    stat("listen-jump");
+  }
+
+  function radioState(e) {
+    if (e.data === YT.PlayerState.ENDED) { radioNext(); return; }   // the whole point
+    const paused = e.data === YT.PlayerState.PAUSED;
+    $("listenEq").dataset.paused = String(paused);
+    $("listenPause").textContent = paused ? "המשך" : "השהיה";
+    if (e.data === YT.PlayerState.PLAYING) {
+      clearTimeout(radioGateT);
+      $("listenGate").classList.add("hide");
+    }
+  }
+
+  function radioError() {
+    const cur = radio.song ? radio.song.y[radio.vidIdx] : null;
+    if (cur) { radio.dead.add(cur); stat("video-error-" + cur); }
+    const alt = radio.song ? radio.song.y.find((v) => !radio.dead.has(v)) : null;
+    if (alt) { radio.vidIdx = radio.song.y.indexOf(alt); listenPlayer.loadVideoById(alt); listenPlayer.playVideo(); return; }
+    radioNext();
+  }
 
   function listenSongs(q) {
     const n = norm(q || "");
-    if (!n) return SONGS.map((s, i) => ({ s, i }));
-    return SONGS.map((s, i) => ({ s, i }))
-      .filter(({ s }) => norm(s.n).includes(n) || norm(s.a || "").includes(n));
+    const all = SONGS.map((s, i) => ({ s, i }));
+    if (!n) return all;
+    return all.filter(({ s }) => norm(s.n).includes(n) || norm(s.a || "").includes(n));
   }
 
   function drawListen() {
     const rows = listenSongs($("listenSearch").value);
-    $("listenCount").textContent =
-      rows.length === SONGS.length
-        ? `${SONGS.length} שירים · לחצו על שיר כדי להאזין`
-        : `${rows.length} מתוך ${SONGS.length} שירים`;
+    const cur = radio.song;
+    $("listenCount").textContent = rows.length === SONGS.length
+      ? `${SONGS.length} שירים · לחצו על שיר כדי לדלג אליו`
+      : `${rows.length} מתוך ${SONGS.length} שירים`;
 
     $("listenList").innerHTML = rows.length
       ? rows.map(({ s, i }) => `
-        <div class="songitem" data-on="${listenIdx === i}">
+        <div class="songitem" data-on="${cur === s}">
           <button class="songitem__play" data-play="${i}" aria-label="השמעת ${esc(s.n)}">▶</button>
           <span class="songitem__txt">
             <span class="songitem__name">${esc(s.n)}</span>
@@ -950,57 +1053,57 @@ input{font:inherit}
       : `<p class="listen__empty">לא נמצא שיר בשם הזה</p>`;
   }
 
-  function listenPlay(i) {
-    const s = SONGS[i];
-    if (!s) return;
-    listenIdx = i;
-    $("nowPlayer").innerHTML =
-      `<iframe src="https://www.youtube-nocookie.com/embed/${esc(s.y[0])}?autoplay=1&rel=0"
-               title="${esc(s.n)}" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
-    $("nowName").textContent = s.n;
-    $("nowMeta").textContent = s.c + (s.a ? " · הלחן המקורי: " + s.a : "");
-    $("nowYt").href = "https://www.youtube.com/watch?v=" + s.y[0];
-    $("nowWiki").href = s.w || "#";
-    $("nowWiki").classList.toggle("hide", !s.w);
-    $("nowBox").classList.remove("hide");
-    $("nowBox").scrollIntoView({ block: "nearest" });
-    stat("listen-play");
-    drawListen();
-  }
-
   function listenStop() {
-    listenIdx = null;
-    $("nowPlayer").innerHTML = "";      // removing the iframe is what stops the audio
-    $("nowBox").classList.add("hide");
-    drawListen();
+    clearTimeout(radioGateT);
+    if (listenPlayer && listenPlayer.stopVideo) listenPlayer.stopVideo();
+    listenPending = null;
   }
 
-  function openListen() {
+  $("listenBtn").addEventListener("click", () => {
     if (player && player.stopVideo) player.stopVideo();   // don't talk over the game
     $("setup").classList.add("hide");
     $("listen").classList.remove("hide");
-    drawListen();
+    radioReshuffle();
+    radioNext();
     stat("listen-open");
-    $("listenSearch").focus();
-  }
+  });
 
-  $("listenBtn").addEventListener("click", openListen);
   $("listenBack").addEventListener("click", () => {
     listenStop();
     $("listen").classList.add("hide");
     $("setup").classList.remove("hide");
     $("listenBtn").focus();
   });
-  $("nowStop").addEventListener("click", listenStop);
-  $("listenSearch").addEventListener("input", drawListen);
-  $("listenList").addEventListener("click", (e) => {
-    const row = e.target.closest("[data-play]") || e.target.closest(".songitem");
-    if (!row || e.target.closest("a")) return;            // let the links be links
-    const btn = row.matches("[data-play]") ? row : row.querySelector("[data-play]");
-    if (btn) listenPlay(Number(btn.dataset.play));
+
+  $("listenNext").addEventListener("click", () => { stat("listen-skip"); radioNext(); });
+
+  $("listenPause").addEventListener("click", () => {
+    if (!listenPlayer || !listenPlayer.getPlayerState) return;
+    const st = listenPlayer.getPlayerState();
+    if (st === YT.PlayerState.PLAYING) listenPlayer.pauseVideo();
+    else listenPlayer.playVideo();
   });
+
+  $("listenGate").addEventListener("click", () => {
+    $("listenGate").classList.add("hide");
+    if (listenPlayer && listenPlayer.playVideo) listenPlayer.playVideo();
+  });
+
+  $("listenSearch").addEventListener("input", drawListen);
+
+  $("listenList").addEventListener("click", (e) => {
+    if (e.target.closest("a")) return;                    // let the links be links
+    const row = e.target.closest(".songitem");
+    const btn = row && row.querySelector("[data-play]");
+    if (btn) radioJump(Number(btn.dataset.play));
+  });
+
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && !$("listen").classList.contains("hide")) $("listenBack").click();
+    if ($("listen").classList.contains("hide")) return;
+    if (e.key === "Escape") $("listenBack").click();
+    if (e.code === "Space" && !/^(INPUT|TEXTAREA)$/.test(e.target.tagName)) {
+      e.preventDefault(); $("listenPause").click();
+    }
   });
 
   // number keys buzz for player 1..9 — quicker than aiming at a button
