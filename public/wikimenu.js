@@ -61,7 +61,11 @@
     ".wm-burger--head{width:38px;height:38px;border:1px solid var(--line,#2C2C34);border-radius:8px;",
     "color:var(--grey,#A8A8B2);margin-inline-end:2px}",
     ".wm-burger--head:hover{color:var(--white,#F6F5F3);border-color:var(--grey,#A8A8B2)}",
-    ".wm-burger--float{position:fixed;top:14px;inset-inline-start:14px;z-index:8900;width:42px;height:42px;",
+    /* bottom inline-end (bottom-left in RTL): the top corners hold the game's
+       logo, round info and back buttons; the opposite bottom corner mirrors
+       the a11y fab and rides the same lift above the consent bar */
+    ".wm-burger--float{position:fixed;bottom:calc(18px + var(--a11y-lift,0px));inset-inline-end:18px;",
+    "z-index:8900;width:42px;height:42px;",
     "background:" + RED + ";border-radius:9px;color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.45)}",
     ".wm-burger--float:hover{filter:brightness(1.1)}",
     ".wm-scrim{position:fixed;inset:0;z-index:9400;background:rgba(0,0,0,.5);opacity:0;",
@@ -84,19 +88,21 @@
     ".wm-drawer ul.wm-group-home{margin:0 0 7px}",   /* out-specify the ul reset */
     /* the home row alone keeps Minerva's tall padding and its icon */
     ".wm-home{display:flex;align-items:center;gap:10px;padding:12px 15px 12px 10px;",
-    "background:" + RED + ";position:relative;font-size:16px;font-weight:400;color:#fff;text-decoration:none}",
+    "background:" + RED + ";position:relative;font-size:16px;font-weight:700;color:#fff;text-decoration:none}",
     ".wm-home svg{flex:none}",
     /* every other row: their 2px 8px, transparent over the red panel */
     ".wm-item,.wm-head{display:block;width:100%;padding:2px 8px;background:" + RED + ";border:0;",
-    ".wm-item,.wm-head,.wm-sub a{position:relative}",
-    "font-size:16px;font-weight:400;color:#fff;text-decoration:none;text-align:start;",
-    "font-family:inherit;cursor:pointer}",
+    "font-size:16px;color:#fff;text-decoration:none;text-align:start;",
+    "font-family:inherit;cursor:pointer;position:relative}",
+    /* their weights, measured: link labels are bold 700, the ▸ headers stay 400 */
+    ".wm-item{font-weight:700}",
+    ".wm-head{font-weight:400}",
     /* white submenu with red text, same tight padding */
     ".wm-sub{display:none;background:#fff}",
     ".wm-sub[data-open='true']{display:block}",
     ".wm-sub li{border-bottom:1px solid " + DIVIDER + "}",
     ".wm-sub li:last-child{border-bottom:0}",
-    ".wm-sub a{display:block;padding:2px 8px;font-size:16px;color:" + RED + ";background:#fff;text-decoration:none}",
+    ".wm-sub a{display:block;padding:2px 8px;font-size:16px;font-weight:700;color:" + RED + ";background:#fff;text-decoration:none;position:relative}",
     ".wm-drawer:focus{outline:none}",
     ".wm-burger:focus-visible,.wm-drawer a:focus-visible,.wm-drawer button:focus-visible{",
     "outline:3px solid #fff;outline-offset:-2px}",
