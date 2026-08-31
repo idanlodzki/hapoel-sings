@@ -279,6 +279,7 @@ def shell(slug, title, desc, body):
 <p class="updated">עודכן לאחרונה: {UPDATED}</p>
 </div></main>
 <script src="stats.js"></script>
+<script src="wikimenu.js"></script>
 <script src="clarity.js"></script>
 <script src="site.js"></script>
 <script src="a11y.js"></script>

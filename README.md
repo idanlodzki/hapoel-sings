@@ -75,6 +75,9 @@ public/            the site Vercel serves
   index.html       the game
   songs.json       the song database — this is the file you edit
   a11y.js          נגישות widget + privacy notice, on every page
+  wikimenu.js      ויקיפועל's mobile (Minerva) drawer menu, added at the
+                   wiki's request when they linked the site — an exact copy
+                   of their drawer, in their styling, on every page
   site.js          shared header/footer, generated — edit build-pages.py instead
 scripts/           add-song, validate, export-db, server (local editor), backup
 research/          how the list was built: scrapers, classifiers, reports
