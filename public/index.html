@@ -396,8 +396,7 @@ a.topbar__brand:hover{color:var(--red)}
      song that ends rolls straight into the next. -->
 <section id="listen" class="hide">
   <div class="topbar">
-    <a class="topbar__brand" href="index.html" title="לתפריט הראשי"><img src="logo.svg" alt="" width="26" height="26"> הפועל שרים</a>
-    <button class="mini" id="listenBack">← חזרה</button>
+    <a class="topbar__brand" href="index.html" title="לתפריט הראשי"><img src="logo.svg" alt="" width="26" height="26"> חזרה להפועל שרים</a>
   </div>
 
   <div class="listen__wrap">
@@ -426,7 +425,7 @@ a.topbar__brand:hover{color:var(--red)}
 <!-- ============ GAME ============ -->
 <section id="game" class="hide">
   <div class="topbar">
-    <a class="topbar__brand" href="index.html" title="לתפריט הראשי"><img src="logo.svg" alt="" width="26" height="26"> הפועל שרים</a>
+    <a class="topbar__brand" href="index.html" title="לתפריט הראשי"><img src="logo.svg" alt="" width="26" height="26"> חזרה להפועל שרים</a>
     <span class="round" id="roundInfo"></span>
   </div>
 
@@ -1094,12 +1093,6 @@ a.topbar__brand:hover{color:var(--red)}
     stat("listen-open");
   });
 
-  $("listenBack").addEventListener("click", () => {
-    listenStop();
-    $("listen").classList.add("hide");
-    $("setup").classList.remove("hide");
-    $("listenBtn").focus();
-  });
 
   $("listenNext").addEventListener("click", () => { stat("listen-skip"); radioNext(); });
 
@@ -1126,7 +1119,7 @@ a.topbar__brand:hover{color:var(--red)}
 
   document.addEventListener("keydown", (e) => {
     if ($("listen").classList.contains("hide")) return;
-    if (e.key === "Escape") $("listenBack").click();
+    if (e.key === "Escape") location.href = "index.html";   // same exit the brand link takes
     if (e.code === "Space" && !/^(INPUT|TEXTAREA)$/.test(e.target.tagName)) {
       e.preventDefault(); $("listenPause").click();
     }
