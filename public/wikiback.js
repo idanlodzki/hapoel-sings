@@ -28,14 +28,13 @@
     "white-space:nowrap;font-family:inherit}",
     ".wb-btn:hover{color:var(--white,#F6F5F3);border-color:var(--grey,#A8A8B2)}",
     ".wb-btn img{width:26px;height:27px;display:block}",
-    /* the fixed copy that covers the setup screen only */
-    ".wb-fixed{position:fixed;top:14px;inset-inline-start:14px;z-index:60;",
-    "background:rgba(22,22,26,.9);backdrop-filter:blur(4px)}",
-    "body:has(#game:not(.hide)) .wb-fixed,body:has(#listen:not(.hide)) .wb-fixed{display:none}",
+    /* on the setup screen the button IS the tagline, centered under the brand */
+    ".wb-tagline{padding:9px 18px;font-size:.95rem}",
     /* inside the game/listen topbars it is a regular first item */
     ".topbar .wb-btn{margin-inline-end:2px}",
-    "@media (max-width:480px){.wb-btn span{display:none}",
-    ".wb-btn{padding:6px 8px}}",   /* phone: logo only, no label */
+    /* phones: corner copies shrink to the logo alone; the tagline one keeps its label */
+    "@media (max-width:480px){.topbar .wb-btn span,header.top .wb-btn span{display:none}",
+    ".topbar .wb-btn,header.top .wb-btn{padding:6px 8px}}",
   ].join("");
   document.head.appendChild(css);
 
@@ -48,9 +47,14 @@
     a.setAttribute("aria-label", "לאתר ויקיפועל");
     a.title = "ויקיפועל";
     a.innerHTML = '<img src="wikipoel-logo.png" alt=""><span>לוויקיפועל</span>';
-    a.addEventListener("click", function () { if (window.stat) stat("wiki-back"); });
     return a;
   }
+
+  /* one delegated counter covers the injected copies and the static
+     tagline button on the setup screen alike */
+  document.addEventListener("click", function (e) {
+    if (e.target.closest(".wb-btn") && window.stat) stat("wiki-back");
+  });
 
   document.addEventListener("DOMContentLoaded", function () {
     var head = document.querySelector("header.top .top__in");
@@ -63,7 +67,5 @@
     document.querySelectorAll(".topbar").forEach(function (bar) {
       bar.insertBefore(makeBtn(), bar.firstChild);
     });
-    // …and a fixed one for the setup screen, which has no topbar
-    document.body.appendChild(makeBtn("wb-fixed"));
   });
 })();
