@@ -217,6 +217,8 @@ input{font:inherit}
   padding:14px clamp(16px,3vw,32px);border-bottom:1px solid var(--line);
 }
 .topbar__brand{display:flex;align-items:center;gap:9px;font-family:var(--f-d);font-weight:900;font-size:1.15rem}
+a.topbar__brand{color:inherit;text-decoration:none}
+a.topbar__brand:hover{color:var(--red)}
 .topbar__brand i{width:26px;height:26px;border-radius:50%;background:var(--red);display:grid;place-items:center;font-size:.85rem;font-style:normal;color:#fff}
 .round{
   margin-inline-start:auto;font-family:var(--f-d);font-weight:700;color:var(--grey);
@@ -382,7 +384,7 @@ input{font:inherit}
      song that ends rolls straight into the next. -->
 <section id="listen" class="hide">
   <div class="topbar">
-    <span class="topbar__brand"><img src="logo.svg" alt="" width="26" height="26"> הפועל שרים</span>
+    <a class="topbar__brand" href="index.html" title="לתפריט הראשי"><img src="logo.svg" alt="" width="26" height="26"> הפועל שרים</a>
     <button class="mini" id="listenBack">← חזרה</button>
   </div>
 
@@ -412,7 +414,7 @@ input{font:inherit}
 <!-- ============ GAME ============ -->
 <section id="game" class="hide">
   <div class="topbar">
-    <span class="topbar__brand"><img src="logo.svg" alt="" width="26" height="26"> הפועל שרים</span>
+    <a class="topbar__brand" href="index.html" title="לתפריט הראשי"><img src="logo.svg" alt="" width="26" height="26"> הפועל שרים</a>
     <span class="round" id="roundInfo"></span>
   </div>
 
@@ -1107,6 +1109,19 @@ input{font:inherit}
     if (e.code === "Space" && !/^(INPUT|TEXTAREA)$/.test(e.target.tagName)) {
       e.preventDefault(); $("listenPause").click();
     }
+  });
+
+  /* the topbar brand is the way back to the main menu. Navigating reloads
+     the page, which is exactly how "משחק חדש" already resets — but a running
+     game deserves a "sure?" first. The listen screen loses nothing, so it
+     goes without asking. */
+  document.querySelectorAll("a.topbar__brand").forEach((a) => {
+    a.addEventListener("click", (e) => {
+      const midGame = !$("game").classList.contains("hide") && state.round > 0;
+      if (midGame && !confirm("לחזור לתפריט הראשי? המשחק הנוכחי יסתיים")) {
+        e.preventDefault();
+      }
+    });
   });
 
   // number keys buzz for player 1..9 — quicker than aiming at a button
