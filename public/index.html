@@ -130,6 +130,18 @@ input{font:inherit}
   .songitem__links{width:100%;padding-inline-start:52px}
 }
 
+/* ---------- leave-game dialog ---------- */
+dialog.ask{
+  margin:auto;   /* the global *{margin:0} reset kills the UA centering */
+  background:var(--ink-2);color:var(--white);border:1.5px solid var(--line);
+  border-radius:16px;padding:26px 24px;max-width:340px;width:calc(100vw - 48px);
+  text-align:center;font-family:var(--f-b);
+}
+dialog.ask::backdrop{background:rgba(0,0,0,.65)}
+dialog.ask h2{font-size:1.3rem;margin-bottom:8px}
+dialog.ask p{color:var(--grey);font-size:.95rem;margin-bottom:20px}
+dialog.ask .ask__row{display:flex;flex-direction:column;gap:10px}
+
 /* ---------- setup ---------- */
 #setup{min-height:100dvh;display:grid;place-items:center;padding:24px}
 .setup-card{width:100%;max-width:560px;text-align:center}
@@ -217,6 +229,8 @@ input{font:inherit}
   padding:14px clamp(16px,3vw,32px);border-bottom:1px solid var(--line);
 }
 .topbar__brand{display:flex;align-items:center;gap:9px;font-family:var(--f-d);font-weight:900;font-size:1.15rem}
+a.topbar__brand{color:inherit;text-decoration:none}
+a.topbar__brand:hover{color:var(--red)}
 .topbar__brand i{width:26px;height:26px;border-radius:50%;background:var(--red);display:grid;place-items:center;font-size:.85rem;font-style:normal;color:#fff}
 .round{
   margin-inline-start:auto;font-family:var(--f-d);font-weight:700;color:var(--grey);
@@ -339,7 +353,10 @@ input{font:inherit}
       <img class="brand__mark" src="logo.svg" alt="" width="52" height="52">
       <h1>הפועל שרים</h1>
     </div>
-    <p class="tagline">וכולם שרים עכשיו</p>
+    <p class="tagline tagline--wb">
+      <a class="wb-btn wb-tagline" href="https://wiki.red-fans.com/" target="_blank" rel="noopener"
+         title="ויקיפועל"><img src="wikipoel-logo.png" alt=""><span>חזרה לוויקיפועל</span></a>
+    </p>
 
     <div class="plist" id="plist"></div>
 
@@ -379,8 +396,7 @@ input{font:inherit}
      song that ends rolls straight into the next. -->
 <section id="listen" class="hide">
   <div class="topbar">
-    <span class="topbar__brand"><img src="logo.svg" alt="" width="26" height="26"> הפועל שרים</span>
-    <button class="mini" id="listenBack">← חזרה</button>
+    <a class="topbar__brand" href="index.html" title="לתפריט הראשי"><img src="logo.svg" alt="" width="26" height="26"> חזרה להפועל שרים</a>
   </div>
 
   <div class="listen__wrap">
@@ -409,7 +425,7 @@ input{font:inherit}
 <!-- ============ GAME ============ -->
 <section id="game" class="hide">
   <div class="topbar">
-    <span class="topbar__brand"><img src="logo.svg" alt="" width="26" height="26"> הפועל שרים</span>
+    <a class="topbar__brand" href="index.html" title="לתפריט הראשי"><img src="logo.svg" alt="" width="26" height="26"> חזרה להפועל שרים</a>
     <span class="round" id="roundInfo"></span>
   </div>
 
@@ -477,6 +493,15 @@ input{font:inherit}
 </section>
 
 <div class="toast" id="toast" data-clarity-mask="true"></div>
+
+<dialog class="ask" id="leaveAsk" aria-labelledby="leaveAskTitle">
+  <h2 id="leaveAskTitle">רגע, עוזבים באמצע?</h2>
+  <p>המשחק הנוכחי יסתיים והניקוד יימחק.</p>
+  <div class="ask__row">
+    <button class="btn btn--red" id="leaveYes">כן, לתפריט הראשי</button>
+    <button class="btn btn--ghost" id="leaveNo">להמשיך לשחק</button>
+  </div>
+</dialog>
 <div class="ytbox"><div id="yt"></div></div>
 <div class="ytbox"><div id="ytListen"></div></div>
 
@@ -1068,12 +1093,6 @@ input{font:inherit}
     stat("listen-open");
   });
 
-  $("listenBack").addEventListener("click", () => {
-    listenStop();
-    $("listen").classList.add("hide");
-    $("setup").classList.remove("hide");
-    $("listenBtn").focus();
-  });
 
   $("listenNext").addEventListener("click", () => { stat("listen-skip"); radioNext(); });
 
@@ -1100,10 +1119,34 @@ input{font:inherit}
 
   document.addEventListener("keydown", (e) => {
     if ($("listen").classList.contains("hide")) return;
-    if (e.key === "Escape") $("listenBack").click();
+    if (e.key === "Escape") location.href = "index.html";   // same exit the brand link takes
     if (e.code === "Space" && !/^(INPUT|TEXTAREA)$/.test(e.target.tagName)) {
       e.preventDefault(); $("listenPause").click();
     }
+  });
+
+  /* the topbar brand is the way back to the main menu. Navigating reloads
+     the page, which is exactly how "משחק חדש" already resets — but a running
+     game deserves a "sure?" first, in the site's own voice rather than the
+     browser's system dialog. <dialog> gives Escape and focus handling free.
+     The listen screen loses nothing, so it goes without asking. */
+  document.querySelectorAll("a.topbar__brand").forEach((a) => {
+    a.addEventListener("click", (e) => {
+      const midGame = !$("game").classList.contains("hide") && state.round > 0;
+      if (!midGame) return;                      // listen / end screens: just go
+      e.preventDefault();
+      if (player && player.pauseVideo) player.pauseVideo();   // hush while asking
+      $("leaveAsk").showModal();
+    });
+  });
+  $("leaveYes").addEventListener("click", () => { location.href = "index.html"; });
+  $("leaveNo").addEventListener("click", () => {
+    $("leaveAsk").close();
+    if (player && player.playVideo) player.playVideo();       // resume the song
+  });
+  // Escape closes the dialog natively; treat it like "stay" and resume
+  $("leaveAsk").addEventListener("cancel", () => {
+    if (player && player.playVideo) player.playVideo();
   });
 
   // number keys buzz for player 1..9 — quicker than aiming at a button
@@ -1121,6 +1164,7 @@ input{font:inherit}
 </script>
 
 <script src="stats.js"></script>
+<script src="wikiback.js"></script>
 <script src="clarity.js"></script>
 <script src="site.js"></script>
 <script src="a11y.js"></script>
