@@ -614,7 +614,8 @@ input{font:inherit}
 
      Sport and seasons come from the wiki's own roster category tags, baked
      into songs.json — see scripts/enrich-songs.py. */
-  const CAT_DEFAULT = { terrace: true, football: true, basketball: false, other: false };
+  const CAT_DEFAULT = { terrace: true, football: true, basketball: false, other: false, veterans: false };
+  const VET_BEFORE = 2000;   // players who left before this are their own group
   const SEASON_DEFAULT = ["2025/26", "2026/27"];
   const yr = (s) => parseInt(String(s).slice(0, 4), 10);
   let cats, allSeasons, seasonSel;
@@ -641,8 +642,19 @@ input{font:inherit}
     } catch {}
   };
 
+  /* Seasons offered in the picker start at VET_BEFORE — everything older is
+     covered by the ותיקים chip, so the two never overlap or contradict. */
   const allSeasonsList = () => [...new Set(SONGS.flatMap((s) => s.seasons || []))]
+    .filter((s) => yr(s) >= VET_BEFORE)
     .sort((a, b) => yr(a) - yr(b));
+
+  const lastSeason = (s) => {
+    const ss = s.seasons || [];
+    return ss.length ? Math.max(...ss.map(yr)) : null;
+  };
+  /* "veteran" = last season at the club predates VET_BEFORE */
+  const isVeteran = (s) =>
+    s.c === "שירי שחקנים" && lastSeason(s) !== null && lastSeason(s) < VET_BEFORE;
 
   /* a player counts if ANY season he was on the squad is one of the picked ones */
   function inWindow(s) {
@@ -653,6 +665,8 @@ input{font:inherit}
   function inCats(s) {
     if (s.c === "שירים מהיציע") return cats.terrace;
     if (s.c === "שירי שחקנים") {
+      // one bucket for the old-timers: the season picker does not apply to them
+      if (isVeteran(s)) return cats.veterans;
       if (!inWindow(s)) return false;
       if (s.sport === "כדורסל") return cats.basketball;
       return cats.football;   // כדורגל, and the odd player the wiki has no page for
@@ -665,6 +679,8 @@ input{font:inherit}
       if (key === "terrace") return s.c === "שירים מהיציע";
       if (key === "other") return s.c === "שירים";
       if (s.c !== "שירי שחקנים") return false;
+      if (key === "veterans") return isVeteran(s);
+      if (isVeteran(s)) return false;          // counted under ותיקים, not here
       if (!inWindow(s)) return false;
       return key === "basketball" ? s.sport === "כדורסל" : s.sport !== "כדורסל";
     }).length;
@@ -675,12 +691,13 @@ input{font:inherit}
       '<button type="button" class="cat" data-cat="terrace">יציע <span class="cat__n"></span></button>' +
       '<button type="button" class="cat" data-cat="football">כדורגל <span class="cat__n"></span></button>' +
       '<button type="button" class="cat" data-cat="basketball">כדורסל <span class="cat__n"></span></button>' +
+      '<button type="button" class="cat" data-cat="veterans" title="שחקנים שסיימו לפני 2000">ותיקים <span class="cat__n"></span></button>' +
       '<button type="button" class="cat" data-cat="other">אחר <span class="cat__n"></span></button>' +
     '</div>' +
     '<label class="cats__squad"><input type="checkbox" data-allseasons>' +
       '<span>כל העונות<small>אחרת — רק העונות שסומנו למטה</small></span></label>' +
     '<div class="cats__seasons">' +
-      '<div class="cats__seasons-head"><span>עונות</span>' +
+      '<div class="cats__seasons-head"><span>עונות (מ-2000)</span>' +
         '<button type="button" class="mini" data-seasons="recent">3 האחרונות</button>' +
         '<button type="button" class="mini" data-seasons="all">סמן הכל</button>' +
         '<button type="button" class="mini" data-seasons="none">נקה</button>' +
@@ -693,6 +710,7 @@ input{font:inherit}
       '<button type="button" class="mini" data-preset="terrace">רק יציע</button>' +
       '<button type="button" class="mini" data-preset="football">רק כדורגל</button>' +
       '<button type="button" class="mini" data-preset="basketball">רק כדורסל</button>' +
+      '<button type="button" class="mini" data-preset="veterans">רק ותיקים</button>' +
     '</div>';
 
   function renderCats() {
@@ -765,10 +783,11 @@ input{font:inherit}
       cats = { ...CAT_DEFAULT }; allSeasons = false;
       seasonSel = new Set(SEASON_DEFAULT);
     } else if (p === "all") {
-      cats = { terrace: true, football: true, basketball: true, other: true }; allSeasons = true;
-    } else if (p === "terrace") { cats = { terrace: true, football: false, basketball: false, other: false }; }
-    else if (p === "football") { cats = { terrace: false, football: true, basketball: false, other: false }; }
-    else if (p === "basketball") { cats = { terrace: false, football: false, basketball: true, other: false }; }
+      cats = { terrace: true, football: true, basketball: true, other: true, veterans: true }; allSeasons = true;
+    } else if (p === "terrace") { cats = { terrace: true, football: false, basketball: false, other: false, veterans: false }; }
+    else if (p === "football") { cats = { terrace: false, football: true, basketball: false, other: false, veterans: false }; }
+    else if (p === "basketball") { cats = { terrace: false, football: false, basketball: true, other: false, veterans: false }; }
+    else if (p === "veterans") { cats = { terrace: false, football: false, basketball: false, other: false, veterans: true }; }
     afterCatChange();
   });
 

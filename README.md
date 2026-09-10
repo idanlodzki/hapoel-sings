@@ -41,12 +41,15 @@ songs plus current-squad footballers**, 108 of the 383.
 
 Expanding it reveals the controls:
 
-- chips for **יציע / כדורגל / כדורסל / אחר**, each with a live count
-- a **season picker** — all 46 seasons in the data (1976/77 to 2026/27) as
-  individually selectable chips, newest first, so a night can be scoped to
-  any set of years rather than a single unbroken span. Shortcuts for
-  *3 האחרונות / סמן הכל / נקה*, and *כל העונות* to ignore seasons entirely
-- presets: ברירת מחדל / הכל / רק יציע / רק כדורגל / רק כדורסל
+- chips for **יציע / כדורגל / כדורסל / ותיקים / אחר**, each with a live count.
+  **ותיקים** is every player whose last season at the club predates 2000 —
+  one bucket instead of two dozen season chips
+- a **season picker** — every season from 2000/01 onward as individually
+  selectable chips, newest first, so a night can be scoped to any set of
+  years rather than a single unbroken span. Shortcuts for
+  *3 האחרונות / סמן הכל / נקה*, and *כל העונות* to ignore seasons entirely.
+  Anything older lives in **ותיקים**, so the chip and the grid never overlap
+- presets: ברירת מחדל / הכל / רק יציע / רק כדורגל / רק כדורסל / רק ותיקים
 
 A player matches if **any** season he was on the squad is among the picked
 ones, so someone with two spells at the club shows up for both.
