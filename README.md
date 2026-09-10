@@ -38,7 +38,7 @@ The setup screen (and the listen screen) carry a category filter above the
 per-song picker: **יציע / כדורגל / כדורסל / אחר**, plus a *רק שחקנים מהסגל
 הנוכחי* toggle scoped to seasons 2025/26 and 2026/27, and one-tap presets.
 The default — the state a first-time visitor gets — is **terrace songs plus
-current-squad footballers**, 102 of the 135.
+current-squad footballers**, 108 of the 383.
 
 Both screens share one filter state (`hapoel-sings-cats` in localStorage), so
 the game and listen mode can never disagree about what is in play.
@@ -114,7 +114,7 @@ the curation work — if you ever edit it, re-export with
 Scraped from [ויקיפועל](https://wiki.red-fans.com) — every page under
 `קטגוריה:שירים` and its subcategories — then filtered down by hand.
 
-For 131 of the 143, the link is the **original tune** the terrace chant was
+For most of the terrace songs the link is the **original tune** the terrace chant was
 built on, not a crowd recording. Those were found by reading the wiki's
 `|שיר מקורי=` and `|מנגינה=` infobox fields, and where the wiki only named a
 tune, by searching YouTube and accepting a match only when the video title

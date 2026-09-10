@@ -1,5 +1,5 @@
 {
- "count": 135,
+ "count": 383,
  "songs": [
   {
    "name": "16 מלאו לנער-ביברס נאתכו",
@@ -138,6 +138,119 @@
    "player": "סלים טועמה"
   },
   {
+   "name": "אבי אזולאי",
+   "category": "שירי שחקנים",
+   "artist": "מאמי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אבי_אזולאי",
+   "youtube": [
+    "jX6m7GUn61k"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1992/93",
+    "1994/95",
+    "1995/96",
+    "1996/97",
+    "1997/98",
+    "1998/99"
+   ],
+   "player": "אבי אזולאי"
+  },
+  {
+   "name": "אבי סופר",
+   "category": "שירי שחקנים",
+   "artist": "בום פם (אריס סאן)",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אבי_סופר",
+   "youtube": [
+    "TzWhBms_oG0"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2004/05"
+   ],
+   "player": "אבי סופר"
+  },
+  {
+   "name": "אבי תקווה",
+   "category": "שירי שחקנים",
+   "artist": "רוזה - יהורם גאון",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אבי_תקווה",
+   "youtube": [
+    "hG3KX-dzCbY"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2000/01"
+   ],
+   "player": "אבי תקווה"
+  },
+  {
+   "name": "אביב וולנרמן",
+   "category": "שירי שחקנים",
+   "artist": "קלינקה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אביב_וולנרמן",
+   "youtube": [
+    "xS6ytAPVEHA"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1998/99",
+    "1999/00",
+    "2000/01"
+   ],
+   "player": "אביב וולנרמן"
+  },
+  {
+   "name": "אביב סלם",
+   "category": "שירי שחקנים",
+   "artist": "לכי תספרי לכולם",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אביב_סלם",
+   "youtube": [
+    "PpFx8W6Bnu0"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2023/24"
+   ],
+   "player": "אביב סלם"
+  },
+  {
+   "name": "אבירם זליקוביץ'",
+   "category": "שירי שחקנים",
+   "artist": "יום שישי את יודעת",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אבירם_זליקוביץ'",
+   "youtube": [
+    "hC-2elRW4RE"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2011/12"
+   ],
+   "player": "אבירם זליקוביץ'"
+  },
+  {
+   "name": "אברהם צ'קול",
+   "category": "שירי שחקנים",
+   "artist": "הפרויקט של עידן רייכל - בואי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אברהם_צ'קול",
+   "youtube": [
+    "_uJLsc05ZE4"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2013/14",
+    "2014/15"
+   ],
+   "player": "אברהם צ'קול"
+  },
+  {
    "name": "אגדת השמש והירח - וינסנט אניימה",
    "category": "שירי שחקנים",
    "artist": null,
@@ -169,6 +282,89 @@
    "seasons": []
   },
   {
+   "name": "אדי אלקיים",
+   "category": "שירי שחקנים",
+   "artist": "אה או (של גזוז)",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אדי_אלקיים",
+   "youtube": [
+    "MS-6ayuU_bI"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1998/99",
+    "1999/00",
+    "2000/01"
+   ],
+   "player": "אדי אלקיים"
+  },
+  {
+   "name": "אדי גוטליב",
+   "category": "שירי שחקנים",
+   "artist": "שיר לשלום של להקת הנח\"ל",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אדי_גוטליב",
+   "youtube": [
+    "d4JyiXsta10"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2015/16",
+    "2016/17",
+    "2017/18",
+    "2018/19",
+    "2020/21",
+    "2021/22",
+    "2022/23"
+   ],
+   "player": "אדי גוטליב"
+  },
+  {
+   "name": "אדם אריאל",
+   "category": "שירי שחקנים",
+   "artist": "איזו מדינה/אלי לוזון",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אדם_אריאל",
+   "youtube": [
+    "PT9hEKCMz_w"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2022/23"
+   ],
+   "player": "אדם אריאל"
+  },
+  {
+   "name": "אדריאן יוטר",
+   "category": "שירי שחקנים",
+   "artist": "Buffalo Soldier",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אדריאן_יוטר",
+   "youtube": [
+    "uMUQMSXLlHM"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2010/11"
+   ],
+   "player": "אדריאן יוטר"
+  },
+  {
+   "name": "אהוד כחילה",
+   "category": "שירי שחקנים",
+   "artist": "משיח משיח משיח",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אהוד_כחילה",
+   "youtube": [
+    "irMzxijZuE0"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1998/99"
+   ],
+   "player": "אהוד כחילה"
+  },
+  {
    "name": "אוהב אותך אני שלך",
    "category": "שירים מהיציע",
    "artist": null,
@@ -181,6 +377,21 @@
    "seasons": []
   },
   {
+   "name": "אולוביו אדפמי",
+   "category": "שירי שחקנים",
+   "artist": "Don't you want me",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אולוביו_אדפמי",
+   "youtube": [
+    "uPudE8nDog0"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2005/06"
+   ],
+   "player": "אולוביו אדפמי"
+  },
+  {
    "name": "אומרים לי שזה רק כדורגל",
    "category": "שירים מהיציע",
    "artist": null,
@@ -191,6 +402,53 @@
    "original": true,
    "sport": null,
    "seasons": []
+  },
+  {
+   "name": "אופיר פוקס",
+   "category": "שירי שחקנים",
+   "artist": "La copa de la vida",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אופיר_פוקס",
+   "youtube": [
+    "tF_ggG5dY5U"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2007/08",
+    "2008/09"
+   ],
+   "player": "אופיר פוקס"
+  },
+  {
+   "name": "אור איתן",
+   "category": "שירי שחקנים",
+   "artist": "באנו חושך לגרש",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אור_איתן",
+   "youtube": [
+    "6vClC6bQG48"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2003/04",
+    "2004/05"
+   ],
+   "player": "אור איתן"
+  },
+  {
+   "name": "אור בלוריאן",
+   "category": "שירי שחקנים",
+   "artist": "I'm Blue-Eiffel 65",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אור_בלוריאן",
+   "youtube": [
+    "BinWA0EenDY"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2023/24"
+   ],
+   "player": "אור בלוריאן"
   },
   {
    "name": "אור ישראלוב",
@@ -211,6 +469,21 @@
     "2026/27"
    ],
    "player": "אור ישראלוב"
+  },
+  {
+   "name": "אורי קרגולה",
+   "category": "שירי שחקנים",
+   "artist": "In the army now",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אורי_קרגולה",
+   "youtube": [
+    "y1kHrTTtAqM"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2003/04"
+   ],
+   "player": "אורי קרגולה"
   },
   {
    "name": "אותך אני אוהב",
@@ -237,6 +510,165 @@
    "seasons": []
   },
   {
+   "name": "איאד אבו עביד",
+   "category": "שירי שחקנים",
+   "artist": "מברוק עליק-ג'ורג' בר",
+   "wiki": "https://wiki.red-fans.com/index.php?title=איאד_אבו_עביד",
+   "youtube": [
+    "DRSXzxAKVQ8"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2015/16",
+    "2019/20",
+    "2020/21"
+   ],
+   "player": "איאד אבו עביד"
+  },
+  {
+   "name": "איאד חוט'בא",
+   "category": "שירי שחקנים",
+   "artist": "לחיים - כנר על הגג",
+   "wiki": "https://wiki.red-fans.com/index.php?title=איאד_חוט'בא",
+   "youtube": [
+    "cXBptXt12Pg"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2011/12",
+    "2012/13"
+   ],
+   "player": "איאד חוט'בא"
+  },
+  {
+   "name": "איבזיטו אוגבונה",
+   "category": "שירי שחקנים",
+   "artist": "Banana Boat Song",
+   "wiki": "https://wiki.red-fans.com/index.php?title=איבזיטו_אוגבונה",
+   "youtube": [
+    "YO7M0Hx_1D8"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2003/04",
+    "2004/05",
+    "2005/06",
+    "2006/07"
+   ],
+   "player": "איבזיטו אוגבונה"
+  },
+  {
+   "name": "איהאב גנאים",
+   "category": "שירי שחקנים",
+   "artist": null,
+   "wiki": "https://wiki.red-fans.com/index.php?title=איהאב_גנאים",
+   "youtube": [
+    "-OVI5QiXM78"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2023/24"
+   ],
+   "player": "איהאב גנאים"
+  },
+  {
+   "name": "איוון יוליץ'",
+   "category": "שירי שחקנים",
+   "artist": "קופה קבאנה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=איוון_יוליץ'",
+   "youtube": [
+    "3QWRtg1D8RE"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2006/07"
+   ],
+   "player": "איוון יוליץ'"
+  },
+  {
+   "name": "אייזאה אייזנדורף",
+   "category": "שירי שחקנים",
+   "artist": "מענטזת – ג'קי מקייטן",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אייזאה_אייזנדורף",
+   "youtube": [
+    "idq88dSy2t8"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2019/20"
+   ],
+   "player": "אייזאה אייזנדורף"
+  },
+  {
+   "name": "אייל הראל",
+   "category": "שירי שחקנים",
+   "artist": "ילדה רעה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אייל_הראל",
+   "youtube": [
+    "b2tiC0RQQbk"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2022/23",
+    "2023/24"
+   ],
+   "player": "אייל הראל"
+  },
+  {
+   "name": "אילונגו אנגסניה",
+   "category": "שירי שחקנים",
+   "artist": "סאלאם - להקת שבע",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אילונגו_אנגסניה",
+   "youtube": [
+    "i4HViPVymlo"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2004/05"
+   ],
+   "player": "אילונגו אנגסניה"
+  },
+  {
+   "name": "אילי דולינסקי",
+   "category": "שירי שחקנים",
+   "artist": "עומד על צוק היי פייב",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אילי_דולינסקי",
+   "youtube": [
+    "v5ssR7XtD9I"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2022/23"
+   ],
+   "player": "אילי דולינסקי"
+  },
+  {
+   "name": "אילן בכר",
+   "category": "שירי שחקנים",
+   "artist": "תותים - אתניקס",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אילן_בכר",
+   "youtube": [
+    "BXfbSYpGHi0"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1999/00",
+    "2000/01",
+    "2001/02"
+   ],
+   "player": "אילן בכר"
+  },
+  {
    "name": "אין לי גרוש ועדיין בא",
    "category": "שירים מהיציע",
    "artist": null,
@@ -249,6 +681,53 @@
    "seasons": []
   },
   {
+   "name": "איסומעילה לינגאנה",
+   "category": "שירי שחקנים",
+   "artist": "גידי גוב - יש אי שם",
+   "wiki": "https://wiki.red-fans.com/index.php?title=איסומעילה_לינגאנה",
+   "youtube": [
+    "WNY_byDI6Kg"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2015/16"
+   ],
+   "player": "איסומעילה לינגאנה"
+  },
+  {
+   "name": "אישטוואן פישונט",
+   "category": "שירי שחקנים",
+   "artist": "תני לי- חיים משה ולידור יוספי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אישטוואן_פישונט",
+   "youtube": [
+    "ZwM70xwJChc"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1999/00",
+    "2000/01",
+    "2001/02"
+   ],
+   "player": "אישטוואן פישונט"
+  },
+  {
+   "name": "איתי אלקסלסי",
+   "category": "שירי שחקנים",
+   "artist": "In The Navy",
+   "wiki": "https://wiki.red-fans.com/index.php?title=איתי_אלקסלסי",
+   "youtube": [
+    "TKc8yiq8NLo"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2007/08"
+   ],
+   "player": "איתי אלקסלסי"
+  },
+  {
    "name": "איתך עד המוות גם אם אשתגע",
    "category": "שירים מהיציע",
    "artist": null,
@@ -259,6 +738,21 @@
    "original": true,
    "sport": null,
    "seasons": []
+  },
+  {
+   "name": "איתמר שבירו",
+   "category": "שירי שחקנים",
+   "artist": "דיווה/דנה אינטרנשיונל",
+   "wiki": "https://wiki.red-fans.com/index.php?title=איתמר_שבירו",
+   "youtube": [
+    "pdZi84F-Fsk"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2024/25"
+   ],
+   "player": "איתמר שבירו"
   },
   {
    "name": "אל-ים קנצפולסקי",
@@ -282,6 +776,84 @@
    "player": "אל-ים קנצפולסקי"
   },
   {
+   "name": "אלון אברמוביץ'",
+   "category": "שירי שחקנים",
+   "artist": "היום יום הולדת",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אלון_אברמוביץ'",
+   "youtube": [
+    "cm0QEnSh9JU"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2011/12"
+   ],
+   "player": "אלון אברמוביץ'"
+  },
+  {
+   "name": "אלון אזוגי",
+   "category": "שירי שחקנים",
+   "artist": "אבניבי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אלון_אזוגי",
+   "youtube": [
+    "WOG8z8ePfe0"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2021/22",
+    "2023/24"
+   ],
+   "player": "אלון אזוגי"
+  },
+  {
+   "name": "אלון חזן",
+   "category": "שירי שחקנים",
+   "artist": "הלו הלו",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אלון_חזן",
+   "youtube": [
+    "FxVkkJbSCNI"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1996/97"
+   ],
+   "player": "אלון חזן"
+  },
+  {
+   "name": "אלון חלפון",
+   "category": "שירי שחקנים",
+   "artist": "דו רה מי (\"דו הוא דוב\")",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אלון_חלפון",
+   "youtube": [
+    "PeHQ55EwnAo"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2002/03",
+    "2003/04"
+   ],
+   "player": "אלון חלפון"
+  },
+  {
+   "name": "אלייז'ה בראיינט",
+   "category": "שירי שחקנים",
+   "artist": "האחיות פיק - השיר הזה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אלייז'ה_בראיינט",
+   "youtube": [
+    "ErklElxgoNU"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "אלייז'ה בראיינט"
+  },
+  {
    "name": "אליניב ברדה",
    "category": "שירי שחקנים",
    "artist": null,
@@ -296,6 +868,52 @@
     "2006/07"
    ],
    "player": "אליניב ברדה"
+  },
+  {
+   "name": "אלישי כדיר",
+   "category": "שירי שחקנים",
+   "artist": "לא נפסיק לשיר – יהורם גאון",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אלישי_כדיר",
+   "youtube": [
+    "wheK8Kpa2lU"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2019/20"
+   ],
+   "player": "אלישי כדיר"
+  },
+  {
+   "name": "אלן אוז'בולט",
+   "category": "שירי שחקנים",
+   "artist": "ברוש/אריאל זילבר",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אלן_אוז'בולט",
+   "youtube": [
+    "mPJm3xpfxnU"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2022/23",
+    "2023/24"
+   ],
+   "player": "אלן אוז'בולט"
+  },
+  {
+   "name": "אלעד אליהו",
+   "category": "שירי שחקנים",
+   "artist": "Money\" של אבבא",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אלעד_אליהו",
+   "youtube": [
+    "WCkOmcIl79s"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2010/11"
+   ],
+   "player": "אלעד אליהו"
   },
   {
    "name": "אמרו לו",
@@ -431,6 +1049,21 @@
    "player": "איליה יבוריאן"
   },
   {
+   "name": "אנריקה ג'וקו",
+   "category": "שירי שחקנים",
+   "artist": null,
+   "wiki": "https://wiki.red-fans.com/index.php?title=אנריקה_ג'וקו",
+   "youtube": [
+    "dp1bPHsyaN4"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2024/25"
+   ],
+   "player": "אנריקה ג'וקו"
+  },
+  {
    "name": "אנשים רק מדברים",
    "category": "שירים מהיציע",
    "artist": null,
@@ -441,6 +1074,56 @@
    "original": true,
    "sport": null,
    "seasons": []
+  },
+  {
+   "name": "אנתוני גודס",
+   "category": "שירי שחקנים",
+   "artist": "נמס ממך / עומר אדם",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אנתוני_גודס",
+   "youtube": [
+    "TX5x_JCnAvA"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2012/13"
+   ],
+   "player": "אנתוני גודס"
+  },
+  {
+   "name": "אסי דומב",
+   "category": "שירי שחקנים",
+   "artist": "חנהל'ה התבלבלה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אסי_דומב",
+   "youtube": [
+    "lQ2IjYEbw9U"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1997/98",
+    "2000/01",
+    "2001/02",
+    "2002/03",
+    "2004/05",
+    "2005/06"
+   ],
+   "player": "אסי דומב"
+  },
+  {
+   "name": "אסי טובי",
+   "category": "שירי שחקנים",
+   "artist": "נעימת התוכנית \"אגן הים התיכון\" רשת ג",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אסי_טובי",
+   "youtube": [
+    "fzRiAQeG1yg"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1998/99"
+   ],
+   "player": "אסי טובי"
   },
   {
    "name": "אסף צור",
@@ -478,6 +1161,95 @@
    "player": "דני בונדר"
   },
   {
+   "name": "אפואלה אדל",
+   "category": "שירי שחקנים",
+   "artist": "הופה היי - יגאל בשן",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אפואלה_אדל",
+   "youtube": [
+    "xsj07hPV9Cg"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2011/12",
+    "2012/13",
+    "2014/15"
+   ],
+   "player": "אפואלה אדל"
+  },
+  {
+   "name": "ארז זייצ'יק",
+   "category": "שירי שחקנים",
+   "artist": "אהבתיה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ארז_זייצ'יק",
+   "youtube": [
+    "19qoWmBJVRc"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2007/08",
+    "2008/09"
+   ],
+   "player": "ארז זייצ'יק"
+  },
+  {
+   "name": "אריאל הרוש",
+   "category": "שירי שחקנים",
+   "artist": "עוברת מולי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אריאל_הרוש",
+   "youtube": [
+    "-Z26uQ5Aeko"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2015/16",
+    "2016/17"
+   ],
+   "player": "אריאל הרוש"
+  },
+  {
+   "name": "אריק ינקו",
+   "category": "שירי שחקנים",
+   "artist": "No Limits - 2 Unlimited",
+   "wiki": "https://wiki.red-fans.com/index.php?title=אריק_ינקו",
+   "youtube": [
+    "GDD_gIhjh30"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2008/09",
+    "2009/10",
+    "2010/11",
+    "2017/18",
+    "2018/19",
+    "2019/20"
+   ],
+   "player": "אריק ינקו"
+  },
+  {
+   "name": "ארתור אטצזיאנוב",
+   "category": "שירי שחקנים",
+   "artist": "כוורת - נתתי לה חיי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ארתור_אטצזיאנוב",
+   "youtube": [
+    "orkXG-xXO-k"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2008/09",
+    "2009/10",
+    "2010/11",
+    "2011/12",
+    "2012/13",
+    "2013/14"
+   ],
+   "player": "ארתור אטצזיאנוב"
+  },
+  {
    "name": "את זאת שאהבתי",
    "category": "שירים מהיציע",
    "artist": null,
@@ -502,6 +1274,39 @@
    "seasons": []
   },
   {
+   "name": "בויאן ורוצ'ינה",
+   "category": "שירי שחקנים",
+   "artist": "אייל גולן-ג'ונגל",
+   "wiki": "https://wiki.red-fans.com/index.php?title=בויאן_ורוצ'ינה",
+   "youtube": [
+    "HVfj-yGl6aA"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2009/10"
+   ],
+   "player": "בויאן ורוצ'ינה"
+  },
+  {
+   "name": "בוריס קליימן",
+   "category": "שירי שחקנים",
+   "artist": "לטיול יצאנו - יפה ירקוני",
+   "wiki": "https://wiki.red-fans.com/index.php?title=בוריס_קליימן",
+   "youtube": [
+    "Fv53p-MoOio"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2009/10",
+    "2011/12",
+    "2012/13",
+    "2013/14"
+   ],
+   "player": "בוריס קליימן"
+  },
+  {
    "name": "בחורים שותים קצת יין",
    "category": "שירים מהיציע",
    "artist": "הג'ירפות",
@@ -512,6 +1317,21 @@
    "original": true,
    "sport": null,
    "seasons": []
+  },
+  {
+   "name": "ביסקוט אמבלה",
+   "category": "שירי שחקנים",
+   "artist": "YMCA",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ביסקוט_אמבלה",
+   "youtube": [
+    "CS9OO0S5w2k"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2004/05"
+   ],
+   "player": "ביסקוט אמבלה"
   },
   {
    "name": "בכל העולם",
@@ -568,6 +1388,68 @@
    "player": "מהראן לאלה"
   },
   {
+   "name": "בן אלגרבלי",
+   "category": "שירי שחקנים",
+   "artist": "Eduard Sharpe&The Magnetic Zeros-Home",
+   "wiki": "https://wiki.red-fans.com/index.php?title=בן_אלגרבלי",
+   "youtube": [
+    "_3hWYXOg1Cg"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2015/16"
+   ],
+   "player": "בן אלגרבלי"
+  },
+  {
+   "name": "בן בנטיל",
+   "category": "שירי שחקנים",
+   "artist": "לו יהי/נעמי שמר",
+   "wiki": "https://wiki.red-fans.com/index.php?title=בן_בנטיל",
+   "youtube": [
+    "cpp8XENcuBk"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2024/25"
+   ],
+   "player": "בן בנטיל"
+  },
+  {
+   "name": "בן שהר",
+   "category": "שירי שחקנים",
+   "artist": "אריק סיני - גן השקמים",
+   "wiki": "https://wiki.red-fans.com/index.php?title=בן_שהר",
+   "youtube": [
+    "Wxoq6EUXIuY"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2005/06",
+    "2010/11",
+    "2024/25"
+   ],
+   "player": "בן שהר"
+  },
+  {
+   "name": "בנג'מין פראנסיס",
+   "category": "שירי שחקנים",
+   "artist": "CAMPTOWN RACES (DOO-DAH, DOO-DAH DAY)",
+   "wiki": "https://wiki.red-fans.com/index.php?title=בנג'מין_פראנסיס",
+   "youtube": [
+    "Fpht_8VdUdI"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2014/15"
+   ],
+   "player": "בנג'מין פראנסיס"
+  },
+  {
    "name": "בניצחון בכשלון אני שלך",
    "category": "שירים מהיציע",
    "artist": null,
@@ -603,6 +1485,69 @@
    "player": "בר טימור"
   },
   {
+   "name": "בראיין אנגולה",
+   "category": "שירי שחקנים",
+   "artist": "כל בוקר - משה פרץ",
+   "wiki": "https://wiki.red-fans.com/index.php?title=בראיין_אנגולה",
+   "youtube": [
+    "0N8cNgQ8eBc"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2023/24",
+    "2024/25"
+   ],
+   "player": "בראיין אנגולה"
+  },
+  {
+   "name": "בראיין גרזיצ'יץ'",
+   "category": "שירי שחקנים",
+   "artist": "שלוש בלילה - טיפקס",
+   "wiki": "https://wiki.red-fans.com/index.php?title=בראיין_גרזיצ'יץ'",
+   "youtube": [
+    "NyRZQko3gIY"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2013/14"
+   ],
+   "player": "בראיין גרזיצ'יץ'"
+  },
+  {
+   "name": "בראיין פאסי",
+   "category": "שירי שחקנים",
+   "artist": "דיינו",
+   "wiki": "https://wiki.red-fans.com/index.php?title=בראיין_פאסי",
+   "youtube": [
+    "Ov9tqZsbjV8"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2023/24"
+   ],
+   "player": "בראיין פאסי"
+  },
+  {
+   "name": "ברוך דגו",
+   "category": "שירי שחקנים",
+   "artist": "Day By Day",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ברוך_דגו",
+   "youtube": [
+    "WZw_dEyL_IA"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2005/06",
+    "2006/07",
+    "2007/08"
+   ],
+   "player": "ברוך דגו"
+  },
+  {
    "name": "ברוכים הבאים לגיהנום של האדומים",
    "category": "שירים מהיציע",
    "artist": null,
@@ -613,6 +1558,367 @@
    "original": true,
    "sport": null,
    "seasons": []
+  },
+  {
+   "name": "ברונו קוטיניו",
+   "category": "שירי שחקנים",
+   "artist": "Luciano Pavarotti - La Donna È Mobile",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ברונו_קוטיניו",
+   "youtube": [
+    "xCFEk6Y8TmM"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2012/13"
+   ],
+   "player": "ברונו קוטיניו"
+  },
+  {
+   "name": "בריאן אסברי",
+   "category": "שירי שחקנים",
+   "artist": "אחכה לך - הנשמות הטהורות",
+   "wiki": "https://wiki.red-fans.com/index.php?title=בריאן_אסברי",
+   "youtube": [
+    "YHQ_NhxUxqE"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2010/11"
+   ],
+   "player": "בריאן אסברי"
+  },
+  {
+   "name": "בריאן רנדל",
+   "category": "שירי שחקנים",
+   "artist": "ערב אבוד / גידי גוב",
+   "wiki": "https://wiki.red-fans.com/index.php?title=בריאן_רנדל",
+   "youtube": [
+    "e-VDtNd7xPw"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2012/13"
+   ],
+   "player": "בריאן רנדל"
+  },
+  {
+   "name": "ברנקו איליץ'",
+   "category": "שירי שחקנים",
+   "artist": "דנבר הדינוזאור האחרון",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ברנקו_איליץ'",
+   "youtube": [
+    "RBFIZ4XW_9M"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2013/14"
+   ],
+   "player": "ברנקו איליץ'"
+  },
+  {
+   "name": "ג'ו רגלנד",
+   "category": "שירי שחקנים",
+   "artist": "שמש הלילה/אפרת בוימולד",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ג'ו_רגלנד",
+   "youtube": [
+    "tLyMHyMzSu4"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2024/25"
+   ],
+   "player": "ג'ו רגלנד"
+  },
+  {
+   "name": "ג'ובאני ואלדיירו",
+   "category": "שירי שחקנים",
+   "artist": "במבוליאו (ג'יפסי קינגס)",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ג'ובאני_ואלדיירו",
+   "youtube": [
+    "MomGjm3XDQw"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2004/05"
+   ],
+   "player": "ג'ובאני ואלדיירו"
+  },
+  {
+   "name": "ג'ון הולנד",
+   "category": "שירי שחקנים",
+   "artist": null,
+   "wiki": "https://wiki.red-fans.com/index.php?title=ג'ון_הולנד",
+   "youtube": [
+    "TR1RHN4h-r0"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2023/24"
+   ],
+   "player": "ג'ון הולנד"
+  },
+  {
+   "name": "ג'ונתן מוטלי",
+   "category": "שירי שחקנים",
+   "artist": "בואי נעשה לנו חג/יגאל בשן",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ג'ונתן_מוטלי",
+   "youtube": [
+    "rldwiBSEg54"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2024/25",
+    "2025/26"
+   ],
+   "player": "ג'ונתן מוטלי"
+  },
+  {
+   "name": "ג'ורדן מקריי",
+   "category": "שירי שחקנים",
+   "artist": "מנגינת פתיחה שירים ושערים",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ג'ורדן_מקריי",
+   "youtube": [
+    "6crtto9UPtU"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2022/23"
+   ],
+   "player": "ג'ורדן מקריי"
+  },
+  {
+   "name": "ג'וש אוונס",
+   "category": "שירי שחקנים",
+   "artist": "ילדה חיכיתי שנים - זוהר ארגוב",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ג'וש_אוונס",
+   "youtube": [
+    "-_AHX92Q6ek"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2013/14",
+    "2021/22"
+   ],
+   "player": "ג'וש אוונס"
+  },
+  {
+   "name": "ג'יי. פי. טוקוטו",
+   "category": "שירי שחקנים",
+   "artist": "סתיו ישראלי גלי עטרי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ג'יי._פי._טוקוטו",
+   "youtube": [
+    "slvXNVkcL-I"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2020/21",
+    "2021/22",
+    "2022/23"
+   ],
+   "player": "ג'יי. פי. טוקוטו"
+  },
+  {
+   "name": "ג'יילן הורד",
+   "category": "שירי שחקנים",
+   "artist": "סביבון סוב סוב סוב",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ג'יילן_הורד",
+   "youtube": [
+    "Oh1xNFsrMoA"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2022/23",
+    "2023/24"
+   ],
+   "player": "ג'יילן הורד"
+  },
+  {
+   "name": "ג'יימס יאנג",
+   "category": "שירי שחקנים",
+   "artist": "תראו אותי - ארנבות של דר קספר",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ג'יימס_יאנג",
+   "youtube": [
+    "ePtW_BvjSG4"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2020/21",
+    "2021/22",
+    "2022/23"
+   ],
+   "player": "ג'יימס יאנג"
+  },
+  {
+   "name": "ג'ייקובן בראון",
+   "category": "שירי שחקנים",
+   "artist": "אתה תותח / שרית חדד",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ג'ייקובן_בראון",
+   "youtube": [
+    "9yVsFL6oMGE"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2021/22",
+    "2022/23",
+    "2023/24"
+   ],
+   "player": "ג'ייקובן בראון"
+  },
+  {
+   "name": "ג'ף אלן",
+   "category": "שירי שחקנים",
+   "artist": "Survivor - Eye Of The Tiger",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ג'ף_אלן",
+   "youtube": [
+    "btPJPFnesV4"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2012/13",
+    "2015/16",
+    "2017/18"
+   ],
+   "player": "ג'ף אלן"
+  },
+  {
+   "name": "גאבור הלמאי",
+   "category": "שירי שחקנים",
+   "artist": "אייל גולן-מלך המגרש + פתאום מצאתי בך",
+   "wiki": "https://wiki.red-fans.com/index.php?title=גאבור_הלמאי",
+   "youtube": [
+    "TmRG9Uean30"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2000/01",
+    "2001/02",
+    "2002/03"
+   ],
+   "player": "גאבור הלמאי"
+  },
+  {
+   "name": "גארי גנדל",
+   "category": "שירי שחקנים",
+   "artist": "רוזה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=גארי_גנדל",
+   "youtube": [
+    "jusFXzI7nlg"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2000/01",
+    "2005/06"
+   ],
+   "player": "גארי גנדל"
+  },
+  {
+   "name": "גבריאל סגל",
+   "category": "שירי שחקנים",
+   "artist": "בלבלה / מוטי טקה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=גבריאל_סגל",
+   "youtube": [
+    "kEl1vA-PxnA"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2023/24"
+   ],
+   "player": "גבריאל סגל"
+  },
+  {
+   "name": "גד עמוס",
+   "category": "שירי שחקנים",
+   "artist": "אני לא זמין/מושיק עפיה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=גד_עמוס",
+   "youtube": [
+    "9wZkkQK0wd4"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2025/26"
+   ],
+   "player": "גד עמוס"
+  },
+  {
+   "name": "גדעון ריאטי",
+   "category": "שירי שחקנים",
+   "artist": "Yellow submarine, Beatles",
+   "wiki": "https://wiki.red-fans.com/index.php?title=גדעון_ריאטי",
+   "youtube": [
+    "m2uTFF_3MaA"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2011/12",
+    "2012/13"
+   ],
+   "player": "גדעון ריאטי"
+  },
+  {
+   "name": "גולן גוט",
+   "category": "שירי שחקנים",
+   "artist": "Jingle Bells",
+   "wiki": "https://wiki.red-fans.com/index.php?title=גולן_גוט",
+   "youtube": [
+    "3PgNPc-iFW8"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2013/14",
+    "2014/15"
+   ],
+   "player": "גולן גוט"
+  },
+  {
+   "name": "גוני נאור",
+   "category": "שירי שחקנים",
+   "artist": "Johnny, Johnny come home/Avalanche",
+   "wiki": "https://wiki.red-fans.com/index.php?title=גוני_נאור",
+   "youtube": [
+    "qRyiQbeYvf0"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2024/25"
+   ],
+   "player": "גוני נאור"
+  },
+  {
+   "name": "גיא גומברג",
+   "category": "שירי שחקנים",
+   "artist": "ברי סחרוף-עבדים",
+   "wiki": "https://wiki.red-fans.com/index.php?title=גיא_גומברג",
+   "youtube": [
+    "2LH8kvivV-A"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2015/16"
+   ],
+   "player": "גיא גומברג"
   },
   {
    "name": "גיא פלטין",
@@ -630,6 +1936,95 @@
     "2026/27"
    ],
    "player": "גיא פלטין"
+  },
+  {
+   "name": "גיא צרפתי",
+   "category": "שירי שחקנים",
+   "artist": "Big big world",
+   "wiki": "https://wiki.red-fans.com/index.php?title=גיא_צרפתי",
+   "youtube": [
+    "wpkS2DU_qMs"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2004/05"
+   ],
+   "player": "גיא צרפתי"
+  },
+  {
+   "name": "גידי ויינר",
+   "category": "שירי שחקנים",
+   "artist": "ליאור נרקיס - תגלי לי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=גידי_ויינר",
+   "youtube": [
+    "RE4qBiDd-kk"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "1976/77",
+    "1977/78",
+    "1978/79",
+    "1979/80",
+    "1980/81",
+    "1981/82"
+   ],
+   "player": "גידי ויינר"
+  },
+  {
+   "name": "גיל אמיתי",
+   "category": "שירי שחקנים",
+   "artist": "בחלום / ענת עצמון",
+   "wiki": "https://wiki.red-fans.com/index.php?title=גיל_אמיתי",
+   "youtube": [
+    "SxSjRl_UNis"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2015/16"
+   ],
+   "player": "גיל אמיתי"
+  },
+  {
+   "name": "גיל בני",
+   "category": "שירי שחקנים",
+   "artist": "What is love",
+   "wiki": "https://wiki.red-fans.com/index.php?title=גיל_בני",
+   "youtube": [
+    "HEXWRTEbj1I"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2021/22",
+    "2022/23",
+    "2023/24"
+   ],
+   "player": "גיל בני"
+  },
+  {
+   "name": "גל שיש",
+   "category": "שירי שחקנים",
+   "artist": "אולה אולה אולה - גל שיש",
+   "wiki": "https://wiki.red-fans.com/index.php?title=גל_שיש",
+   "youtube": [
+    "IBTrjvkNEIs"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2006/07",
+    "2007/08",
+    "2008/09",
+    "2009/10",
+    "2010/11",
+    "2011/12",
+    "2015/16",
+    "2016/17"
+   ],
+   "player": "גל שיש"
   },
   {
    "name": "גם אם תשחקי בשדה מוקשים",
@@ -656,6 +2051,131 @@
    "seasons": []
   },
   {
+   "name": "דאבור רופניק",
+   "category": "שירי שחקנים",
+   "artist": "פתאום מצאתי בך",
+   "wiki": "https://wiki.red-fans.com/index.php?title=דאבור_רופניק",
+   "youtube": [
+    "LVkvGoimWBQ"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1998/99",
+    "1999/00"
+   ],
+   "player": "דאבור רופניק"
+  },
+  {
+   "name": "דובי גמירוב",
+   "category": "שירי שחקנים",
+   "artist": "גלי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=דובי_גמירוב",
+   "youtube": [
+    "EKYJXvt9mhc"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2008/09"
+   ],
+   "player": "דובי גמירוב"
+  },
+  {
+   "name": "דוד רוצ'לה",
+   "category": "שירי שחקנים",
+   "artist": "כי הוא בחור כארז",
+   "wiki": "https://wiki.red-fans.com/index.php?title=דוד_רוצ'לה",
+   "youtube": [
+    "n8n-PDVYgu4"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2012/13"
+   ],
+   "player": "דוד רוצ'לה"
+  },
+  {
+   "name": "דודו דהאן",
+   "category": "שירי שחקנים",
+   "artist": "ברבאבא",
+   "wiki": "https://wiki.red-fans.com/index.php?title=דודו_דהאן",
+   "youtube": [
+    "slIA5DS8Qoc"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2000/01",
+    "2001/02"
+   ],
+   "player": "דודו דהאן"
+  },
+  {
+   "name": "דודו סמפאיו",
+   "category": "שירי שחקנים",
+   "artist": "אם אתה בסביבה/אריק סיני",
+   "wiki": "https://wiki.red-fans.com/index.php?title=דודו_סמפאיו",
+   "youtube": [
+    "X-eQOTWiXaU"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2024/25"
+   ],
+   "player": "דודו סמפאיו"
+  },
+  {
+   "name": "דויד קופרמן",
+   "category": "שירי שחקנים",
+   "artist": null,
+   "wiki": "https://wiki.red-fans.com/index.php?title=דויד_קופרמן",
+   "youtube": [
+    "aYFktZD8A-c"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2023/24",
+    "2024/25"
+   ],
+   "player": "דויד קופרמן"
+  },
+  {
+   "name": "דור בנימיני",
+   "category": "שירי שחקנים",
+   "artist": "אור/אלון דה לוקו",
+   "wiki": "https://wiki.red-fans.com/index.php?title=דור_בנימיני",
+   "youtube": [
+    "WZXOpB-L34U"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2024/25",
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "דור בנימיני"
+  },
+  {
+   "name": "דוראנד סקוט",
+   "category": "שירי שחקנים",
+   "artist": "ענוג\" (נוער שוליים)",
+   "wiki": "https://wiki.red-fans.com/index.php?title=דוראנד_סקוט",
+   "youtube": [
+    "FGGEcvvZjIQ"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2014/15"
+   ],
+   "player": "דוראנד סקוט"
+  },
+  {
    "name": "דורון ליידנר",
    "category": "שירי שחקנים",
    "artist": "פאר טסי",
@@ -675,6 +2195,131 @@
    "player": "דורון ליידנר"
   },
   {
+   "name": "דז וולס",
+   "category": "שירי שחקנים",
+   "artist": null,
+   "wiki": "https://wiki.red-fans.com/index.php?title=דז_וולס",
+   "youtube": [
+    "j_KuGKdl7S0"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2023/24"
+   ],
+   "player": "דז וולס"
+  },
+  {
+   "name": "דיאן רצ'וניצה",
+   "category": "שירי שחקנים",
+   "artist": "Scott Joplin - The Entertainer",
+   "wiki": "https://wiki.red-fans.com/index.php?title=דיאן_רצ'וניצה",
+   "youtube": [
+    "EQlPq4z2gBc"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1999/00"
+   ],
+   "player": "דיאן רצ'וניצה"
+  },
+  {
+   "name": "דימיטריוס טרדוול",
+   "category": "שירי שחקנים",
+   "artist": "Abba - Gimme! Gimme! Gimme",
+   "wiki": "https://wiki.red-fans.com/index.php?title=דימיטריוס_טרדוול",
+   "youtube": [
+    "AzMAP85RRws"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2019/20"
+   ],
+   "player": "דימיטריוס טרדוול"
+  },
+  {
+   "name": "דמונטז סטיט",
+   "category": "שירי שחקנים",
+   "artist": "Rivers of Babylon (Boney M)",
+   "wiki": "https://wiki.red-fans.com/index.php?title=דמונטז_סטיט",
+   "youtube": [
+    "l3QxT-w3WMo"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2011/12",
+    "2012/13"
+   ],
+   "player": "דמונטז סטיט"
+  },
+  {
+   "name": "דמיאן גייזר",
+   "category": "שירי שחקנים",
+   "artist": "אליעזר והגזר",
+   "wiki": "https://wiki.red-fans.com/index.php?title=דמיאן_גייזר",
+   "youtube": [
+    "K7oJhNnhWMw"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1997/98"
+   ],
+   "player": "דמיאן גייזר"
+  },
+  {
+   "name": "דן אוטורו",
+   "category": "שירי שחקנים",
+   "artist": "היא לא יודעת מה עובר עליי - שלמה ארצי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=דן_אוטורו",
+   "youtube": [
+    "WHDQ-JHI6Z8"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "דן אוטורו"
+  },
+  {
+   "name": "דן איינבינדר",
+   "category": "שירי שחקנים",
+   "artist": "סהרה-טונה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=דן_איינבינדר",
+   "youtube": [
+    "dZWlObNQoZ4"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2020/21",
+    "2021/22",
+    "2022/23",
+    "2023/24"
+   ],
+   "player": "דן איינבינדר"
+  },
+  {
+   "name": "דניאל בראון",
+   "category": "שירי שחקנים",
+   "artist": "Let The Sunshine In",
+   "wiki": "https://wiki.red-fans.com/index.php?title=דניאל_בראון",
+   "youtube": [
+    "0mH23CAV7jE"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2008/09"
+   ],
+   "player": "דניאל בראון"
+  },
+  {
    "name": "דניאל דאפה",
    "category": "שירי שחקנים",
    "artist": "דודו טסה",
@@ -689,6 +2334,54 @@
     "2026/27"
    ],
    "player": "דניאל דאפה"
+  },
+  {
+   "name": "דניאל דה רידר",
+   "category": "שירי שחקנים",
+   "artist": "Creep - Radiohead - דניאל דה רידר",
+   "wiki": "https://wiki.red-fans.com/index.php?title=דניאל_דה_רידר",
+   "youtube": [
+    "yHFCYpQEQSA"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2009/10"
+   ],
+   "player": "דניאל דה רידר"
+  },
+  {
+   "name": "דניס אונישנקו",
+   "category": "שירי שחקנים",
+   "artist": "דני שובבני",
+   "wiki": "https://wiki.red-fans.com/index.php?title=דניס_אונישנקו",
+   "youtube": [
+    "OLgpC3iRoeA"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1999/00",
+    "2000/01",
+    "2001/02",
+    "2002/03"
+   ],
+   "player": "דניס אונישנקו"
+  },
+  {
+   "name": "דסי רודריגז",
+   "category": "שירי שחקנים",
+   "artist": "Maria – Blondie",
+   "wiki": "https://wiki.red-fans.com/index.php?title=דסי_רודריגז",
+   "youtube": [
+    "AGy-g85qmgg"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2019/20"
+   ],
+   "player": "דסי רודריגז"
   },
   {
    "name": "הבל החן שקר היופי - איתי שכטר",
@@ -948,6 +2641,21 @@
    "seasons": []
   },
   {
+   "name": "הרמוני איקינדה",
+   "category": "שירי שחקנים",
+   "artist": "החלונות הגבוהים - באנו למילואים",
+   "wiki": "https://wiki.red-fans.com/index.php?title=הרמוני_איקינדה",
+   "youtube": [
+    "FEnhlfdsYlo"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2014/15"
+   ],
+   "player": "הרמוני איקינדה"
+  },
+  {
    "name": "השפן הקטן-לוקאש סאשה",
    "category": "שירי שחקנים",
    "artist": null,
@@ -959,6 +2667,21 @@
    "sport": null,
    "seasons": [],
    "player": "השפן הקטן-לוקאש סאשה"
+  },
+  {
+   "name": "ואסיליה מיציץ׳",
+   "category": "שירי שחקנים",
+   "artist": "אין כמו במבה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ואסיליה_מיציץ׳",
+   "youtube": [
+    "aCMQeoK2lcM"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2025/26"
+   ],
+   "player": "ואסיליה מיציץ׳"
   },
   {
    "name": "וואליד באדיר",
@@ -983,6 +2706,132 @@
    "player": "וואליד באדיר"
   },
   {
+   "name": "וולטון סילבה",
+   "category": "שירי שחקנים",
+   "artist": "תותים",
+   "wiki": "https://wiki.red-fans.com/index.php?title=וולטון_סילבה",
+   "youtube": [
+    "E64QIkGvlxA"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2002/03"
+   ],
+   "player": "וולטון סילבה"
+  },
+  {
+   "name": "וולינגטון דה אוליברה",
+   "category": "שירי שחקנים",
+   "artist": "לפעמים",
+   "wiki": "https://wiki.red-fans.com/index.php?title=וולינגטון_דה_אוליברה",
+   "youtube": [
+    "TxeYFbC1HWM"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2006/07"
+   ],
+   "player": "וולינגטון דה אוליברה"
+  },
+  {
+   "name": "וילי וורקמן",
+   "category": "שירי שחקנים",
+   "artist": "Rihanna - We Found Love",
+   "wiki": "https://wiki.red-fans.com/index.php?title=וילי_וורקמן",
+   "youtube": [
+    "tg00YEETFzg"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2014/15"
+   ],
+   "player": "וילי וורקמן"
+  },
+  {
+   "name": "וינסנט קאונסיל",
+   "category": "שירי שחקנים",
+   "artist": null,
+   "wiki": "https://wiki.red-fans.com/index.php?title=וינסנט_קאונסיל",
+   "youtube": [
+    "aL-Gf5ebpLQ"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2013/14"
+   ],
+   "player": "וינסנט קאונסיל"
+  },
+  {
+   "name": "זאב חיימוביץ'",
+   "category": "שירי שחקנים",
+   "artist": "Gnarls Barkley - Crazy",
+   "wiki": "https://wiki.red-fans.com/index.php?title=זאב_חיימוביץ'",
+   "youtube": [
+    "bd2B6SjMh_w"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2012/13",
+    "2013/14"
+   ],
+   "player": "זאב חיימוביץ'"
+  },
+  {
+   "name": "זאב מרק",
+   "category": "שירי שחקנים",
+   "artist": "חנה'לה התבלבלה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=זאב_מרק",
+   "youtube": [
+    "AmpDvvXpp9o"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2007/08",
+    "2008/09"
+   ],
+   "player": "זאב מרק"
+  },
+  {
+   "name": "זיו כבדה",
+   "category": "שירי שחקנים",
+   "artist": "פמלה - בועז שרעבי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=זיו_כבדה",
+   "youtube": [
+    "p3IC5Vz5cs0"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1997/98",
+    "1998/99",
+    "1999/00"
+   ],
+   "player": "זיו כבדה"
+  },
+  {
+   "name": "זיו מורגן",
+   "category": "שירי שחקנים",
+   "artist": "ככה השם רצה/ישראל אס",
+   "wiki": "https://wiki.red-fans.com/index.php?title=זיו_מורגן",
+   "youtube": [
+    "EgcO3DBxAs0"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2023/24",
+    "2024/25",
+    "2025/26"
+   ],
+   "player": "זיו מורגן"
+  },
+  {
    "name": "זיכרון ישן",
    "category": "שירים מהיציע",
    "artist": null,
@@ -995,6 +2844,22 @@
    "seasons": []
   },
   {
+   "name": "חואקין שוכמן",
+   "category": "שירי שחקנים",
+   "artist": "טמפרטורה - עומר אדם",
+   "wiki": "https://wiki.red-fans.com/index.php?title=חואקין_שוכמן",
+   "youtube": [
+    "AqsFHTDXX2U"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2019/20",
+    "2020/21"
+   ],
+   "player": "חואקין שוכמן"
+  },
+  {
    "name": "חוץ ממך אין עוד אחרת",
    "category": "שירים מהיציע",
    "artist": null,
@@ -1005,6 +2870,117 @@
    "original": true,
    "sport": null,
    "seasons": []
+  },
+  {
+   "name": "חיים זלוטיקמן",
+   "category": "שירי שחקנים",
+   "artist": "אין",
+   "wiki": "https://wiki.red-fans.com/index.php?title=חיים_זלוטיקמן",
+   "youtube": [
+    "7b4z2CSngQQ"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "1986/87",
+    "1987/88",
+    "1992/93"
+   ],
+   "player": "חיים זלוטיקמן"
+  },
+  {
+   "name": "חן עזרא",
+   "category": "שירי שחקנים",
+   "artist": "ציירי לך שפם",
+   "wiki": "https://wiki.red-fans.com/index.php?title=חן_עזרא",
+   "youtube": [
+    "1ywmGGV2MU8"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2016/17"
+   ],
+   "player": "חן עזרא"
+  },
+  {
+   "name": "חנן אלקיים",
+   "category": "שירי שחקנים",
+   "artist": "איך הוא שר",
+   "wiki": "https://wiki.red-fans.com/index.php?title=חנן_אלקיים",
+   "youtube": [
+    "ARuMB_iMRcY"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2003/04",
+    "2004/05",
+    "2005/06"
+   ],
+   "player": "חנן אלקיים"
+  },
+  {
+   "name": "חנן ממן",
+   "category": "שירי שחקנים",
+   "artist": "סיון - יגאל בשן",
+   "wiki": "https://wiki.red-fans.com/index.php?title=חנן_ממן",
+   "youtube": [
+    "zSm9pSOkQgE"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2012/13"
+   ],
+   "player": "חנן ממן"
+  },
+  {
+   "name": "טאי אודיאסה",
+   "category": "שירי שחקנים",
+   "artist": "עפרה חזה - חי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=טאי_אודיאסה",
+   "youtube": [
+    "T_1GL2AIUco"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "טאי אודיאסה"
+  },
+  {
+   "name": "טייריק ג'ונס",
+   "category": "שירי שחקנים",
+   "artist": null,
+   "wiki": "https://wiki.red-fans.com/index.php?title=טייריק_ג'ונס",
+   "youtube": [
+    "PbLb_yvJXG0"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2020/21"
+   ],
+   "player": "טייריק ג'ונס"
+  },
+  {
+   "name": "טל איילה",
+   "category": "שירי שחקנים",
+   "artist": "שמחה גדולה הלילה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=טל_איילה",
+   "youtube": [
+    "H_dc8UTu1Sg"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2006/07",
+    "2008/09"
+   ],
+   "player": "טל איילה"
   },
   {
    "name": "טל ארצ'ל",
@@ -1025,6 +3001,36 @@
     "2026/27"
    ],
    "player": "טל ארצ'ל"
+  },
+  {
+   "name": "טמיר אריאלי",
+   "category": "שירי שחקנים",
+   "artist": "Jimmie Davis You Are My Sunshine",
+   "wiki": "https://wiki.red-fans.com/index.php?title=טמיר_אריאלי",
+   "youtube": [
+    "X0HLEJCgGws"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2013/14"
+   ],
+   "player": "טמיר אריאלי"
+  },
+  {
+   "name": "יאיר כהן צדק",
+   "category": "שירי שחקנים",
+   "artist": "אהבתיה - שלמה ארצי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=יאיר_כהן_צדק",
+   "youtube": [
+    "PUOTuPY6kBI"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2003/04"
+   ],
+   "player": "יאיר כהן צדק"
   },
   {
    "name": "יאללה הפועל - עד המוות",
@@ -1075,6 +3081,78 @@
    "seasons": []
   },
   {
+   "name": "יהב גורפינקל",
+   "category": "שירי שחקנים",
+   "artist": "יחזקאל-החלונות הגבוהים",
+   "wiki": "https://wiki.red-fans.com/index.php?title=יהב_גורפינקל",
+   "youtube": [
+    "GfR9DxI7Gnc"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2022/23",
+    "2023/24"
+   ],
+   "player": "יהב גורפינקל"
+  },
+  {
+   "name": "יהודה חוטה",
+   "category": "שירי שחקנים",
+   "artist": "יודה יודה - השמחות/אני חוזר הביתה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=יהודה_חוטה",
+   "youtube": [
+    "m4EIG5RBkv4"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2008/09",
+    "2009/10",
+    "2010/11",
+    "2011/12"
+   ],
+   "player": "יהודה חוטה"
+  },
+  {
+   "name": "יהונתן שולדבראנד",
+   "category": "שירי שחקנים",
+   "artist": "Bobby Vinton - Mr. Lonely",
+   "wiki": "https://wiki.red-fans.com/index.php?title=יהונתן_שולדבראנד",
+   "youtube": [
+    "_zSecRAFM14"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2011/12",
+    "2012/13",
+    "2013/14",
+    "2014/15",
+    "2021/22"
+   ],
+   "player": "יהונתן שולדבראנד"
+  },
+  {
+   "name": "יואב בר",
+   "category": "שירי שחקנים",
+   "artist": "מאמי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=יואב_בר",
+   "youtube": [
+    "w-e7qVfxk2o"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "1995/96",
+    "1997/98",
+    "1998/99",
+    "1999/00",
+    "2001/02"
+   ],
+   "player": "יואב בר"
+  },
+  {
    "name": "יונתן פרבר",
    "category": "שירי שחקנים",
    "artist": "עומר אדם",
@@ -1090,6 +3168,81 @@
    "player": "יונתן פרבר"
   },
   {
+   "name": "יונתן רבינוביץ'",
+   "category": "שירי שחקנים",
+   "artist": "תנו תרועה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=יונתן_רבינוביץ'",
+   "youtube": [
+    "7uq4lMUU-6c"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2015/16",
+    "2016/17",
+    "2023/24",
+    "2024/25"
+   ],
+   "player": "יונתן רבינוביץ'"
+  },
+  {
+   "name": "יוסי אבוקסיס",
+   "category": "שירי שחקנים",
+   "artist": "אין אמת בכוכבים - גילי ארגוב",
+   "wiki": "https://wiki.red-fans.com/index.php?title=יוסי_אבוקסיס",
+   "youtube": [
+    "PfwOTfnkisY"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1987/88",
+    "1988/89",
+    "1989/90",
+    "1990/91",
+    "1991/92",
+    "1992/93",
+    "2001/02",
+    "2002/03",
+    "2003/04",
+    "2004/05",
+    "2005/06",
+    "2006/07"
+   ],
+   "player": "יוסי אבוקסיס"
+  },
+  {
+   "name": "יוסי רוזן",
+   "category": "שירי שחקנים",
+   "artist": "Johnny come home",
+   "wiki": "https://wiki.red-fans.com/index.php?title=יוסי_רוזן",
+   "youtube": [
+    "2yvWl8EcLmo"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2003/04",
+    "2004/05"
+   ],
+   "player": "יוסי רוזן"
+  },
+  {
+   "name": "יוסף אובה",
+   "category": "שירי שחקנים",
+   "artist": "הופה הופה (יווני)",
+   "wiki": "https://wiki.red-fans.com/index.php?title=יוסף_אובה",
+   "youtube": [
+    "AWxN1Oc4W0I"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2000/01"
+   ],
+   "player": "יוסף אובה"
+  },
+  {
    "name": "יוצא היום לקרב",
    "category": "שירים מהיציע",
    "artist": null,
@@ -1102,6 +3255,55 @@
    "seasons": []
   },
   {
+   "name": "יורגן קולין",
+   "category": "שירי שחקנים",
+   "artist": "Call me - Blondie",
+   "wiki": "https://wiki.red-fans.com/index.php?title=יורגן_קולין",
+   "youtube": [
+    "y6QBaZHltJw"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2013/14",
+    "2014/15"
+   ],
+   "player": "יורגן קולין"
+  },
+  {
+   "name": "יותם שירן",
+   "category": "שירי שחקנים",
+   "artist": "שמחות קטנות (יהללו)",
+   "wiki": "https://wiki.red-fans.com/index.php?title=יותם_שירן",
+   "youtube": [
+    "7YIUyrtRBOo"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2011/12",
+    "2012/13",
+    "2013/14"
+   ],
+   "player": "יותם שירן"
+  },
+  {
+   "name": "יזן נסאר",
+   "category": "שירי שחקנים",
+   "artist": "הנה זה בא",
+   "wiki": "https://wiki.red-fans.com/index.php?title=יזן_נסאר",
+   "youtube": [
+    "1mmDlCKfs7E"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2024/25",
+    "2025/26"
+   ],
+   "player": "יזן נסאר"
+  },
+  {
    "name": "יחד לעולם",
    "category": "שירים מהיציע",
    "artist": null,
@@ -1112,6 +3314,74 @@
    "original": true,
    "sport": null,
    "seasons": []
+  },
+  {
+   "name": "ים מדר",
+   "category": "שירי שחקנים",
+   "artist": "פני מלאך - יואב יצחק",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ים_מדר",
+   "youtube": [
+    "QxikQ7Du1Jk"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2018/19",
+    "2019/20",
+    "2020/21",
+    "2024/25",
+    "2025/26"
+   ],
+   "player": "ים מדר"
+  },
+  {
+   "name": "יניב בן ניסן",
+   "category": "שירי שחקנים",
+   "artist": "אמסטרדם (נוער שוליים)",
+   "wiki": "https://wiki.red-fans.com/index.php?title=יניב_בן_ניסן",
+   "youtube": [
+    "CD9m7IXxbKg"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2004/05"
+   ],
+   "player": "יניב בן ניסן"
+  },
+  {
+   "name": "ינסי גייטס",
+   "category": "שירי שחקנים",
+   "artist": "הבא בתור הוא סוס (נושאי המגבעת)",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ינסי_גייטס",
+   "youtube": [
+    "qfdEEERjvm4"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2014/15"
+   ],
+   "player": "ינסי גייטס"
+  },
+  {
+   "name": "יפתח בוכמן",
+   "category": "שירי שחקנים",
+   "artist": "ריקוד רומנטי - ישי לוי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=יפתח_בוכמן",
+   "youtube": [
+    "Fj6X9i5w6IQ"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2004/05",
+    "2005/06",
+    "2006/07",
+    "2007/08",
+    "2015/16"
+   ],
+   "player": "יפתח בוכמן"
   },
   {
    "name": "יפתח זיו",
@@ -1128,6 +3398,88 @@
     "2026/27"
    ],
    "player": "יפתח זיו"
+  },
+  {
+   "name": "יקיר לוסקי",
+   "category": "שירי שחקנים",
+   "artist": "איך את מסובבת אותי - רון שובל",
+   "wiki": "https://wiki.red-fans.com/index.php?title=יקיר_לוסקי",
+   "youtube": [
+    "6PRqmkUQVXE"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2003/04",
+    "2004/05",
+    "2005/06",
+    "2007/08"
+   ],
+   "player": "יקיר לוסקי"
+  },
+  {
+   "name": "ירדן שוורצמן",
+   "category": "שירי שחקנים",
+   "artist": "לה קוקרצ'ה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ירדן_שוורצמן",
+   "youtube": [
+    "cv27CK_5q2s"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2010/11"
+   ],
+   "player": "ירדן שוורצמן"
+  },
+  {
+   "name": "ירון להט",
+   "category": "שירי שחקנים",
+   "artist": "למה ליבך כמו קרח - גידי גוב",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ירון_להט",
+   "youtube": [
+    "3LAnFzuWdSk"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2010/11"
+   ],
+   "player": "ירון להט"
+  },
+  {
+   "name": "יריב רוקני",
+   "category": "שירי שחקנים",
+   "artist": "שיר הפתיחה של הסדרה פלינסטונס",
+   "wiki": "https://wiki.red-fans.com/index.php?title=יריב_רוקני",
+   "youtube": [
+    "2PPf3aaZmUw"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "1997/98",
+    "2010/11",
+    "2011/12"
+   ],
+   "player": "יריב רוקני"
+  },
+  {
+   "name": "ישראל כהן",
+   "category": "שירי שחקנים",
+   "artist": "ברבאבא + ישראל ישראל ישראל בטח בשם (אנחנו מאמינים בני מאמינים)",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ישראל_כהן",
+   "youtube": [
+    "LixTT9ZLxEQ"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1997/98",
+    "1998/99",
+    "1999/00"
+   ],
+   "player": "ישראל כהן"
   },
   {
    "name": "כדי להיות אוהד של הפועל",
@@ -1230,6 +3582,74 @@
    "seasons": []
   },
   {
+   "name": "כפיר אדרי",
+   "category": "שירי שחקנים",
+   "artist": "לא נפסיק לשיר",
+   "wiki": "https://wiki.red-fans.com/index.php?title=כפיר_אדרי",
+   "youtube": [
+    "k3jgDXgeUP8"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2003/04",
+    "2004/05"
+   ],
+   "player": "כפיר אדרי"
+  },
+  {
+   "name": "כפיר אודי",
+   "category": "שירי שחקנים",
+   "artist": "שיר הפרטיזן",
+   "wiki": "https://wiki.red-fans.com/index.php?title=כפיר_אודי",
+   "youtube": [
+    "tT3Tt_YfjHE"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1996/97",
+    "1997/98",
+    "1998/99",
+    "1999/00",
+    "2000/01",
+    "2001/02",
+    "2002/03",
+    "2006/07"
+   ],
+   "player": "כפיר אודי"
+  },
+  {
+   "name": "כריס ג'ונס",
+   "category": "שירי שחקנים",
+   "artist": "תמיד אוהב אותי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=כריס_ג'ונס",
+   "youtube": [
+    "rgSvk335zis"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2025/26"
+   ],
+   "player": "כריס ג'ונס"
+  },
+  {
+   "name": "כריס הורטון",
+   "category": "שירי שחקנים",
+   "artist": null,
+   "wiki": "https://wiki.red-fans.com/index.php?title=כריס_הורטון",
+   "youtube": [
+    "CXuSk72ot2w"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2022/23"
+   ],
+   "player": "כריס הורטון"
+  },
+  {
    "name": "כשאת בוכה את לא יפה - אליניב ברדה",
    "category": "שירי שחקנים",
    "artist": null,
@@ -1294,6 +3714,51 @@
    "seasons": []
   },
   {
+   "name": "לארי אובאנון",
+   "category": "שירי שחקנים",
+   "artist": "שיר גביע העולם 2010",
+   "wiki": "https://wiki.red-fans.com/index.php?title=לארי_אובאנון",
+   "youtube": [
+    "aZjM4Oe8Yb0"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2014/15"
+   ],
+   "player": "לארי אובאנון"
+  },
+  {
+   "name": "לויזוס לויזו",
+   "category": "שירי שחקנים",
+   "artist": "ערוץ הילדים זה אנחנו",
+   "wiki": "https://wiki.red-fans.com/index.php?title=לויזוס_לויזו",
+   "youtube": [
+    "UQ5kQEwftsg"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2025/26"
+   ],
+   "player": "לויזוס לויזו"
+  },
+  {
+   "name": "לוקאס וינטרה",
+   "category": "שירי שחקנים",
+   "artist": "מי שטוב לו ושמח",
+   "wiki": "https://wiki.red-fans.com/index.php?title=לוקאס_וינטרה",
+   "youtube": [
+    "A7TpdC-1e7U"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2015/16"
+   ],
+   "player": "לוקאס וינטרה"
+  },
+  {
    "name": "לוקאס פלקאו",
    "category": "שירי שחקנים",
    "artist": "עומר אדם",
@@ -1308,6 +3773,68 @@
     "2026/27"
    ],
    "player": "לוקאס פלקאו"
+  },
+  {
+   "name": "ליאור אסולין",
+   "category": "שירי שחקנים",
+   "artist": "תני לי אויר",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ליאור_אסולין",
+   "youtube": [
+    "S1oVogpgaHw"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2007/08"
+   ],
+   "player": "ליאור אסולין"
+  },
+  {
+   "name": "ליאור בקשי",
+   "category": "שירי שחקנים",
+   "artist": "there's no limit/ 2unlimited",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ליאור_בקשי",
+   "youtube": [
+    "BFzZnSeELyA"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2008/09"
+   ],
+   "player": "ליאור בקשי"
+  },
+  {
+   "name": "ליאור לוי",
+   "category": "שירי שחקנים",
+   "artist": "לחן מקורי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ליאור_לוי",
+   "youtube": [
+    "JAZfug8xDnQ"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2013/14",
+    "2014/15"
+   ],
+   "player": "ליאור לוי"
+  },
+  {
+   "name": "לירן רוטמן",
+   "category": "שירי שחקנים",
+   "artist": "הנה בא השלום/אילנית",
+   "wiki": "https://wiki.red-fans.com/index.php?title=לירן_רוטמן",
+   "youtube": [
+    "VcsLw6jqucA"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2024/25",
+    "2025/26"
+   ],
+   "player": "לירן רוטמן"
   },
   {
    "name": "לעולם לא תצעדי לבד",
@@ -1334,6 +3861,53 @@
    "seasons": []
   },
   {
+   "name": "מאוויס צ'יבוטה",
+   "category": "שירי שחקנים",
+   "artist": "מתחת לשמיים-דיוויד ברוזה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=מאוויס_צ'יבוטה",
+   "youtube": [
+    "3uvtOwS2t3k"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2023/24"
+   ],
+   "player": "מאוויס צ'יבוטה"
+  },
+  {
+   "name": "מאור פרץ",
+   "category": "שירי שחקנים",
+   "artist": "רונה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=מאור_פרץ",
+   "youtube": [
+    "KQ2HuZjz0-Q"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2006/07",
+    "2008/09"
+   ],
+   "player": "מאור פרץ"
+  },
+  {
+   "name": "מארק ליונס",
+   "category": "שירי שחקנים",
+   "artist": "Madonna - Material Girl",
+   "wiki": "https://wiki.red-fans.com/index.php?title=מארק_ליונס",
+   "youtube": [
+    "pw9-nl9EdTo"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2016/17",
+    "2019/20"
+   ],
+   "player": "מארק ליונס"
+  },
+  {
    "name": "מה אני אני רק בן אדם",
    "category": "שירים מהיציע",
    "artist": null,
@@ -1356,6 +3930,38 @@
    "original": true,
    "sport": null,
    "seasons": []
+  },
+  {
+   "name": "מוחמד אבו אל היג'א",
+   "category": "שירי שחקנים",
+   "artist": "הבה נגילה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=מוחמד_אבו_אל_היג'א",
+   "youtube": [
+    "3dEa35drUqo"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2014/15",
+    "2015/16"
+   ],
+   "player": "מוחמד אבו אל היג'א"
+  },
+  {
+   "name": "מוטי אוחיון",
+   "category": "שירי שחקנים",
+   "artist": "דובי דוברמן",
+   "wiki": "https://wiki.red-fans.com/index.php?title=מוטי_אוחיון",
+   "youtube": [
+    "SlNnEyv84dg"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1998/99",
+    "1999/00"
+   ],
+   "player": "מוטי אוחיון"
   },
   {
    "name": "מונו - ויקטור מרעי",
@@ -1390,6 +3996,38 @@
     "2026/27"
    ],
    "player": "מור בוסקילה"
+  },
+  {
+   "name": "מור שושן",
+   "category": "שירי שחקנים",
+   "artist": "שושנה דמארי - שני שושנים",
+   "wiki": "https://wiki.red-fans.com/index.php?title=מור_שושן",
+   "youtube": [
+    "F5CFC-Mh_sg"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2009/10",
+    "2011/12",
+    "2012/13"
+   ],
+   "player": "מור שושן"
+  },
+  {
+   "name": "מזואה אנסומבו",
+   "category": "שירי שחקנים",
+   "artist": "ככה וככה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=מזואה_אנסומבו",
+   "youtube": [
+    "KmuH00cOKno"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2007/08"
+   ],
+   "player": "מזואה אנסומבו"
   },
   {
    "name": "מזמן, ידעתי שהפועל היא כל החיים",
@@ -1476,6 +4114,142 @@
    "seasons": []
   },
   {
+   "name": "מיחאי פינטילי",
+   "category": "שירי שחקנים",
+   "artist": "צא מזה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=מיחאי_פינטילי",
+   "youtube": [
+    "t3gvs8wXQNw"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2015/16"
+   ],
+   "player": "מיחאי פינטילי"
+  },
+  {
+   "name": "מייקל בריסקר",
+   "category": "שירי שחקנים",
+   "artist": "יש לי חולשה לרקדנים –ריקי גל",
+   "wiki": "https://wiki.red-fans.com/index.php?title=מייקל_בריסקר",
+   "youtube": [
+    "MAkDynkL-mw"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2019/20"
+   ],
+   "player": "מייקל בריסקר"
+  },
+  {
+   "name": "מיכאל זנדברג",
+   "category": "שירי שחקנים",
+   "artist": "התחלה חדשה-יהודה פוליקר",
+   "wiki": "https://wiki.red-fans.com/index.php?title=מיכאל_זנדברג",
+   "youtube": [
+    "S3UwjpGWHmE"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2009/10"
+   ],
+   "player": "מיכאל זנדברג"
+  },
+  {
+   "name": "מילאן אוסטרץ",
+   "category": "שירי שחקנים",
+   "artist": "אמא שלי - אריק איינשטיין",
+   "wiki": "https://wiki.red-fans.com/index.php?title=מילאן_אוסטרץ",
+   "youtube": [
+    "dJhycXOQobk"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2000/01",
+    "2001/02"
+   ],
+   "player": "מילאן אוסטרץ"
+  },
+  {
+   "name": "מילאן מקאריץ'",
+   "category": "שירי שחקנים",
+   "artist": "שלח לי מלאך/משינה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=מילאן_מקאריץ'",
+   "youtube": [
+    "CYQ3WBi_n68"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2024/25"
+   ],
+   "player": "מילאן מקאריץ'"
+  },
+  {
+   "name": "מלקולם גריפין",
+   "category": "שירי שחקנים",
+   "artist": "בעקבות השמש – שרי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=מלקולם_גריפין",
+   "youtube": [
+    "Ip_M5-uIIPQ"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2019/20"
+   ],
+   "player": "מלקולם גריפין"
+  },
+  {
+   "name": "מריו מסטרוביץ",
+   "category": "שירי שחקנים",
+   "artist": "Boney M. - Hooray! Hooray! It's a Holi-Holiday",
+   "wiki": "https://wiki.red-fans.com/index.php?title=מריו_מסטרוביץ",
+   "youtube": [
+    "ModISbNyQ8I"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1997/98"
+   ],
+   "player": "מריו מסטרוביץ"
+  },
+  {
+   "name": "מרכוס בינגהאם",
+   "category": "שירי שחקנים",
+   "artist": "הכל עומד במקום/גלי עטרי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=מרכוס_בינגהאם",
+   "youtube": [
+    "XTt1kMoJZ3I"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2024/25"
+   ],
+   "player": "מרכוס בינגהאם"
+  },
+  {
+   "name": "מרקו סימיץ'",
+   "category": "שירי שחקנים",
+   "artist": "אף אחת אחרת של איתי לוי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=מרקו_סימיץ'",
+   "youtube": [
+    "pJBbb6ycE_M"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2016/17"
+   ],
+   "player": "מרקו סימיץ'"
+  },
+  {
    "name": "מרקוס קוקו",
    "category": "שירי שחקנים",
    "artist": "החלונות הגבוהים",
@@ -1492,6 +4266,21 @@
    "player": "מרקוס קוקו"
   },
   {
+   "name": "מתן אריאל לזמי",
+   "category": "שירי שחקנים",
+   "artist": "Moby - Lift Me Up",
+   "wiki": "https://wiki.red-fans.com/index.php?title=מתן_אריאל_לזמי",
+   "youtube": [
+    "oUEC3q8tJ5s"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2014/15"
+   ],
+   "player": "מתן אריאל לזמי"
+  },
+  {
    "name": "נאהב אותך לנצח",
    "category": "שירים מהיציע",
    "artist": null,
@@ -1504,6 +4293,133 @@
    "seasons": []
   },
   {
+   "name": "נוסא איגייבור",
+   "category": "שירי שחקנים",
+   "artist": "ליאור פרחי - ילד רע",
+   "wiki": "https://wiki.red-fans.com/index.php?title=נוסא_איגייבור",
+   "youtube": [
+    "9BQ3_qhLWZQ"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2011/12",
+    "2012/13"
+   ],
+   "player": "נוסא איגייבור"
+  },
+  {
+   "name": "נועם בונה",
+   "category": "שירי שחקנים",
+   "artist": "Joe Dassin-Les Champs-Elysées",
+   "wiki": "https://wiki.red-fans.com/index.php?title=נועם_בונה",
+   "youtube": [
+    "1JhYYUWOBBs"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2023/24"
+   ],
+   "player": "נועם בונה"
+  },
+  {
+   "name": "נועם יעקב",
+   "category": "שירי שחקנים",
+   "artist": "משהו קטן וטוב/משינה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=נועם_יעקב",
+   "youtube": [
+    "B5Ezz8SEvCg"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2024/25"
+   ],
+   "player": "נועם יעקב"
+  },
+  {
+   "name": "ניסים סביליה",
+   "category": "שירי שחקנים",
+   "artist": "ויוה אספניה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ניסים_סביליה",
+   "youtube": [
+    "m0bmBByz75U"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2010/11"
+   ],
+   "player": "ניסים סביליה"
+  },
+  {
+   "name": "ניר לקס",
+   "category": "שירי שחקנים",
+   "artist": "יושבים בבית קפה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ניר_לקס",
+   "youtube": [
+    "TT9KHnj6Mes"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2011/12",
+    "2015/16",
+    "2016/17",
+    "2017/18",
+    "2018/19",
+    "2019/20"
+   ],
+   "player": "ניר לקס"
+  },
+  {
+   "name": "ניר נחום",
+   "category": "שירי שחקנים",
+   "artist": "אתניקס - ציפור מדבר",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ניר_נחום",
+   "youtube": [
+    "KXw58dIBL6E"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2012/13"
+   ],
+   "player": "ניר נחום"
+  },
+  {
+   "name": "נמניה ווצ'יצ'ביץ'",
+   "category": "שירי שחקנים",
+   "artist": "ירדנה ארזי - עוד נגיע",
+   "wiki": "https://wiki.red-fans.com/index.php?title=נמניה_ווצ'יצ'ביץ'",
+   "youtube": [
+    "cM2xYXlJv5A"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2009/10"
+   ],
+   "player": "נמניה ווצ'יצ'ביץ'"
+  },
+  {
+   "name": "נמניה ניקוליץ'",
+   "category": "שירי שחקנים",
+   "artist": "שיירת רוכבים/בום פם ומאור כהן",
+   "wiki": "https://wiki.red-fans.com/index.php?title=נמניה_ניקוליץ'",
+   "youtube": [
+    "tiMmyFi48G8"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2015/16",
+    "2016/17"
+   ],
+   "player": "נמניה ניקוליץ'"
+  },
+  {
    "name": "נעימת השיכורים",
    "category": "שירים מהיציע",
    "artist": null,
@@ -1514,6 +4430,53 @@
    "original": true,
    "sport": null,
    "seasons": []
+  },
+  {
+   "name": "סאבו פאביצ'ביץ'",
+   "category": "שירי שחקנים",
+   "artist": "הכוכבים דולקים על אש קטנה - משינה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=סאבו_פאביצ'ביץ'",
+   "youtube": [
+    "-ozbcdJ9he0"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2012/13"
+   ],
+   "player": "סאבו פאביצ'ביץ'"
+  },
+  {
+   "name": "סארי פלאח",
+   "category": "שירי שחקנים",
+   "artist": "Love Me Again",
+   "wiki": "https://wiki.red-fans.com/index.php?title=סארי_פלאח",
+   "youtube": [
+    "CfihYWRWRTQ"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2014/15"
+   ],
+   "player": "סארי פלאח"
+  },
+  {
+   "name": "סבסטיאן סימרוטיץ'",
+   "category": "שירי שחקנים",
+   "artist": "מארש צה\"ל",
+   "wiki": "https://wiki.red-fans.com/index.php?title=סבסטיאן_סימרוטיץ'",
+   "youtube": [
+    "UVZZfvRW6lE"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1997/98",
+    "1998/99",
+    "1999/00"
+   ],
+   "player": "סבסטיאן סימרוטיץ'"
   },
   {
    "name": "סיגל-דני עמוס",
@@ -1530,6 +4493,53 @@
     "2014/15"
    ],
    "player": "דני עמוס"
+  },
+  {
+   "name": "סמואל יבואה",
+   "category": "שירי שחקנים",
+   "artist": "שער הרחמים\" - מאיר בנאי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=סמואל_יבואה",
+   "youtube": [
+    "9vweQZfJKBo"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2008/09",
+    "2009/10"
+   ],
+   "player": "סמואל יבואה"
+  },
+  {
+   "name": "סנדי כהן",
+   "category": "שירי שחקנים",
+   "artist": "סה לה וי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=סנדי_כהן",
+   "youtube": [
+    "7Tubf4bthSk"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2025/26"
+   ],
+   "player": "סנדי כהן"
+  },
+  {
+   "name": "סרגיי קלשנקו",
+   "category": "שירי שחקנים",
+   "artist": "תביא קצת דינרוס",
+   "wiki": "https://wiki.red-fans.com/index.php?title=סרגיי_קלשנקו",
+   "youtube": [
+    "tLfrhuUHiwc"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2001/02",
+    "2002/03"
+   ],
+   "player": "סרגיי קלשנקו"
   },
   {
    "name": "סתיו טוריאל",
@@ -1574,6 +4584,71 @@
    "seasons": []
   },
   {
+   "name": "עדן בן בסט",
+   "category": "שירי שחקנים",
+   "artist": "Funiculì, Funiculà",
+   "wiki": "https://wiki.red-fans.com/index.php?title=עדן_בן_בסט",
+   "youtube": [
+    "yTSAZAHiOa8"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2008/09"
+   ],
+   "player": "עדן בן בסט"
+  },
+  {
+   "name": "עדן שרם",
+   "category": "שירי שחקנים",
+   "artist": "מים לדוד המלך",
+   "wiki": "https://wiki.red-fans.com/index.php?title=עדן_שרם",
+   "youtube": [
+    "mXb2zd40_yw"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2010/11",
+    "2011/12",
+    "2012/13",
+    "2014/15"
+   ],
+   "player": "עדן שרם"
+  },
+  {
+   "name": "עוביידה חטאב",
+   "category": "שירי שחקנים",
+   "artist": "טיפקס - יש לי חברה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=עוביידה_חטאב",
+   "youtube": [
+    "ayetZkOsEMg"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2014/15"
+   ],
+   "player": "עוביידה חטאב"
+  },
+  {
+   "name": "עוז בלייזר",
+   "category": "שירי שחקנים",
+   "artist": "תגידי שטוב/כנסיית השכל",
+   "wiki": "https://wiki.red-fans.com/index.php?title=עוז_בלייזר",
+   "youtube": [
+    "2G6dj66Dc5o"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2024/25",
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "עוז בלייזר"
+  },
+  {
    "name": "עומר דמארי",
    "category": "שירי שחקנים",
    "artist": "שלמה ארצי",
@@ -1591,6 +4666,55 @@
     "2019/20"
    ],
    "player": "עומר דמארי"
+  },
+  {
+   "name": "עומר סניור",
+   "category": "שירי שחקנים",
+   "artist": "תנו לגדול בשקט/שלומי שבת",
+   "wiki": "https://wiki.red-fans.com/index.php?title=עומר_סניור",
+   "youtube": [
+    "eqNnaDNjF6M"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2020/21",
+    "2021/22",
+    "2022/23",
+    "2023/24"
+   ],
+   "player": "עומר סניור"
+  },
+  {
+   "name": "עומר פדידה",
+   "category": "שירי שחקנים",
+   "artist": "follow the leader - the soca boys",
+   "wiki": "https://wiki.red-fans.com/index.php?title=עומר_פדידה",
+   "youtube": [
+    "Y8zzG4n8CpM"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2013/14",
+    "2014/15"
+   ],
+   "player": "עומר פדידה"
+  },
+  {
+   "name": "עומר פרץ (חלוץ)",
+   "category": "שירי שחקנים",
+   "artist": "שמש - שושנה דמארי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=עומר_פרץ_(חלוץ)",
+   "youtube": [
+    "-GIcUpr0d60"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2005/06"
+   ],
+   "player": "עומר פרץ (חלוץ)"
   },
   {
    "name": "עומרי אלטמן",
@@ -1612,6 +4736,170 @@
     "2026/27"
    ],
    "player": "עומרי אלטמן"
+  },
+  {
+   "name": "עומרי אפק",
+   "category": "שירי שחקנים",
+   "artist": "חייך וחיי- גידי גוב וריטה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=עומרי_אפק",
+   "youtube": [
+    "1ilYp32Qvlc"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1997/98",
+    "1999/00",
+    "2000/01",
+    "2001/02",
+    "2002/03"
+   ],
+   "player": "עומרי אפק"
+  },
+  {
+   "name": "עומרי שקל",
+   "category": "שירי שחקנים",
+   "artist": "האוטו שלי היופי שלך",
+   "wiki": "https://wiki.red-fans.com/index.php?title=עומרי_שקל",
+   "youtube": [
+    "V8e3NXxWSDI"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2015/16"
+   ],
+   "player": "עומרי שקל"
+  },
+  {
+   "name": "עופר ורטה",
+   "category": "שירי שחקנים",
+   "artist": "הקומדי סטור-שיר הטרטע",
+   "wiki": "https://wiki.red-fans.com/index.php?title=עופר_ורטה",
+   "youtube": [
+    "sucWmQUikZQ"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2015/16",
+    "2016/17"
+   ],
+   "player": "עופר ורטה"
+  },
+  {
+   "name": "עופר שטרית",
+   "category": "שירי שחקנים",
+   "artist": "משנכנס אדר",
+   "wiki": "https://wiki.red-fans.com/index.php?title=עופר_שטרית",
+   "youtube": [
+    "dbL9jF07ScQ"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1997/98"
+   ],
+   "player": "עופר שטרית"
+  },
+  {
+   "name": "עזרי בבאייב",
+   "category": "שירי שחקנים",
+   "artist": "Macarena",
+   "wiki": "https://wiki.red-fans.com/index.php?title=עזרי_בבאייב",
+   "youtube": [
+    "zWaymcVmJ-A"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2001/02",
+    "2002/03"
+   ],
+   "player": "עזרי בבאייב"
+  },
+  {
+   "name": "עידו וייר",
+   "category": "שירי שחקנים",
+   "artist": "הבא בתור הוא סוס/נושאי המגבעת",
+   "wiki": "https://wiki.red-fans.com/index.php?title=עידו_וייר",
+   "youtube": [
+    "93aXrAW0y10"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2024/25"
+   ],
+   "player": "עידו וייר"
+  },
+  {
+   "name": "עידו שרון",
+   "category": "שירי שחקנים",
+   "artist": "אחת מאלף/רינת בר וחיילי הנקמה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=עידו_שרון",
+   "youtube": [
+    "hEk9MlPV5lg"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2019/20",
+    "2020/21",
+    "2022/23",
+    "2024/25"
+   ],
+   "player": "עידו שרון"
+  },
+  {
+   "name": "עידן זלמנסון",
+   "category": "שירי שחקנים",
+   "artist": "פרפר נחמד",
+   "wiki": "https://wiki.red-fans.com/index.php?title=עידן_זלמנסון",
+   "youtube": [
+    "XFcXcPnhQMw"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2021/22",
+    "2022/23",
+    "2023/24"
+   ],
+   "player": "עידן זלמנסון"
+  },
+  {
+   "name": "עידן סקורצ'רו",
+   "category": "שירי שחקנים",
+   "artist": "ב.מ.וו. שחורה - אתניקס",
+   "wiki": "https://wiki.red-fans.com/index.php?title=עידן_סקורצ'רו",
+   "youtube": [
+    "IhD0BKCDRB4"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2000/01",
+    "2001/02"
+   ],
+   "player": "עידן סקורצ'רו"
+  },
+  {
+   "name": "עמאר מנצור",
+   "category": "שירי שחקנים",
+   "artist": "מעלה מעלה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=עמאר_מנצור",
+   "youtube": [
+    "QcZuhl247Ks"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2004/05",
+    "2006/07",
+    "2007/08"
+   ],
+   "player": "עמאר מנצור"
   },
   {
    "name": "עמית למקין",
@@ -1648,6 +4936,131 @@
    "player": "עמנואל בואטנג (חלוץ)"
   },
   {
+   "name": "ערן זהבי",
+   "category": "שירי שחקנים",
+   "artist": "תודה - חיים משה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ערן_זהבי",
+   "youtube": [
+    "MZSDjpCx4hk"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2006/07",
+    "2008/09",
+    "2009/10",
+    "2010/11"
+   ],
+   "player": "ערן זהבי"
+  },
+  {
+   "name": "פאביו ג'וניור פריירה",
+   "category": "שירי שחקנים",
+   "artist": "חלומות",
+   "wiki": "https://wiki.red-fans.com/index.php?title=פאביו_ג'וניור_פריירה",
+   "youtube": [
+    "qN8EM920X2o"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2007/08"
+   ],
+   "player": "פאביו ג'וניור פריירה"
+  },
+  {
+   "name": "פאביו רוסה",
+   "category": "שירי שחקנים",
+   "artist": "מה יהיה (מתי כספי מארץ טרופית נהדרת)",
+   "wiki": "https://wiki.red-fans.com/index.php?title=פאביו_רוסה",
+   "youtube": [
+    "ugCWuqXKVFo"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2004/05"
+   ],
+   "player": "פאביו רוסה"
+  },
+  {
+   "name": "פבריציו קארבליו",
+   "category": "שירי שחקנים",
+   "artist": "מארש הדייגים - הדודאים",
+   "wiki": "https://wiki.red-fans.com/index.php?title=פבריציו_קארבליו",
+   "youtube": [
+    "hZ5nhnSBIKI"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2003/04"
+   ],
+   "player": "פבריציו קארבליו"
+  },
+  {
+   "name": "פטר אורלנדיץ'",
+   "category": "שירי שחקנים",
+   "artist": "נוער שוליים - לילה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=פטר_אורלנדיץ'",
+   "youtube": [
+    "jmmdL8yRxoA"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2013/14"
+   ],
+   "player": "פטר אורלנדיץ'"
+  },
+  {
+   "name": "פטריק בברלי",
+   "category": "שירי שחקנים",
+   "artist": "הנה ימים באים/אילנית",
+   "wiki": "https://wiki.red-fans.com/index.php?title=פטריק_בברלי",
+   "youtube": [
+    "QvYJtPTwEB4"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2024/25"
+   ],
+   "player": "פטריק בברלי"
+  },
+  {
+   "name": "פיליפ מנה",
+   "category": "שירי שחקנים",
+   "artist": "שירי לי כנרת",
+   "wiki": "https://wiki.red-fans.com/index.php?title=פיליפ_מנה",
+   "youtube": [
+    "P5mNnyBj9wA"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2008/09",
+    "2009/10",
+    "2014/15"
+   ],
+   "player": "פיליפ מנה"
+  },
+  {
+   "name": "פליקס אובוקה",
+   "category": "שירי שחקנים",
+   "artist": "מאמא יוקרו",
+   "wiki": "https://wiki.red-fans.com/index.php?title=פליקס_אובוקה",
+   "youtube": [
+    "YPbYT-KthOQ"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2005/06"
+   ],
+   "player": "פליקס אובוקה"
+  },
+  {
    "name": "פרנאן מאיימבו",
    "category": "שירי שחקנים",
    "artist": "שרית חדד",
@@ -1662,6 +5075,21 @@
     "2026/27"
    ],
    "player": "פרנאן מאיימבו"
+  },
+  {
+   "name": "צ'ינאנו אונואקו",
+   "category": "שירי שחקנים",
+   "artist": "המסיבה של הפיג’מות/ יוני בלוך",
+   "wiki": "https://wiki.red-fans.com/index.php?title=צ'ינאנו_אונואקו",
+   "youtube": [
+    "WLAJnsqrKPs"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2022/23"
+   ],
+   "player": "צ'ינאנו אונואקו"
   },
   {
    "name": "צ'יקו",
@@ -1680,6 +5108,52 @@
    "player": "צ'יקו"
   },
   {
+   "name": "צליל חתוכה",
+   "category": "שירי שחקנים",
+   "artist": "יום הולדת של להקת עדן",
+   "wiki": "https://wiki.red-fans.com/index.php?title=צליל_חתוכה",
+   "youtube": [
+    "t4-Z8vVMRBs"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2015/16",
+    "2016/17"
+   ],
+   "player": "צליל חתוכה"
+  },
+  {
+   "name": "קאווה",
+   "category": "שירי שחקנים",
+   "artist": "הנה מה טוב ומה נעים",
+   "wiki": "https://wiki.red-fans.com/index.php?title=קאווה",
+   "youtube": [
+    "p085j5DGtJA"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2015/16"
+   ],
+   "player": "קאווה"
+  },
+  {
+   "name": "קולין מלקולם",
+   "category": "שירי שחקנים",
+   "artist": "Ring of Fire",
+   "wiki": "https://wiki.red-fans.com/index.php?title=קולין_מלקולם",
+   "youtube": [
+    "1WaV2x8GXj0"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2025/26"
+   ],
+   "player": "קולין מלקולם"
+  },
+  {
    "name": "קוקאין ואלכוהול",
    "category": "שירים מהיציע",
    "artist": null,
@@ -1692,6 +5166,69 @@
    "seasons": []
   },
   {
+   "name": "קורי קאר",
+   "category": "שירי שחקנים",
+   "artist": "קח לך אישה (אריק איינשטיין)",
+   "wiki": "https://wiki.red-fans.com/index.php?title=קורי_קאר",
+   "youtube": [
+    "dIfnDCAm6d0"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2011/12"
+   ],
+   "player": "קורי קאר"
+  },
+  {
+   "name": "קייל אלכסנדר",
+   "category": "שירי שחקנים",
+   "artist": "שתדעי/שלומי שבת",
+   "wiki": "https://wiki.red-fans.com/index.php?title=קייל_אלכסנדר",
+   "youtube": [
+    "6qUQtevJ71k"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2023/24"
+   ],
+   "player": "קייל אלכסנדר"
+  },
+  {
+   "name": "קלאודיו בומבה",
+   "category": "שירי שחקנים",
+   "artist": "התמונות שבאלבום",
+   "wiki": "https://wiki.red-fans.com/index.php?title=קלאודיו_בומבה",
+   "youtube": [
+    "PhoCmqtlsek"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2015/16",
+    "2016/17"
+   ],
+   "player": "קלאודיו בומבה"
+  },
+  {
+   "name": "קלמי סבן",
+   "category": "שירי שחקנים",
+   "artist": "אורלי - גילי ארגוב",
+   "wiki": "https://wiki.red-fans.com/index.php?title=קלמי_סבן",
+   "youtube": [
+    "VuNXRzamoJs"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2001/02",
+    "2002/03",
+    "2003/04"
+   ],
+   "player": "קלמי סבן"
+  },
+  {
    "name": "קם וחושב רק עלייך",
    "category": "שירים מהיציע",
    "artist": null,
@@ -1702,6 +5239,54 @@
    "original": true,
    "sport": null,
    "seasons": []
+  },
+  {
+   "name": "קרטיס מקנטס",
+   "category": "שירי שחקנים",
+   "artist": "הרבי ג'ו כפרה - טיפקס",
+   "wiki": "https://wiki.red-fans.com/index.php?title=קרטיס_מקנטס",
+   "youtube": [
+    "AKjPO7YDa_0"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "1997/98",
+    "1998/99",
+    "2004/05"
+   ],
+   "player": "קרטיס מקנטס"
+  },
+  {
+   "name": "קרלון בראון",
+   "category": "שירי שחקנים",
+   "artist": "Jesus Christ Superstar - Superstar",
+   "wiki": "https://wiki.red-fans.com/index.php?title=קרלון_בראון",
+   "youtube": [
+    "IvVr2uks0C8"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2013/14"
+   ],
+   "player": "קרלון בראון"
+  },
+  {
+   "name": "רובי לבקוביץ'",
+   "category": "שירי שחקנים",
+   "artist": "אני שומע שוב (שיר החייל)/שלמה ארצי",
+   "wiki": "https://wiki.red-fans.com/index.php?title=רובי_לבקוביץ'",
+   "youtube": [
+    "PWNGGfiuBoo"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2018/19",
+    "2024/25"
+   ],
+   "player": "רובי לבקוביץ'"
   },
   {
    "name": "רוי ברנס",
@@ -1739,6 +5324,53 @@
    "player": "רוי קורין"
   },
   {
+   "name": "רוי רונן",
+   "category": "שירי שחקנים",
+   "artist": "Golden Boy-Nadav Guedj",
+   "wiki": "https://wiki.red-fans.com/index.php?title=רוי_רונן",
+   "youtube": [
+    "BQNNtbdZ4Zg"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2015/16"
+   ],
+   "player": "רוי רונן"
+  },
+  {
+   "name": "רום גפן",
+   "category": "שירי שחקנים",
+   "artist": "The Sting Theme",
+   "wiki": "https://wiki.red-fans.com/index.php?title=רום_גפן",
+   "youtube": [
+    "_WxfjWnuEno"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2012/13",
+    "2013/14",
+    "2014/15"
+   ],
+   "player": "רום גפן"
+  },
+  {
+   "name": "רומן וסילוק",
+   "category": "שירי שחקנים",
+   "artist": "המלח שלי - להקת חיל הים",
+   "wiki": "https://wiki.red-fans.com/index.php?title=רומן_וסילוק",
+   "youtube": [
+    "QCLh39TAk3Q"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2004/05"
+   ],
+   "player": "רומן וסילוק"
+  },
+  {
    "name": "רועי אלקוקין",
    "category": "שירי שחקנים",
    "artist": "רון שובל",
@@ -1756,6 +5388,149 @@
     "2026/27"
    ],
    "player": "רועי אלקוקין"
+  },
+  {
+   "name": "רועי הרמן",
+   "category": "שירי שחקנים",
+   "artist": "מותק/איציק קלה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=רועי_הרמן",
+   "youtube": [
+    "o4ldvXIH8Kw"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2024/25"
+   ],
+   "player": "רועי הרמן"
+  },
+  {
+   "name": "רותם חטואל",
+   "category": "שירי שחקנים",
+   "artist": "בחום של תל אביב/שרית חדד",
+   "wiki": "https://wiki.red-fans.com/index.php?title=רותם_חטואל",
+   "youtube": [
+    "_D9WuX2tURc"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2024/25"
+   ],
+   "player": "רותם חטואל"
+  },
+  {
+   "name": "רז מאיר",
+   "category": "שירי שחקנים",
+   "artist": null,
+   "wiki": "https://wiki.red-fans.com/index.php?title=רז_מאיר",
+   "youtube": [
+    "WV1JhZtiH-A"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2023/24"
+   ],
+   "player": "רז מאיר"
+  },
+  {
+   "name": "רז נחמיאס",
+   "category": "שירי שחקנים",
+   "artist": "One Day",
+   "wiki": "https://wiki.red-fans.com/index.php?title=רז_נחמיאס",
+   "youtube": [
+    "WRmBChQjZPs"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2015/16",
+    "2017/18"
+   ],
+   "player": "רז נחמיאס"
+  },
+  {
+   "name": "ריון בראון",
+   "category": "שירי שחקנים",
+   "artist": "שיר גביע העולם 2014",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ריון_בראון",
+   "youtube": [
+    "TGtWWb9emYI"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2014/15"
+   ],
+   "player": "ריון בראון"
+  },
+  {
+   "name": "ריף מסיקה",
+   "category": "שירי שחקנים",
+   "artist": "כפיים - יהודה פוליקר",
+   "wiki": "https://wiki.red-fans.com/index.php?title=ריף_מסיקה",
+   "youtube": [
+    "sFdSCsTkU1s"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2013/14"
+   ],
+   "player": "ריף מסיקה"
+  },
+  {
+   "name": "רמי אבו לאבן",
+   "category": "שירי שחקנים",
+   "artist": "אני שטה - זהבה בן",
+   "wiki": "https://wiki.red-fans.com/index.php?title=רמי_אבו_לאבן",
+   "youtube": [
+    "WEyEDqXm-gI"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2003/04"
+   ],
+   "player": "רמי אבו לאבן"
+  },
+  {
+   "name": "רמי דואני",
+   "category": "שירי שחקנים",
+   "artist": "שירים ושערים",
+   "wiki": "https://wiki.red-fans.com/index.php?title=רמי_דואני",
+   "youtube": [
+    "IQOlMeMJCc4"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2006/07",
+    "2007/08",
+    "2009/10",
+    "2010/11"
+   ],
+   "player": "רמי דואני"
+  },
+  {
+   "name": "רמי חליס",
+   "category": "שירי שחקנים",
+   "artist": "money - abba",
+   "wiki": "https://wiki.red-fans.com/index.php?title=רמי_חליס",
+   "youtube": [
+    "ETxmCCsMoD0"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2001/02",
+    "2002/03",
+    "2003/04",
+    "2004/05",
+    "2005/06"
+   ],
+   "player": "רמי חליס"
   },
   {
    "name": "רק בשבילך הפועל כתבתי שיר",
@@ -1811,6 +5586,55 @@
    "player": "שאנדה סילבה"
   },
   {
+   "name": "שגיב יחזקאל",
+   "category": "שירי שחקנים",
+   "artist": "תל אביב-עומר אדם ואריסה",
+   "wiki": "https://wiki.red-fans.com/index.php?title=שגיב_יחזקאל",
+   "youtube": [
+    "nMQw29nfzpg"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2013/14",
+    "2014/15",
+    "2015/16",
+    "2016/17"
+   ],
+   "player": "שגיב יחזקאל"
+  },
+  {
+   "name": "שון מלכה",
+   "category": "שירי שחקנים",
+   "artist": "מאיה בוסקילה - הלב",
+   "wiki": "https://wiki.red-fans.com/index.php?title=שון_מלכה",
+   "youtube": [
+    "T5umnAkoxeo"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2013/14",
+    "2014/15"
+   ],
+   "player": "שון מלכה"
+  },
+  {
+   "name": "שחר גואטה",
+   "category": "שירי שחקנים",
+   "artist": "אמא",
+   "wiki": "https://wiki.red-fans.com/index.php?title=שחר_גואטה",
+   "youtube": [
+    "k5Gw5Z8-Vjk"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "1999/00"
+   ],
+   "player": "שחר גואטה"
+  },
+  {
    "name": "שחר פיבן",
    "category": "שירי שחקנים",
    "artist": "משה פרץ",
@@ -1855,6 +5679,36 @@
    "player": "שי אבוטבול"
   },
   {
+   "name": "שי סויסה",
+   "category": "שירי שחקנים",
+   "artist": "יבוא יום",
+   "wiki": "https://wiki.red-fans.com/index.php?title=שי_סויסה",
+   "youtube": [
+    "c1IYu8wRtO8"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2007/08"
+   ],
+   "player": "שי סויסה"
+  },
+  {
+   "name": "שי רביבו",
+   "category": "שירי שחקנים",
+   "artist": "מרדכי בן דוד - אני מאמין",
+   "wiki": "https://wiki.red-fans.com/index.php?title=שי_רביבו",
+   "youtube": [
+    "CdYaNeU9iOo"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2010/11"
+   ],
+   "player": "שי רביבו"
+  },
+  {
    "name": "שלום עליכם",
    "category": "שירים מהיציע",
    "artist": null,
@@ -1865,6 +5719,115 @@
    "original": true,
    "sport": null,
    "seasons": []
+  },
+  {
+   "name": "שלום תקווה",
+   "category": "שירי שחקנים",
+   "artist": "הבאנו שלום עליכם, אתניקס - אין כמו אמא",
+   "wiki": "https://wiki.red-fans.com/index.php?title=שלום_תקווה",
+   "youtube": [
+    "mZ_nbinWkvE"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1995/96",
+    "1996/97",
+    "1997/98",
+    "1998/99",
+    "1999/00"
+   ],
+   "player": "שלום תקווה"
+  },
+  {
+   "name": "שלומי אזולאי (חלוץ)",
+   "category": "שירי שחקנים",
+   "artist": "KC & The Sunshine Band - Give It Up",
+   "wiki": "https://wiki.red-fans.com/index.php?title=שלומי_אזולאי_(חלוץ)",
+   "youtube": [
+    "IeqtAB1WgEw"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2014/15",
+    "2020/21",
+    "2021/22"
+   ],
+   "player": "שלומי אזולאי (חלוץ)"
+  },
+  {
+   "name": "שמעון גרשון",
+   "category": "שירי שחקנים",
+   "artist": "ספידי גונזלס",
+   "wiki": "https://wiki.red-fans.com/index.php?title=שמעון_גרשון",
+   "youtube": [
+    "Kv6DJZssB6g"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1996/97",
+    "1997/98",
+    "1998/99",
+    "1999/00",
+    "2000/01",
+    "2001/02",
+    "2002/03",
+    "2003/04",
+    "2004/05",
+    "2005/06"
+   ],
+   "player": "שמעון גרשון"
+  },
+  {
+   "name": "שמעון הרוש",
+   "category": "שירי שחקנים",
+   "artist": "Emilia- Big Big World",
+   "wiki": "https://wiki.red-fans.com/index.php?title=שמעון_הרוש",
+   "youtube": [
+    "IwBNY2xqSX8"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2012/13",
+    "2013/14"
+   ],
+   "player": "שמעון הרוש"
+  },
+  {
+   "name": "תום אלמדון",
+   "category": "שירי שחקנים",
+   "artist": "יוני בלוך - אחריות",
+   "wiki": "https://wiki.red-fans.com/index.php?title=תום_אלמדון",
+   "youtube": [
+    "vST93JG_AaU"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2014/15"
+   ],
+   "player": "תום אלמדון"
+  },
+  {
+   "name": "תומר אטלס",
+   "category": "שירי שחקנים",
+   "artist": "פתאום מצאתי בך",
+   "wiki": "https://wiki.red-fans.com/index.php?title=תומר_אטלס",
+   "youtube": [
+    "_3NVuSQOiD8"
+   ],
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "1998/99",
+    "1999/00",
+    "2001/02",
+    "2002/03"
+   ],
+   "player": "תומר אטלס"
   },
   {
    "name": "תומר גינת",
@@ -1888,6 +5851,21 @@
     "2026/27"
    ],
    "player": "תומר גינת"
+  },
+  {
+   "name": "תומר חליבה",
+   "category": "שירי שחקנים",
+   "artist": "אם יש לך שמש",
+   "wiki": "https://wiki.red-fans.com/index.php?title=תומר_חליבה",
+   "youtube": [
+    "S9ePzp1-GbE"
+   ],
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2006/07"
+   ],
+   "player": "תומר חליבה"
   },
   {
    "name": "תפילה - גילי ורמוט",
