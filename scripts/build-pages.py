@@ -62,12 +62,6 @@ header.top{border-bottom:1px solid var(--line);background:var(--ink2)}
 .brand img{width:34px;height:34px}
 .top__in{position:relative}
 .top__actions{display:flex;gap:8px;align-items:center;margin-inline-start:auto}
-.btn-play{
-  display:inline-flex;align-items:center;gap:7px;background:var(--red);color:#fff;
-  text-decoration:none;font-weight:700;font-size:.92rem;padding:9px 16px;border-radius:8px;
-  white-space:nowrap;transition:background .15s
-}
-.btn-play:hover{background:#b30015;color:#fff}
 .menu-btn{
   display:inline-flex;align-items:center;gap:8px;background:none;color:var(--grey);
   border:1px solid var(--line);border-radius:8px;padding:9px 14px;font:inherit;
@@ -93,7 +87,6 @@ header.top{border-bottom:1px solid var(--line);background:var(--ink2)}
 .menu a[aria-current=page]{color:var(--white);background:var(--ink2)}
 .menu a[aria-current=page]::after{content:" ●";color:var(--red);font-size:.7em}
 @media (max-width:520px){
-  .btn-play span[aria-hidden]{display:none}
   .top__in{padding:11px 0}
   .brand{font-size:1.05rem}
 }
@@ -220,12 +213,9 @@ def shell(slug, title, desc, body):
         '<a href="%s"%s role="menuitem">%s</a>' % (h, ' aria-current="page"' if h == slug else "", t)
         for h, t in NAV
     )
-    # the game is the point of the site; on every other page it gets a real
-    # button rather than being one link among six
-    play = "" if slug == "index.html" else (
-        '<a class="btn-play" href="index.html">'
-        '<span aria-hidden="true">▶</span> חזרה למשחק</a>'
-    )
+    # the brand link itself is the way back to the game — labeled as such,
+    # so a separate חזרה למשחק button is redundant
+    play = ""
     return f"""<!doctype html>
 <html lang="he" dir="rtl">
 <head>
@@ -264,7 +254,7 @@ def shell(slug, title, desc, body):
 <a class="skip" href="#main">דילוג לתוכן</a>
 <header class="top">
   <div class="wrap top__in">
-    <a class="brand" href="index.html"><img src="logo.svg" alt="" width="34" height="34">הפועל שרים</a>
+    <a class="brand" href="index.html"><img src="logo.svg" alt="" width="34" height="34">חזרה להפועל שרים</a>
     <div class="top__actions">
       {play}
       <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="pagemenu" aria-haspopup="true">
@@ -279,6 +269,7 @@ def shell(slug, title, desc, body):
 <p class="updated">עודכן לאחרונה: {UPDATED}</p>
 </div></main>
 <script src="stats.js"></script>
+<script src="wikiback.js"></script>
 <script src="clarity.js"></script>
 <script src="site.js"></script>
 <script src="a11y.js"></script>
