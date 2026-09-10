@@ -146,11 +146,17 @@ input{font:inherit}
 .cats__squad input{width:20px;height:20px;accent-color:var(--red);flex:none;margin-top:1px}
 .cats__squad small{display:block;color:var(--grey);font-size:.78rem;margin-top:2px}
 .cats__presets{display:flex;gap:6px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:10px}
-.cats__seasons{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:4px 0 10px;font-size:.88rem}
-.cats__seasons select{background:var(--ink);border:1.5px solid var(--line);color:var(--white);
-  border-radius:8px;padding:7px 10px;font:inherit;font-size:.86rem}
-.cats__seasons select:disabled{opacity:.35}
-.cats__seasons span{color:var(--grey)}
+.cats__seasons{padding:4px 0 10px}
+.cats__seasons-head{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:8px;
+  font-size:.86rem;color:var(--grey)}
+.season-grid{display:flex;flex-wrap:wrap;gap:5px;max-height:136px;overflow-y:auto;
+  overscroll-behavior:contain;border:1px solid var(--line);border-radius:9px;
+  padding:8px;background:var(--ink)}
+.season-grid[data-off="true"]{opacity:.35;pointer-events:none}
+.season{border:1px solid var(--line);border-radius:7px;padding:5px 9px;font-size:.78rem;
+  font-weight:700;color:var(--grey);font-variant-numeric:tabular-nums;white-space:nowrap}
+.season:hover{border-color:var(--grey);color:var(--white)}
+.season[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff}
 
 /* ---------- setup ---------- */
 #setup{min-height:100dvh;display:grid;place-items:center;padding:24px}
@@ -609,34 +615,39 @@ input{font:inherit}
      Sport and seasons come from the wiki's own roster category tags, baked
      into songs.json — see scripts/enrich-songs.py. */
   const CAT_DEFAULT = { terrace: true, football: true, basketball: false, other: false };
-  const SEASON_DEFAULT = { from: "2025/26", to: "2026/27" };
-  let cats, allSeasons, fromS, toS;
+  const SEASON_DEFAULT = ["2025/26", "2026/27"];
+  const yr = (s) => parseInt(String(s).slice(0, 4), 10);
+  let cats, allSeasons, seasonSel;
   try {
     const v = JSON.parse(localStorage.getItem("hapoel-sings-cats") || "null") || {};
     cats = v.cats ? { ...CAT_DEFAULT, ...v.cats } : { ...CAT_DEFAULT };
-    // migrate the old boolean-only shape
     allSeasons = typeof v.allSeasons === "boolean" ? v.allSeasons
                : (typeof v.curOnly === "boolean" ? !v.curOnly : false);
-    fromS = v.from || SEASON_DEFAULT.from;
-    toS   = v.to   || SEASON_DEFAULT.to;
-  } catch { cats = { ...CAT_DEFAULT }; allSeasons = false; fromS = SEASON_DEFAULT.from; toS = SEASON_DEFAULT.to; }
+    if (Array.isArray(v.seasons)) seasonSel = new Set(v.seasons);
+    else if (v.from && v.to) {
+      // migrate the old from/to range into an explicit set
+      const lo = Math.min(yr(v.from), yr(v.to)), hi = Math.max(yr(v.from), yr(v.to));
+      seasonSel = new Set();
+      for (let y = lo; y <= hi; y++) seasonSel.add(y + "/" + String((y + 1) % 100).padStart(2, "0"));
+    } else seasonSel = new Set(SEASON_DEFAULT);
+  } catch {
+    cats = { ...CAT_DEFAULT }; allSeasons = false; seasonSel = new Set(SEASON_DEFAULT);
+  }
 
   const saveCats = () => {
     try {
       localStorage.setItem("hapoel-sings-cats",
-        JSON.stringify({ cats, allSeasons, from: fromS, to: toS }));
+        JSON.stringify({ cats, allSeasons, seasons: [...seasonSel] }));
     } catch {}
   };
 
-  const yr = (s) => parseInt(String(s).slice(0, 4), 10);
   const allSeasonsList = () => [...new Set(SONGS.flatMap((s) => s.seasons || []))]
     .sort((a, b) => yr(a) - yr(b));
 
-  /* a player counts if any season he was on the squad falls in the window */
+  /* a player counts if ANY season he was on the squad is one of the picked ones */
   function inWindow(s) {
     if (allSeasons) return true;
-    const lo = Math.min(yr(fromS), yr(toS)), hi = Math.max(yr(fromS), yr(toS));
-    return (s.seasons || []).some((x) => yr(x) >= lo && yr(x) <= hi);
+    return (s.seasons || []).some((x) => seasonSel.has(x));
   }
 
   function inCats(s) {
@@ -667,10 +678,14 @@ input{font:inherit}
       '<button type="button" class="cat" data-cat="other">אחר <span class="cat__n"></span></button>' +
     '</div>' +
     '<label class="cats__squad"><input type="checkbox" data-allseasons>' +
-      '<span>כל העונות<small>אחרת — רק שחקנים מהטווח שנבחר</small></span></label>' +
+      '<span>כל העונות<small>אחרת — רק העונות שסומנו למטה</small></span></label>' +
     '<div class="cats__seasons">' +
-      '<span>מעונת</span><select data-from></select>' +
-      '<span>עד</span><select data-to></select>' +
+      '<div class="cats__seasons-head"><span>עונות</span>' +
+        '<button type="button" class="mini" data-seasons="recent">3 האחרונות</button>' +
+        '<button type="button" class="mini" data-seasons="all">סמן הכל</button>' +
+        '<button type="button" class="mini" data-seasons="none">נקה</button>' +
+      '</div>' +
+      '<div class="season-grid" data-seasongrid></div>' +
     '</div>' +
     '<div class="cats__presets">' +
       '<button type="button" class="mini" data-preset="default">ברירת מחדל</button>' +
@@ -690,14 +705,15 @@ input{font:inherit}
         b.querySelector(".cat__n").textContent = catCount(b.dataset.cat);
       });
       box.querySelector("[data-allseasons]").checked = allSeasons;
-      ["from", "to"].forEach((which) => {
-        const sel = box.querySelector(`[data-${which}]`);
-        if (sel.options.length !== seasons.length) {
-          sel.innerHTML = seasons.map((s) => `<option value="${s}">${s}</option>`).join("");
-        }
-        sel.value = which === "from" ? fromS : toS;
-        sel.disabled = allSeasons;
-      });
+      const grid = box.querySelector("[data-seasongrid]");
+      if (grid.children.length !== seasons.length) {
+        // newest first: recent seasons are the ones people actually reach for
+        grid.innerHTML = seasons.slice().reverse()
+          .map((s) => `<button type="button" class="season" data-season="${s}">${s}</button>`).join("");
+      }
+      grid.querySelectorAll("[data-season]").forEach((b) =>
+        b.setAttribute("aria-pressed", String(seasonSel.has(b.dataset.season))));
+      grid.dataset.off = String(allSeasons);
     });
     const label = total ? `(${total} שירים)` : "(לא נבחר כלום)";
     ["advSummary", "advSummaryListen"].forEach((id) => {
@@ -726,6 +742,20 @@ input{font:inherit}
       adv.setAttribute("aria-expanded", String(open));
       return;
     }
+    const sc = e.target.closest(".cats [data-season]");
+    if (sc) {
+      const v = sc.dataset.season;
+      if (seasonSel.has(v)) seasonSel.delete(v); else seasonSel.add(v);
+      afterCatChange(); return;
+    }
+    const sa = e.target.closest(".cats [data-seasons]");
+    if (sa) {
+      const list = allSeasonsList();
+      if (sa.dataset.seasons === "all") seasonSel = new Set(list);
+      else if (sa.dataset.seasons === "none") seasonSel = new Set();
+      else seasonSel = new Set(list.slice(-3));
+      afterCatChange(); return;
+    }
     const chip = e.target.closest(".cats [data-cat]");
     if (chip) { cats[chip.dataset.cat] = !cats[chip.dataset.cat]; afterCatChange(); return; }
     const pre = e.target.closest(".cats [data-preset]");
@@ -733,7 +763,7 @@ input{font:inherit}
     const p = pre.dataset.preset;
     if (p === "default") {
       cats = { ...CAT_DEFAULT }; allSeasons = false;
-      fromS = SEASON_DEFAULT.from; toS = SEASON_DEFAULT.to;
+      seasonSel = new Set(SEASON_DEFAULT);
     } else if (p === "all") {
       cats = { terrace: true, football: true, basketball: true, other: true }; allSeasons = true;
     } else if (p === "terrace") { cats = { terrace: true, football: false, basketball: false, other: false }; }
@@ -744,8 +774,6 @@ input{font:inherit}
 
   document.addEventListener("change", (e) => {
     if (e.target.matches(".cats [data-allseasons]")) { allSeasons = e.target.checked; afterCatChange(); }
-    else if (e.target.matches(".cats [data-from]")) { fromS = e.target.value; afterCatChange(); }
-    else if (e.target.matches(".cats [data-to]")) { toS = e.target.value; afterCatChange(); }
   });
 
   const basePool = () => SONGS.filter(inCats);
