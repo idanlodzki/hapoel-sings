@@ -34,11 +34,20 @@ Songs never repeat — the list is shuffled once and dealt out.
 
 ## Categories
 
-The setup screen (and the listen screen) carry a category filter above the
-per-song picker: **יציע / כדורגל / כדורסל / אחר**, plus a *רק שחקנים מהסגל
-הנוכחי* toggle scoped to seasons 2025/26 and 2026/27, and one-tap presets.
-The default — the state a first-time visitor gets — is **terrace songs plus
-current-squad footballers**, 108 of the 383.
+Both the setup and listen screens carry an **אפשרויות מתקדמות** line, collapsed
+by default and showing only the resulting song count. The defaults are what a
+normal night wants, so nothing has to be chosen to start playing: **terrace
+songs plus current-squad footballers**, 108 of the 383.
+
+Expanding it reveals the controls:
+
+- chips for **יציע / כדורגל / כדורסל / אחר**, each with a live count
+- a **season window** — `מעונת … עד …` across all 46 seasons in the data
+  (1976/77 to 2026/27), or *כל העונות* to ignore it entirely
+- presets: ברירת מחדל / הכל / רק יציע / רק כדורגל / רק כדורסל
+
+A player matches the window if **any** season he was on the squad falls inside
+it, so someone with two spells at the club shows up for both.
 
 Both screens share one filter state (`hapoel-sings-cats` in localStorage), so
 the game and listen mode can never disagree about what is in play.

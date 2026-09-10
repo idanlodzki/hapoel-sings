@@ -132,7 +132,8 @@ input{font:inherit}
 
 /* ---------- category filter ---------- */
 .cats{background:var(--ink-2);border:1.5px solid var(--line);border-radius:12px;
-  padding:14px;text-align:start}
+  padding:14px;text-align:start;margin-top:-4px}
+.adv-sum{color:var(--grey);font-size:.82rem;font-weight:600}
 .cats__h{display:flex;align-items:center;justify-content:space-between;gap:8px;
   font-family:var(--f-d);font-weight:700;font-size:.95rem;margin-bottom:10px}
 .cats__row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:6px}
@@ -145,6 +146,11 @@ input{font:inherit}
 .cats__squad input{width:20px;height:20px;accent-color:var(--red);flex:none;margin-top:1px}
 .cats__squad small{display:block;color:var(--grey);font-size:.78rem;margin-top:2px}
 .cats__presets{display:flex;gap:6px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:10px}
+.cats__seasons{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:4px 0 10px;font-size:.88rem}
+.cats__seasons select{background:var(--ink);border:1.5px solid var(--line);color:var(--white);
+  border-radius:8px;padding:7px 10px;font:inherit;font-size:.86rem}
+.cats__seasons select:disabled{opacity:.35}
+.cats__seasons span{color:var(--grey)}
 
 /* ---------- setup ---------- */
 #setup{min-height:100dvh;display:grid;place-items:center;padding:24px}
@@ -362,7 +368,10 @@ input{font:inherit}
     <div class="setup-actions">
       <button class="btn btn--ghost" id="addP">+ הוספת משתתף</button>
 
-      <div class="cats" id="catsSetup"></div>
+      <button class="btn btn--ghost" id="advToggle" aria-expanded="false" aria-controls="catsSetup">
+        אפשרויות מתקדמות <span class="adv-sum" id="advSummary"></span>
+      </button>
+      <div class="cats hide" id="catsSetup"></div>
 
       <button class="btn btn--ghost" id="pickToggle" aria-expanded="false">
         בחירת שירים <span id="pickCount"></span>
@@ -417,7 +426,9 @@ input{font:inherit}
       </div>
     </div>
 
-    <div class="cats" id="catsListen"></div>
+    <button class="mini" id="advToggleListen" aria-expanded="false" aria-controls="catsListen"
+            style="margin-bottom:10px">אפשרויות מתקדמות <span class="adv-sum" id="advSummaryListen"></span></button>
+    <div class="cats hide" id="catsListen"></div>
     <p class="listen__sub" id="listenCount"></p>
     <label for="listenSearch" class="sr-only">חיפוש שיר</label>
     <input type="search" id="listenSearch" placeholder="חיפוש שיר…" autocomplete="off">
@@ -590,29 +601,48 @@ input{font:inherit}
   };
 
   /* ---------------- categories ----------------
-     Coarse filter above the per-song picker: which kinds of songs are in play
-     at all. Shared by the game and listen mode so the two never disagree.
+     Deliberately collapsed: the defaults are what a normal night wants, so
+     the setup screen stays a name list and a start button. Everything below
+     lives behind "אפשרויות מתקדמות" for the times someone wants a specific
+     era or only one sport.
+
      Sport and seasons come from the wiki's own roster category tags, baked
      into songs.json — see scripts/enrich-songs.py. */
-  const CUR_SEASONS = ["2025/26", "2026/27"];
   const CAT_DEFAULT = { terrace: true, football: true, basketball: false, other: false };
-  let cats, curOnly;
+  const SEASON_DEFAULT = { from: "2025/26", to: "2026/27" };
+  let cats, allSeasons, fromS, toS;
   try {
-    const saved = JSON.parse(localStorage.getItem("hapoel-sings-cats") || "null");
-    cats = saved && saved.cats ? { ...CAT_DEFAULT, ...saved.cats } : { ...CAT_DEFAULT };
-    curOnly = saved && typeof saved.curOnly === "boolean" ? saved.curOnly : true;
-  } catch { cats = { ...CAT_DEFAULT }; curOnly = true; }
+    const v = JSON.parse(localStorage.getItem("hapoel-sings-cats") || "null") || {};
+    cats = v.cats ? { ...CAT_DEFAULT, ...v.cats } : { ...CAT_DEFAULT };
+    // migrate the old boolean-only shape
+    allSeasons = typeof v.allSeasons === "boolean" ? v.allSeasons
+               : (typeof v.curOnly === "boolean" ? !v.curOnly : false);
+    fromS = v.from || SEASON_DEFAULT.from;
+    toS   = v.to   || SEASON_DEFAULT.to;
+  } catch { cats = { ...CAT_DEFAULT }; allSeasons = false; fromS = SEASON_DEFAULT.from; toS = SEASON_DEFAULT.to; }
 
   const saveCats = () => {
-    try { localStorage.setItem("hapoel-sings-cats", JSON.stringify({ cats, curOnly })); } catch {}
+    try {
+      localStorage.setItem("hapoel-sings-cats",
+        JSON.stringify({ cats, allSeasons, from: fromS, to: toS }));
+    } catch {}
   };
 
-  const isCurrent = (s) => (s.seasons || []).some((x) => CUR_SEASONS.includes(x));
+  const yr = (s) => parseInt(String(s).slice(0, 4), 10);
+  const allSeasonsList = () => [...new Set(SONGS.flatMap((s) => s.seasons || []))]
+    .sort((a, b) => yr(a) - yr(b));
+
+  /* a player counts if any season he was on the squad falls in the window */
+  function inWindow(s) {
+    if (allSeasons) return true;
+    const lo = Math.min(yr(fromS), yr(toS)), hi = Math.max(yr(fromS), yr(toS));
+    return (s.seasons || []).some((x) => yr(x) >= lo && yr(x) <= hi);
+  }
 
   function inCats(s) {
     if (s.c === "שירים מהיציע") return cats.terrace;
     if (s.c === "שירי שחקנים") {
-      if (curOnly && !isCurrent(s)) return false;
+      if (!inWindow(s)) return false;
       if (s.sport === "כדורסל") return cats.basketball;
       return cats.football;   // כדורגל, and the odd player the wiki has no page for
     }
@@ -624,22 +654,24 @@ input{font:inherit}
       if (key === "terrace") return s.c === "שירים מהיציע";
       if (key === "other") return s.c === "שירים";
       if (s.c !== "שירי שחקנים") return false;
-      if (curOnly && !isCurrent(s)) return false;
+      if (!inWindow(s)) return false;
       return key === "basketball" ? s.sport === "כדורסל" : s.sport !== "כדורסל";
     }).length;
   }
 
-  const CATS_HTML =
-    '<div class="cats__h"><span>אילו שירים לשחק?</span>' +
-      '<span class="cat__n" data-cattotal></span></div>' +
+  const CATS_HTML = () =>
     '<div class="cats__row">' +
       '<button type="button" class="cat" data-cat="terrace">יציע <span class="cat__n"></span></button>' +
       '<button type="button" class="cat" data-cat="football">כדורגל <span class="cat__n"></span></button>' +
       '<button type="button" class="cat" data-cat="basketball">כדורסל <span class="cat__n"></span></button>' +
       '<button type="button" class="cat" data-cat="other">אחר <span class="cat__n"></span></button>' +
     '</div>' +
-    '<label class="cats__squad"><input type="checkbox" data-curonly>' +
-      '<span>רק שחקנים מהסגל הנוכחי<small>עונות 2025/26 ו-2026/27</small></span></label>' +
+    '<label class="cats__squad"><input type="checkbox" data-allseasons>' +
+      '<span>כל העונות<small>אחרת — רק שחקנים מהטווח שנבחר</small></span></label>' +
+    '<div class="cats__seasons">' +
+      '<span>מעונת</span><select data-from></select>' +
+      '<span>עד</span><select data-to></select>' +
+    '</div>' +
     '<div class="cats__presets">' +
       '<button type="button" class="mini" data-preset="default">ברירת מחדל</button>' +
       '<button type="button" class="mini" data-preset="all">הכל</button>' +
@@ -650,15 +682,26 @@ input{font:inherit}
 
   function renderCats() {
     const total = chosen().length;
+    const seasons = allSeasonsList();
     document.querySelectorAll(".cats").forEach((box) => {
-      if (!box.dataset.built) { box.innerHTML = CATS_HTML; box.dataset.built = "1"; }
+      if (!box.dataset.built) { box.innerHTML = CATS_HTML(); box.dataset.built = "1"; }
       box.querySelectorAll("[data-cat]").forEach((b) => {
         b.setAttribute("aria-pressed", String(!!cats[b.dataset.cat]));
         b.querySelector(".cat__n").textContent = catCount(b.dataset.cat);
       });
-      box.querySelector("[data-curonly]").checked = curOnly;
-      box.querySelector("[data-cattotal]").textContent =
-        total ? total + " שירים" : "לא נבחר כלום";
+      box.querySelector("[data-allseasons]").checked = allSeasons;
+      ["from", "to"].forEach((which) => {
+        const sel = box.querySelector(`[data-${which}]`);
+        if (sel.options.length !== seasons.length) {
+          sel.innerHTML = seasons.map((s) => `<option value="${s}">${s}</option>`).join("");
+        }
+        sel.value = which === "from" ? fromS : toS;
+        sel.disabled = allSeasons;
+      });
+    });
+    const label = total ? `(${total} שירים)` : "(לא נבחר כלום)";
+    ["advSummary", "advSummaryListen"].forEach((id) => {
+      const el = $(id); if (el) el.textContent = label;
     });
   }
 
@@ -675,23 +718,34 @@ input{font:inherit}
   }
 
   document.addEventListener("click", (e) => {
+    const adv = e.target.closest("#advToggle, #advToggleListen");
+    if (adv) {
+      const box = $(adv.getAttribute("aria-controls"));
+      const open = box.classList.contains("hide");
+      box.classList.toggle("hide", !open);
+      adv.setAttribute("aria-expanded", String(open));
+      return;
+    }
     const chip = e.target.closest(".cats [data-cat]");
     if (chip) { cats[chip.dataset.cat] = !cats[chip.dataset.cat]; afterCatChange(); return; }
     const pre = e.target.closest(".cats [data-preset]");
     if (!pre) return;
     const p = pre.dataset.preset;
-    if (p === "default") { cats = { ...CAT_DEFAULT }; curOnly = true; }
-    else if (p === "all") { cats = { terrace: true, football: true, basketball: true, other: true }; curOnly = false; }
-    else if (p === "terrace") { cats = { terrace: true, football: false, basketball: false, other: false }; }
+    if (p === "default") {
+      cats = { ...CAT_DEFAULT }; allSeasons = false;
+      fromS = SEASON_DEFAULT.from; toS = SEASON_DEFAULT.to;
+    } else if (p === "all") {
+      cats = { terrace: true, football: true, basketball: true, other: true }; allSeasons = true;
+    } else if (p === "terrace") { cats = { terrace: true, football: false, basketball: false, other: false }; }
     else if (p === "football") { cats = { terrace: false, football: true, basketball: false, other: false }; }
     else if (p === "basketball") { cats = { terrace: false, football: false, basketball: true, other: false }; }
     afterCatChange();
   });
 
   document.addEventListener("change", (e) => {
-    if (!e.target.matches(".cats [data-curonly]")) return;
-    curOnly = e.target.checked;
-    afterCatChange();
+    if (e.target.matches(".cats [data-allseasons]")) { allSeasons = e.target.checked; afterCatChange(); }
+    else if (e.target.matches(".cats [data-from]")) { fromS = e.target.value; afterCatChange(); }
+    else if (e.target.matches(".cats [data-to]")) { toS = e.target.value; afterCatChange(); }
   });
 
   const basePool = () => SONGS.filter(inCats);
