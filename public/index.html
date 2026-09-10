@@ -134,6 +134,8 @@ input{font:inherit}
 .cats{background:var(--ink-2);border:1.5px solid var(--line);border-radius:12px;
   padding:14px;text-align:start;margin-top:-4px}
 .adv-sum{color:var(--grey);font-size:.82rem;font-weight:600}
+.adv-caret{display:inline-block;color:var(--grey);font-size:.8rem;transition:transform .18s var(--ease)}
+[aria-expanded="true"] .adv-caret{transform:rotate(180deg)}
 .cats__h{display:flex;align-items:center;justify-content:space-between;gap:8px;
   font-family:var(--f-d);font-weight:700;font-size:.95rem;margin-bottom:10px}
 .cats__row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:6px}
@@ -375,7 +377,8 @@ input{font:inherit}
       <button class="btn btn--ghost" id="addP">+ הוספת משתתף</button>
 
       <button class="btn btn--ghost" id="advToggle" aria-expanded="false" aria-controls="catsSetup">
-        אפשרויות מתקדמות <span class="adv-sum" id="advSummary"></span>
+        רוצים כדורסל? עונות אחרות? <span class="adv-sum" id="advSummary"></span>
+        <span class="adv-caret" aria-hidden="true">▾</span>
       </button>
       <div class="cats hide" id="catsSetup"></div>
 
@@ -433,7 +436,8 @@ input{font:inherit}
     </div>
 
     <button class="mini" id="advToggleListen" aria-expanded="false" aria-controls="catsListen"
-            style="margin-bottom:10px">אפשרויות מתקדמות <span class="adv-sum" id="advSummaryListen"></span></button>
+            style="margin-bottom:10px">רוצים כדורסל? עונות אחרות? <span class="adv-sum" id="advSummaryListen"></span>
+            <span class="adv-caret" aria-hidden="true">▾</span></button>
     <div class="cats hide" id="catsListen"></div>
     <p class="listen__sub" id="listenCount"></p>
     <label for="listenSearch" class="sr-only">חיפוש שיר</label>
@@ -609,7 +613,7 @@ input{font:inherit}
   /* ---------------- categories ----------------
      Deliberately collapsed: the defaults are what a normal night wants, so
      the setup screen stays a name list and a start button. Everything below
-     lives behind "אפשרויות מתקדמות" for the times someone wants a specific
+     lives behind "רוצים כדורסל? עונות אחרות?" for the times someone wants a specific
      era or only one sport.
 
      Sport and seasons come from the wiki's own roster category tags, baked

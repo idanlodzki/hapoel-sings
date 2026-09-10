@@ -34,7 +34,7 @@ Songs never repeat — the list is shuffled once and dealt out.
 
 ## Categories
 
-Both the setup and listen screens carry an **אפשרויות מתקדמות** line, collapsed
+Both the setup and listen screens carry a **רוצים כדורסל? עונות אחרות?** line, collapsed
 by default and showing only the resulting song count. The defaults are what a
 normal night wants, so nothing has to be chosen to start playing: **terrace
 songs plus current-squad footballers**, 108 of the 383.
