@@ -130,6 +130,22 @@ input{font:inherit}
   .songitem__links{width:100%;padding-inline-start:52px}
 }
 
+/* ---------- category filter ---------- */
+.cats{background:var(--ink-2);border:1.5px solid var(--line);border-radius:12px;
+  padding:14px;text-align:start}
+.cats__h{display:flex;align-items:center;justify-content:space-between;gap:8px;
+  font-family:var(--f-d);font-weight:700;font-size:.95rem;margin-bottom:10px}
+.cats__row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.cat{display:inline-flex;align-items:center;gap:7px;border:1.5px solid var(--line);
+  border-radius:999px;padding:8px 14px;font-size:.9rem;font-weight:700;color:var(--grey)}
+.cat:hover{border-color:var(--grey);color:var(--white)}
+.cat[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff}
+.cat__n{font-size:.78rem;opacity:.85;font-variant-numeric:tabular-nums;font-weight:700}
+.cats__squad{display:flex;align-items:flex-start;gap:10px;cursor:pointer;padding:8px 0;font-size:.9rem}
+.cats__squad input{width:20px;height:20px;accent-color:var(--red);flex:none;margin-top:1px}
+.cats__squad small{display:block;color:var(--grey);font-size:.78rem;margin-top:2px}
+.cats__presets{display:flex;gap:6px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:10px}
+
 /* ---------- setup ---------- */
 #setup{min-height:100dvh;display:grid;place-items:center;padding:24px}
 .setup-card{width:100%;max-width:560px;text-align:center}
@@ -346,6 +362,8 @@ input{font:inherit}
     <div class="setup-actions">
       <button class="btn btn--ghost" id="addP">+ הוספת משתתף</button>
 
+      <div class="cats" id="catsSetup"></div>
+
       <button class="btn btn--ghost" id="pickToggle" aria-expanded="false">
         בחירת שירים <span id="pickCount"></span>
       </button>
@@ -399,6 +417,7 @@ input{font:inherit}
       </div>
     </div>
 
+    <div class="cats" id="catsListen"></div>
     <p class="listen__sub" id="listenCount"></p>
     <label for="listenSearch" class="sr-only">חיפוש שיר</label>
     <input type="search" id="listenSearch" placeholder="חיפוש שיר…" autocomplete="off">
@@ -508,12 +527,15 @@ input{font:inherit}
           w: s.wiki || "",
           a: s.artist || null,
           y: (s.youtube || []).map(toId).filter(Boolean),
+          sport: s.sport || null,
+          seasons: s.seasons || [],
         }))
         .filter((s) => s.n && s.y.length);
     } catch (e) {
       $("setupErr").textContent = "לא הצלחנו לטעון את רשימת השירים";
       SONGS = [];
     }
+    renderCats();
     renderPicker();
     updatePool();
   }
@@ -567,7 +589,112 @@ input{font:inherit}
     try { localStorage.setItem("hapoel-sings-excluded", JSON.stringify([...excluded])) } catch {}
   };
 
-  const basePool = () => SONGS;
+  /* ---------------- categories ----------------
+     Coarse filter above the per-song picker: which kinds of songs are in play
+     at all. Shared by the game and listen mode so the two never disagree.
+     Sport and seasons come from the wiki's own roster category tags, baked
+     into songs.json — see scripts/enrich-songs.py. */
+  const CUR_SEASONS = ["2025/26", "2026/27"];
+  const CAT_DEFAULT = { terrace: true, football: true, basketball: false, other: false };
+  let cats, curOnly;
+  try {
+    const saved = JSON.parse(localStorage.getItem("hapoel-sings-cats") || "null");
+    cats = saved && saved.cats ? { ...CAT_DEFAULT, ...saved.cats } : { ...CAT_DEFAULT };
+    curOnly = saved && typeof saved.curOnly === "boolean" ? saved.curOnly : true;
+  } catch { cats = { ...CAT_DEFAULT }; curOnly = true; }
+
+  const saveCats = () => {
+    try { localStorage.setItem("hapoel-sings-cats", JSON.stringify({ cats, curOnly })); } catch {}
+  };
+
+  const isCurrent = (s) => (s.seasons || []).some((x) => CUR_SEASONS.includes(x));
+
+  function inCats(s) {
+    if (s.c === "שירים מהיציע") return cats.terrace;
+    if (s.c === "שירי שחקנים") {
+      if (curOnly && !isCurrent(s)) return false;
+      if (s.sport === "כדורסל") return cats.basketball;
+      return cats.football;   // כדורגל, and the odd player the wiki has no page for
+    }
+    return cats.other;
+  }
+
+  function catCount(key) {
+    return SONGS.filter((s) => {
+      if (key === "terrace") return s.c === "שירים מהיציע";
+      if (key === "other") return s.c === "שירים";
+      if (s.c !== "שירי שחקנים") return false;
+      if (curOnly && !isCurrent(s)) return false;
+      return key === "basketball" ? s.sport === "כדורסל" : s.sport !== "כדורסל";
+    }).length;
+  }
+
+  const CATS_HTML =
+    '<div class="cats__h"><span>אילו שירים לשחק?</span>' +
+      '<span class="cat__n" data-cattotal></span></div>' +
+    '<div class="cats__row">' +
+      '<button type="button" class="cat" data-cat="terrace">יציע <span class="cat__n"></span></button>' +
+      '<button type="button" class="cat" data-cat="football">כדורגל <span class="cat__n"></span></button>' +
+      '<button type="button" class="cat" data-cat="basketball">כדורסל <span class="cat__n"></span></button>' +
+      '<button type="button" class="cat" data-cat="other">אחר <span class="cat__n"></span></button>' +
+    '</div>' +
+    '<label class="cats__squad"><input type="checkbox" data-curonly>' +
+      '<span>רק שחקנים מהסגל הנוכחי<small>עונות 2025/26 ו-2026/27</small></span></label>' +
+    '<div class="cats__presets">' +
+      '<button type="button" class="mini" data-preset="default">ברירת מחדל</button>' +
+      '<button type="button" class="mini" data-preset="all">הכל</button>' +
+      '<button type="button" class="mini" data-preset="terrace">רק יציע</button>' +
+      '<button type="button" class="mini" data-preset="football">רק כדורגל</button>' +
+      '<button type="button" class="mini" data-preset="basketball">רק כדורסל</button>' +
+    '</div>';
+
+  function renderCats() {
+    const total = chosen().length;
+    document.querySelectorAll(".cats").forEach((box) => {
+      if (!box.dataset.built) { box.innerHTML = CATS_HTML; box.dataset.built = "1"; }
+      box.querySelectorAll("[data-cat]").forEach((b) => {
+        b.setAttribute("aria-pressed", String(!!cats[b.dataset.cat]));
+        b.querySelector(".cat__n").textContent = catCount(b.dataset.cat);
+      });
+      box.querySelector("[data-curonly]").checked = curOnly;
+      box.querySelector("[data-cattotal]").textContent =
+        total ? total + " שירים" : "לא נבחר כלום";
+    });
+  }
+
+  function afterCatChange() {
+    saveCats();
+    renderCats();
+    updatePool();
+    renderPicker();
+    if (!$("listen").classList.contains("hide")) {
+      drawListen();
+      radioReshuffle();
+      radioNext();
+    }
+  }
+
+  document.addEventListener("click", (e) => {
+    const chip = e.target.closest(".cats [data-cat]");
+    if (chip) { cats[chip.dataset.cat] = !cats[chip.dataset.cat]; afterCatChange(); return; }
+    const pre = e.target.closest(".cats [data-preset]");
+    if (!pre) return;
+    const p = pre.dataset.preset;
+    if (p === "default") { cats = { ...CAT_DEFAULT }; curOnly = true; }
+    else if (p === "all") { cats = { terrace: true, football: true, basketball: true, other: true }; curOnly = false; }
+    else if (p === "terrace") { cats = { terrace: true, football: false, basketball: false, other: false }; }
+    else if (p === "football") { cats = { terrace: false, football: true, basketball: false, other: false }; }
+    else if (p === "basketball") { cats = { terrace: false, football: false, basketball: true, other: false }; }
+    afterCatChange();
+  });
+
+  document.addEventListener("change", (e) => {
+    if (!e.target.matches(".cats [data-curonly]")) return;
+    curOnly = e.target.checked;
+    afterCatChange();
+  });
+
+  const basePool = () => SONGS.filter(inCats);
   const chosen = () => basePool().filter((s) => !excluded.has(s.w || s.n));
 
   function updatePool() {
@@ -950,7 +1077,8 @@ input{font:inherit}
   let radioGateT = null;
 
   function radioReshuffle() {
-    radio.queue = shuffle([...SONGS.keys()]);
+    // indices into SONGS, so radioLoad/radioJump keep working unchanged
+    radio.queue = shuffle(SONGS.map((s, i) => i).filter((i) => inCats(SONGS[i])));
     radio.qi = -1;
   }
 
@@ -989,6 +1117,14 @@ input{font:inherit}
 
   function radioNext() {
     if (!SONGS.length) return;
+    if (!radio.queue.length) {
+      radio.song = null;
+      $("nowName").textContent = "לא נבחרו שירים";
+      $("nowMeta").textContent = "בחרו קטגוריה אחת לפחות";
+      if (listenPlayer && listenPlayer.stopVideo) listenPlayer.stopVideo();
+      drawListen();
+      return;
+    }
     for (let tries = 0; tries < SONGS.length; tries++) {
       radio.qi++;
       if (radio.qi >= radio.queue.length) radioReshuffle(), radio.qi = 0;
@@ -1025,7 +1161,7 @@ input{font:inherit}
 
   function listenSongs(q) {
     const n = norm(q || "");
-    const all = SONGS.map((s, i) => ({ s, i }));
+    const all = SONGS.map((s, i) => ({ s, i })).filter(({ s }) => inCats(s));
     if (!n) return all;
     return all.filter(({ s }) => norm(s.n).includes(n) || norm(s.a || "").includes(n));
   }

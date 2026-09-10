@@ -32,6 +32,30 @@ no score, *שיר אחר* to skip.
 
 Songs never repeat — the list is shuffled once and dealt out.
 
+## Categories
+
+The setup screen (and the listen screen) carry a category filter above the
+per-song picker: **יציע / כדורגל / כדורסל / אחר**, plus a *רק שחקנים מהסגל
+הנוכחי* toggle scoped to seasons 2025/26 and 2026/27, and one-tap presets.
+The default — the state a first-time visitor gets — is **terrace songs plus
+current-squad footballers**, 102 of the 135.
+
+Both screens share one filter state (`hapoel-sings-cats` in localStorage), so
+the game and listen mode can never disagree about what is in play.
+
+This needs `sport` and `seasons` on each player song, which come from the
+wiki's own roster category tags (`[[קטגוריה:סגל הפועל ת"א (כדורגל) 2013/14]]`)
+— an authoritative per-season record, not prose parsing:
+
+```bash
+python3 scripts/enrich-songs.py          # re-reads the wiki, updates songs.json
+WIKI_CACHE=/path/to/pages.json python3 scripts/enrich-songs.py   # offline
+```
+
+One player (השפן הקטן-לוקאש סאשה) has no wiki page of his own, only a song
+page, so his sport is unknown; he is grouped under כדורגל, which is where the
+overwhelming majority of player songs sit.
+
 ## Adding a song
 
 `public/songs.json` is the whole database. Three ways in, easiest first:

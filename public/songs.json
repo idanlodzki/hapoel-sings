@@ -9,7 +9,15 @@
    "youtube": [
     "Nqnji8-oLFk"
    ],
-   "original": false
+   "original": false,
+   "sport": "כדורגל",
+   "seasons": [
+    "2006/07",
+    "2007/08",
+    "2008/09",
+    "2009/10"
+   ],
+   "player": "ביברס נאתכו"
   },
   {
    "name": "I'm Mr Lonely-רמזי ספורי",
@@ -19,7 +27,16 @@
    "youtube": [
     "kGhjOPeOMmE"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2012/13",
+    "2013/14",
+    "2014/15",
+    "2015/16",
+    "2018/19"
+   ],
+   "player": "רמזי ספורי"
   },
   {
    "name": "Let the sunshine in - אבי כנפו, אורי שלף",
@@ -29,7 +46,16 @@
    "youtube": [
     "dxNvFVI2G38"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2001/02",
+    "2002/03",
+    "2003/04",
+    "2004/05",
+    "2005/06"
+   ],
+   "player": "אבי כנפו"
   },
   {
    "name": "South Africa-ישראל זגורי",
@@ -39,7 +65,14 @@
    "youtube": [
     "pRpeEdMmmQ0"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2013/14",
+    "2014/15",
+    "2016/17"
+   ],
+   "player": "ישראל זגורי"
   },
   {
    "name": "Speedy Gonzales - גיל מוסינזון, שימון גרשון, ערן יצחק",
@@ -49,7 +82,16 @@
    "youtube": [
     "JIFgouHdlro"
    ],
-   "original": false
+   "original": false,
+   "sport": "כדורסל",
+   "seasons": [
+    "1996/97",
+    "1997/98",
+    "2002/03",
+    "2004/05",
+    "2005/06"
+   ],
+   "player": "גיל מוסינזון"
   },
   {
    "name": "Under The Sea - אוראל דגני, תומר גינת",
@@ -59,7 +101,17 @@
    "youtube": [
     "GC_mV1IpjWA"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2013/14",
+    "2014/15",
+    "2016/17",
+    "2017/18",
+    "2018/19",
+    "2019/20"
+   ],
+   "player": "אוראל דגני"
   },
   {
    "name": "Volare - סלים טועמה",
@@ -69,7 +121,21 @@
    "youtube": [
     "6jWsIpAbo-8"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "1998/99",
+    "1999/00",
+    "2000/01",
+    "2001/02",
+    "2002/03",
+    "2006/07",
+    "2010/11",
+    "2011/12",
+    "2012/13",
+    "2013/14"
+   ],
+   "player": "סלים טועמה"
   },
   {
    "name": "אגדת השמש והירח - וינסנט אניימה",
@@ -80,7 +146,15 @@
     "I7HZYZH8ai4",
     "EbZrvEKJGH0"
    ],
-   "original": false
+   "original": false,
+   "sport": "כדורגל",
+   "seasons": [
+    "2007/08",
+    "2008/09",
+    "2009/10",
+    "2010/11"
+   ],
+   "player": "וינסנט אניימה"
   },
   {
    "name": "אדומה שלי",
@@ -90,7 +164,9 @@
    "youtube": [
     "m2rGnG2HyUM"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "אוהב אותך אני שלך",
@@ -100,7 +176,9 @@
    "youtube": [
     "JhbYESVx9qE"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "אומרים לי שזה רק כדורגל",
@@ -110,7 +188,9 @@
    "youtube": [
     "fNThHjoimrY"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "אור ישראלוב",
@@ -120,7 +200,17 @@
    "youtube": [
     "n5illsgvqKA"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2021/22",
+    "2022/23",
+    "2023/24",
+    "2024/25",
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "אור ישראלוב"
   },
   {
    "name": "אותך אני אוהב",
@@ -130,7 +220,9 @@
    "youtube": [
     "OMOGaugKpzs"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "אחרייך הפועל אני בא בכל מצב",
@@ -140,7 +232,9 @@
    "youtube": [
     "yHfZMgI5q6Y"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "אין לי גרוש ועדיין בא",
@@ -150,7 +244,9 @@
    "youtube": [
     "IFLgChjqRUA"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "איתך עד המוות גם אם אשתגע",
@@ -160,7 +256,9 @@
    "youtube": [
     "cl5HbmhEUBM"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "אל-ים קנצפולסקי",
@@ -170,7 +268,18 @@
    "youtube": [
     "WRneo8GPXu0"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2020/21",
+    "2021/22",
+    "2022/23",
+    "2023/24",
+    "2024/25",
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "אל-ים קנצפולסקי"
   },
   {
    "name": "אליניב ברדה",
@@ -180,7 +289,13 @@
    "youtube": [
     "vKJvaI5JdcM"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2005/06",
+    "2006/07"
+   ],
+   "player": "אליניב ברדה"
   },
   {
    "name": "אמרו לו",
@@ -190,7 +305,9 @@
    "youtube": [
     "ykkSqpoJPKI"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "אמרו עליי הכל",
@@ -200,7 +317,9 @@
    "youtube": [
     "d63zhQZDQeo"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "אמריקה - עומרי קנדה",
@@ -210,7 +329,16 @@
    "youtube": [
     "YhiepQ5WLhI"
    ],
-   "original": false
+   "original": false,
+   "sport": "כדורגל",
+   "seasons": [
+    "2007/08",
+    "2008/09",
+    "2009/10",
+    "2010/11",
+    "2011/12"
+   ],
+   "player": "עומרי קנדה"
   },
   {
    "name": "אנאס מחאמיד",
@@ -220,7 +348,15 @@
    "youtube": [
     "Su4Gv-cwpWI"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2015/16",
+    "2016/17",
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "אנאס מחאמיד"
   },
   {
    "name": "אנדריאן קרייב",
@@ -230,7 +366,13 @@
    "youtube": [
     "wVpLBgwyuoI"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "אנדריאן קרייב"
   },
   {
    "name": "אנחנו לא שכירי חרב",
@@ -240,7 +382,9 @@
    "youtube": [
     "Nmb80HXWsFQ"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "אנטוניו בלייקני",
@@ -250,7 +394,14 @@
    "youtube": [
     "wiSAhfPtAg4"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2024/25",
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "אנטוניו בלייקני"
   },
   {
    "name": "אני לא רגוע",
@@ -260,7 +411,9 @@
    "youtube": [
     "QeooG13vzdw"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "אני שוב מתאהב- איליה יבוריאן, ניר גלאון, נייט רובינסון",
@@ -270,7 +423,12 @@
    "youtube": [
     "qoGurrdtz6Q"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2005/06"
+   ],
+   "player": "איליה יבוריאן"
   },
   {
    "name": "אנשים רק מדברים",
@@ -280,7 +438,9 @@
    "youtube": [
     "h7ddNsV-QLI"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "אסף צור",
@@ -290,7 +450,13 @@
    "youtube": [
     "1XtsdZfcRu0"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "אסף צור"
   },
   {
    "name": "אף פעם לא תדעי - דני בונדר",
@@ -300,7 +466,16 @@
    "youtube": [
     "bJuyjgA_gvI"
    ],
-   "original": false
+   "original": false,
+   "sport": "כדורגל",
+   "seasons": [
+    "2006/07",
+    "2007/08",
+    "2008/09",
+    "2009/10",
+    "2010/11"
+   ],
+   "player": "דני בונדר"
   },
   {
    "name": "את זאת שאהבתי",
@@ -310,7 +485,9 @@
    "youtube": [
     "rkcTUMuIQKo"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "את לא דומה לשום דבר אחר",
@@ -320,7 +497,9 @@
    "youtube": [
     "qRKjWL5a2-E"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "בחורים שותים קצת יין",
@@ -330,7 +509,9 @@
    "youtube": [
     "Et8aqlwCeh4"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "בכל העולם",
@@ -340,7 +521,9 @@
    "youtube": [
     "pAyKJAtDNCw"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "בכל מקום בכל מגרש",
@@ -350,7 +533,9 @@
    "youtube": [
     "n4RjJKxsamQ"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "בכל שבוע קרנבל",
@@ -360,7 +545,9 @@
    "youtube": [
     "tKJwvQfraY8"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "במדינת הגמדים - מהראן לאלה",
@@ -370,7 +557,15 @@
    "youtube": [
     "4j6F-QHgOv4"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2008/09",
+    "2009/10",
+    "2010/11",
+    "2011/12"
+   ],
+   "player": "מהראן לאלה"
   },
   {
    "name": "בניצחון בכשלון אני שלך",
@@ -380,7 +575,9 @@
    "youtube": [
     "U6AOviMQoN0"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "בר טימור",
@@ -390,7 +587,20 @@
    "youtube": [
     "Bu7bMJ-5-kM"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2011/12",
+    "2012/13",
+    "2020/21",
+    "2021/22",
+    "2022/23",
+    "2023/24",
+    "2024/25",
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "בר טימור"
   },
   {
    "name": "ברוכים הבאים לגיהנום של האדומים",
@@ -400,7 +610,9 @@
    "youtube": [
     "LHcP4MWABGY"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "גיא פלטין",
@@ -410,7 +622,14 @@
    "youtube": [
     "Prv3wl3X9O4"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2024/25",
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "גיא פלטין"
   },
   {
    "name": "גם אם תשחקי בשדה מוקשים",
@@ -420,7 +639,9 @@
    "youtube": [
     "SzGr282fgAM"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "גם כשאת מגמגמת",
@@ -430,7 +651,9 @@
    "youtube": [
     "rfvGz953w2k"
    ],
-   "original": false
+   "original": false,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "דורון ליידנר",
@@ -440,7 +663,16 @@
    "youtube": [
     "8qTu7LFgouY"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2019/20",
+    "2020/21",
+    "2021/22",
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "דורון ליידנר"
   },
   {
    "name": "דניאל דאפה",
@@ -450,7 +682,13 @@
    "youtube": [
     "HHWcnaJXeIY"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "דניאל דאפה"
   },
   {
    "name": "הבל החן שקר היופי - איתי שכטר",
@@ -460,7 +698,14 @@
    "youtube": [
     "a8yZcvoTYEE"
    ],
-   "original": false
+   "original": false,
+   "sport": "כדורגל",
+   "seasons": [
+    "2009/10",
+    "2010/11",
+    "2013/14"
+   ],
+   "player": "איתי שכטר"
   },
   {
    "name": "המורי הזקן",
@@ -470,7 +715,9 @@
    "youtube": [
     "TeCEFML_ssM"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "המקל בתוף פוגע",
@@ -480,7 +727,9 @@
    "youtube": [
     "t-PhGnkn_hU"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "העולם עוצר בנקודת המפגש",
@@ -490,7 +739,9 @@
    "youtube": [
     "0jTHNBKjMBU"
    ],
-   "original": false
+   "original": false,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "העיר הזאת שלך",
@@ -500,7 +751,9 @@
    "youtube": [
     "D2Zu1fkmpwg"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "הפועל אחרייך",
@@ -510,7 +763,9 @@
    "youtube": [
     "bKcv-D2YwP0"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "הפועל אני אמות אם צריך",
@@ -520,7 +775,9 @@
    "youtube": [
     "fY275qCUbKA"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "הפועל אני אתן הכל בשבילך",
@@ -530,7 +787,9 @@
    "youtube": [
     "01SBf0tsLyI"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "הפועל זה החיים (שיר)",
@@ -540,7 +799,9 @@
    "youtube": [
     "WI2NYRhlM30"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "הפועל כמוך אין אף אחת",
@@ -550,7 +811,9 @@
    "youtube": [
     "LNBjMRvOB5M"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "הפועל לכל מקום שתלכי",
@@ -560,7 +823,9 @@
    "youtube": [
     "FJRfLp64sPE"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "הפועל מה את עושה לי",
@@ -570,7 +835,9 @@
    "youtube": [
     "awwgoKgrrqk"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "הפועל מספקת את המנת אדרנלין",
@@ -580,7 +847,9 @@
    "youtube": [
     "XOHyfDNF2v0"
    ],
-   "original": false
+   "original": false,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "הפועל עולה",
@@ -590,7 +859,9 @@
    "youtube": [
     "c-aTdb7Bt6Q"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "הפועל עולה עולה או",
@@ -600,7 +871,9 @@
    "youtube": [
     "Jv8x1LoN_Ds"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "הפועל שיגעת אותי",
@@ -610,7 +883,9 @@
    "youtube": [
     "JWRoHfkLZNQ"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "הפועל שלי אני איתך לעולמים",
@@ -620,7 +895,9 @@
    "youtube": [
     "n__raqTpqfg"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "הפועל תראי מה קרה לי",
@@ -630,7 +907,9 @@
    "youtube": [
     "5zdfSP1VtUU"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "הפועל, תקשיבו לנו",
@@ -640,7 +919,9 @@
    "youtube": [
     "MNAGFfgcXaY"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "הפרח בגני",
@@ -650,7 +931,9 @@
    "youtube": [
     "vcpgpEUlKfk"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "הקבוצה שלי הפועל",
@@ -660,7 +943,9 @@
    "youtube": [
     "ZmIENA6qhjE"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "השפן הקטן-לוקאש סאשה",
@@ -670,7 +955,10 @@
    "youtube": [
     "-qH8J3gZ-gI"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": [],
+   "player": "השפן הקטן-לוקאש סאשה"
   },
   {
    "name": "וואליד באדיר",
@@ -680,7 +968,19 @@
    "youtube": [
     "iZA0-_hosqM"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2005/06",
+    "2006/07",
+    "2007/08",
+    "2008/09",
+    "2009/10",
+    "2010/11",
+    "2011/12",
+    "2012/13"
+   ],
+   "player": "וואליד באדיר"
   },
   {
    "name": "זיכרון ישן",
@@ -690,7 +990,9 @@
    "youtube": [
     "zRIn7W-kXhs"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "חוץ ממך אין עוד אחרת",
@@ -700,7 +1002,9 @@
    "youtube": [
     "dgTraS02Zyc"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "טל ארצ'ל",
@@ -710,7 +1014,17 @@
    "youtube": [
     "-PY5m1qxYcw"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2021/22",
+    "2022/23",
+    "2023/24",
+    "2024/25",
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "טל ארצ'ל"
   },
   {
    "name": "יאללה הפועל - עד המוות",
@@ -720,7 +1034,9 @@
    "youtube": [
     "_3dmm4jpvr0"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "יאללה הפועל שלי",
@@ -730,7 +1046,9 @@
    "youtube": [
     "244y56-vLWE"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "יאללה יאללה הפועל - כולם עכשיו לקפוץ",
@@ -740,7 +1058,9 @@
    "youtube": [
     "Ry9ijNhIw-w"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "יאללה יאללה כפיים",
@@ -750,7 +1070,9 @@
    "youtube": [
     "_dmZOAm-8dc"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "יונתן פרבר",
@@ -760,7 +1082,12 @@
    "youtube": [
     "isCbysjdcQ0"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2026/27"
+   ],
+   "player": "יונתן פרבר"
   },
   {
    "name": "יוצא היום לקרב",
@@ -770,7 +1097,9 @@
    "youtube": [
     "CUgSRJfa7mQ"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "יחד לעולם",
@@ -780,7 +1109,9 @@
    "youtube": [
     "pvuN_WvF1to"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "יפתח זיו",
@@ -790,7 +1121,13 @@
    "youtube": [
     "hSfvAKQUOzM"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "יפתח זיו"
   },
   {
    "name": "כדי להיות אוהד של הפועל",
@@ -800,7 +1137,9 @@
    "youtube": [
     "oxPWVX-qSrQ"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "כי רק בזכותך אני עוד חי וקיים",
@@ -810,7 +1149,9 @@
    "youtube": [
     "zoMYU_nOGNg"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "ככה וככה - אקסבייר מנפורד",
@@ -820,7 +1161,13 @@
    "youtube": [
     "pu_K7ALK7Ok"
    ],
-   "original": false
+   "original": false,
+   "sport": "כדורסל",
+   "seasons": [
+    "2022/23",
+    "2023/24"
+   ],
+   "player": "אקסבייר מנפורד"
   },
   {
    "name": "כל החיים שלי אני פה איתך",
@@ -830,7 +1177,9 @@
    "youtube": [
     "rgww_W_MvJg"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "כל היום אני רק עלייך",
@@ -840,7 +1189,9 @@
    "youtube": [
     "2u33EXxwzVc"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "כל העולם כולו",
@@ -850,7 +1201,9 @@
    "youtube": [
     "x5tdi0zzvDM"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "כמו עיוור אני הולך",
@@ -860,7 +1213,9 @@
    "youtube": [
     "7K8q9Xh_aJw"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "כמו פרפר לאור",
@@ -870,7 +1225,9 @@
    "youtube": [
     "tmwcjNE1eQw"
    ],
-   "original": false
+   "original": false,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "כשאת בוכה את לא יפה - אליניב ברדה",
@@ -880,7 +1237,13 @@
    "youtube": [
     "Rd9uHs0zTLc"
    ],
-   "original": false
+   "original": false,
+   "sport": "כדורגל",
+   "seasons": [
+    "2005/06",
+    "2006/07"
+   ],
+   "player": "אליניב ברדה"
   },
   {
    "name": "כשאת עולה למגרש",
@@ -890,7 +1253,9 @@
    "youtube": [
     "pjPA7CXutDw"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "כשהשטן יקח אותנו",
@@ -900,7 +1265,9 @@
    "youtube": [
     "IS_J2Nm6d4Y"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "לא יודע להסביר",
@@ -910,7 +1277,9 @@
    "youtube": [
     "WPiEbYSF9kE"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "לא משנה מה שיהיה",
@@ -920,7 +1289,9 @@
    "youtube": [
     "rkdtSFaKY7A"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "לוקאס פלקאו",
@@ -930,7 +1301,13 @@
    "youtube": [
     "_VAQwpv5jpQ"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "לוקאס פלקאו"
   },
   {
    "name": "לעולם לא תצעדי לבד",
@@ -940,7 +1317,9 @@
    "youtube": [
     "Dd9qP-taSes"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "לפעמים",
@@ -950,7 +1329,9 @@
    "youtube": [
     "bh9JerE0daA"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "מה אני אני רק בן אדם",
@@ -960,7 +1341,9 @@
    "youtube": [
     "LhEVbDprJ8s"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "מהיום שבו נולדתי (שיר הילדים)",
@@ -970,7 +1353,9 @@
    "youtube": [
     "lmaexcD8eak"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "מונו - ויקטור מרעי",
@@ -980,7 +1365,15 @@
    "youtube": [
     "mkHNGEaN_YQ"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2008/09",
+    "2009/10",
+    "2010/11",
+    "2012/13"
+   ],
+   "player": "ויקטור מרעי"
   },
   {
    "name": "מור בוסקילה",
@@ -990,7 +1383,13 @@
    "youtube": [
     "NHDuKGNNTc8"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "מור בוסקילה"
   },
   {
    "name": "מזמן, ידעתי שהפועל היא כל החיים",
@@ -1000,7 +1399,9 @@
    "youtube": [
     "kJQP7kiw5Fk"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "מחכה כבר שעות",
@@ -1010,7 +1411,9 @@
    "youtube": [
     "KjeK0Kg2Pa4"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "מחכים כל השבוע לצבוע את היציעים",
@@ -1020,7 +1423,9 @@
    "youtube": [
     "C4AqHJKorsE"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "מטריפה לי את המוח",
@@ -1030,7 +1435,9 @@
    "youtube": [
     "i54fb_5J4cE"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "מי המציא את המילה",
@@ -1040,7 +1447,9 @@
    "youtube": [
     "hc7_fC4pnlY"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "מיום הולדתי אני כולי שלך",
@@ -1050,7 +1459,9 @@
    "youtube": [
     "YUU9W55KFf8"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "מיום שנולדתי רק דבר אחד",
@@ -1060,7 +1471,9 @@
    "youtube": [
     "LH-i8IvYIcg"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "מרקוס קוקו",
@@ -1070,7 +1483,13 @@
    "youtube": [
     "Mp-oAudF6yY"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "מרקוס קוקו"
   },
   {
    "name": "נאהב אותך לנצח",
@@ -1080,7 +1499,9 @@
    "youtube": [
     "h8VGQTtENSs"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "נעימת השיכורים",
@@ -1090,7 +1511,9 @@
    "youtube": [
     "iAGJjnQ73JU"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "סיגל-דני עמוס",
@@ -1100,7 +1523,13 @@
    "youtube": [
     "yn8Q6PLWQQs"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2013/14",
+    "2014/15"
+   ],
+   "player": "דני עמוס"
   },
   {
    "name": "סתיו טוריאל",
@@ -1110,7 +1539,15 @@
    "youtube": [
     "2zk_cTSeLUk"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2023/24",
+    "2024/25",
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "סתיו טוריאל"
   },
   {
    "name": "עד המוות הפועל",
@@ -1120,7 +1557,9 @@
    "youtube": [
     "g9d0E0tJSeU"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "עדים לנו כוכבי מרום",
@@ -1130,7 +1569,9 @@
    "youtube": [
     "KSoOcvB3p3o"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "עומר דמארי",
@@ -1140,7 +1581,16 @@
    "youtube": [
     "sDRSs2rrZ8o"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2011/12",
+    "2012/13",
+    "2013/14",
+    "2018/19",
+    "2019/20"
+   ],
+   "player": "עומר דמארי"
   },
   {
    "name": "עומרי אלטמן",
@@ -1150,7 +1600,18 @@
    "youtube": [
     "0Il2etmS7mA"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2015/16",
+    "2016/17",
+    "2019/20",
+    "2020/21",
+    "2023/24",
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "עומרי אלטמן"
   },
   {
    "name": "עמית למקין",
@@ -1160,7 +1621,15 @@
    "youtube": [
     "zMWp-Fsp02E"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2023/24",
+    "2024/25",
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "עמית למקין"
   },
   {
    "name": "עמנואל בואטנג (חלוץ)",
@@ -1170,7 +1639,13 @@
    "youtube": [
     "Gs069dndIYk"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "עמנואל בואטנג (חלוץ)"
   },
   {
    "name": "פרנאן מאיימבו",
@@ -1180,7 +1655,13 @@
    "youtube": [
     "jRvXRGrX1cU"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "פרנאן מאיימבו"
   },
   {
    "name": "צ'יקו",
@@ -1190,7 +1671,13 @@
    "youtube": [
     "JybdxlhMlK4"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "צ'יקו"
   },
   {
    "name": "קוקאין ואלכוהול",
@@ -1200,7 +1687,9 @@
    "youtube": [
     "2hUe1rUEBhk"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "קם וחושב רק עלייך",
@@ -1210,7 +1699,9 @@
    "youtube": [
     "3AxwmES4ZyE"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "רוי ברנס",
@@ -1220,7 +1711,15 @@
    "youtube": [
     "6p-lDYPR2P8"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2019/20",
+    "2020/21",
+    "2021/22",
+    "2023/24"
+   ],
+   "player": "רוי ברנס"
   },
   {
    "name": "רוי קורין",
@@ -1230,7 +1729,14 @@
    "youtube": [
     "_EtY8t35yb8"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2024/25",
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "רוי קורין"
   },
   {
    "name": "רועי אלקוקין",
@@ -1240,7 +1746,16 @@
    "youtube": [
     "vV1WQLR--tE"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2022/23",
+    "2023/24",
+    "2024/25",
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "רועי אלקוקין"
   },
   {
    "name": "רק בשבילך הפועל כתבתי שיר",
@@ -1250,7 +1765,9 @@
    "youtube": [
     "-9f24o5V60k"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "רק הפועל",
@@ -1261,7 +1778,9 @@
     "2Y8VZfgL0UM",
     "NOh4KdVd0uM"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "רק למענך נולדנו",
@@ -1271,7 +1790,9 @@
    "youtube": [
     "qN3Y3Z5-3sw"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "שאנדה סילבה",
@@ -1281,7 +1802,13 @@
    "youtube": [
     "mgg1ttP5es4"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "שאנדה סילבה"
   },
   {
    "name": "שחר פיבן",
@@ -1291,7 +1818,14 @@
    "youtube": [
     "PXyZN8A9XB8"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2024/25",
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "שחר פיבן"
   },
   {
    "name": "שי אבוטבול",
@@ -1301,7 +1835,24 @@
    "youtube": [
     "JEIXCBj5ObU"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2002/03",
+    "2003/04",
+    "2004/05",
+    "2005/06",
+    "2006/07",
+    "2007/08",
+    "2008/09",
+    "2009/10",
+    "2010/11",
+    "2011/12",
+    "2012/13",
+    "2013/14",
+    "2014/15"
+   ],
+   "player": "שי אבוטבול"
   },
   {
    "name": "שלום עליכם",
@@ -1311,7 +1862,9 @@
    "youtube": [
     "EKlLpiBuxIA"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "תומר גינת",
@@ -1321,7 +1874,20 @@
    "youtube": [
     "j2F4INQFjEI"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורסל",
+   "seasons": [
+    "2016/17",
+    "2017/18",
+    "2018/19",
+    "2019/20",
+    "2022/23",
+    "2023/24",
+    "2024/25",
+    "2025/26",
+    "2026/27"
+   ],
+   "player": "תומר גינת"
   },
   {
    "name": "תפילה - גילי ורמוט",
@@ -1331,7 +1897,19 @@
    "youtube": [
     "bnh5VZwnp0U"
    ],
-   "original": true
+   "original": true,
+   "sport": "כדורגל",
+   "seasons": [
+    "2005/06",
+    "2006/07",
+    "2008/09",
+    "2009/10",
+    "2010/11",
+    "2012/13",
+    "2013/14",
+    "2014/15"
+   ],
+   "player": "גיל ורמוט"
   },
   {
    "name": "תראו הפועל הנה מה שסיכמנו",
@@ -1341,7 +1919,9 @@
    "youtube": [
     "fPDJhzjSly4"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   },
   {
    "name": "תראי את היציע צבוע אדום",
@@ -1351,7 +1931,9 @@
    "youtube": [
     "IpNdoz6QGmk"
    ],
-   "original": true
+   "original": true,
+   "sport": null,
+   "seasons": []
   }
  ]
 }
